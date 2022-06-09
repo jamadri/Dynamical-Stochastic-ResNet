@@ -85,8 +85,9 @@ def train_epoch(net,optimizer,trainloader,testloader,it,control_dict,global_outp
         net.train()#turn to train mode
         inputs, labels = data
         inputs, labels = Variable(inputs), Variable(labels)
-        if global_cuda_available:
-            inputs, labels = inputs.cuda(), labels.cuda()
+        inputs, labels = inputs.to(device), labels.to(device)  # Changes here, not interested in cuda but in tpu
+        # if global_cuda_available:
+        #     inputs, labels = inputs.cuda(), labels.cuda()
         optimizer.zero_grad()
         outputs = net(inputs)
         loss = criterion(outputs, labels)
