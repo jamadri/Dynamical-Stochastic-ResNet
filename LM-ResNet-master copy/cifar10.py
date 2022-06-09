@@ -53,7 +53,7 @@ def generate_filename(modelname,code = None):
     return 'result/'+modelname + '-test' + str(code) + ".mdlpkl"
 
 
-def train_epoch(net,optimizer,trainloader,testloader,it,control_dict,global_output_filename = "out.txt"):
+def train_epoch(net,optimizer,trainloader,testloader,it,control_dict,device,global_output_filename = "out.txt"):
     """
     SGD Trainer For Cross Entropy Loss
     :param net:
@@ -174,7 +174,7 @@ class NN_SGDTrainer(object):
 
     def train(self,model_name="test"):
         self.iter_time += 1
-        acc = train_epoch(self.net,self.optimizer,self.trainloader,self.testloader,self.iter_time,self.lr_adjust,self.output)
+        acc = train_epoch(self.net,self.optimizer,self.trainloader,self.testloader,self.iter_time,self.lr_adjust,self.device,self.output)
         if acc > self.max:
             model_filename = generate_filename(model_name, 1)
             torch.save(self.net, model_filename)
