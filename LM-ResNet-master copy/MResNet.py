@@ -4,7 +4,7 @@ import torch.nn.functional as functional
 import math
 from torch.autograd import Variable
 
-from init import *
+# from init import *
 from random import random
 
 class BasicBlockWithDeathRate(nn.Module):
@@ -30,11 +30,12 @@ class BasicBlockWithDeathRate(nn.Module):
             out=self.relu(out)
             out=self.conv2(out)
             if self.training:
-                out /= (1. - self.death_rate)  # During training phase some of the channels are ignored, we rescale the outputs as a consequence.
-        else:  # We are in training phase but do not kill any channel.
-            if self.stride==1:  # 
+                out /= (1. - self.death_rate)
+        else:
+            if self.stride==1:
                 out=Variable(torch.FloatTensor(x.size()).cuda().zero_(),requires_grad=False)
             else:
+                
                 size=list(x.size())
                 size[-1]//=2
                 size[-2]//=2
@@ -67,7 +68,7 @@ class BasicBlock(nn.Module):
         return out
     
 
-class GaussianNoise(nn.Module):  # Not sure when is it used?
+class GaussianNoise(nn.Module):
     def __init__(self, stddev):
         super(GaussianNoise,self).__init__()
         self.stddev = stddev
@@ -109,7 +110,7 @@ class Bottleneck(nn.Module):
 
         return out
 
-class Downsample(nn.Module):  # “We perform downsampling directly by convolutional layers that have a stride of 2.” ([He et al., 2015, p. 3]
+class Downsample(nn.Module):
     def __init__(self,in_planes,out_planes,stride=2):
         super(Downsample,self).__init__()
         self.downsample=nn.Sequential(
@@ -123,13 +124,13 @@ class Downsample(nn.Module):  # “We perform downsampling directly by convoluti
         return x
 
 class MResNet(nn.Module):
-    # “on CIFAR, we adopt the original design of the residual block in He et al. (2016), i.e. using a small two-layer neural network as the residual block with bn-relu-conv-bn-reluconv.” ([Lu et al., 2020, p. 5])
+
     def __init__(self,block,layers,pretrain=True,num_classes=100,stochastic_depth=False,PL=0.5,noise_level=0.001,noise=False):
         self.in_planes=16
         self.planes=[16,32,64]
         self.strides=[1,2,2]
         super(MResNet,self).__init__()
-        self.noise=noise 
+        self.noise=noise
         self.block=block
         self.conv1=nn.Conv2d(3,16,kernel_size=3,padding=1,bias=False)
         self.bn1=nn.BatchNorm2d(16)
@@ -181,10 +182,6 @@ class MResNet(nn.Module):
 
 
     def forward(self,x):
-        '''
-        We obtain the following stochastic training strategy for LM-architecture
-        Xn+1 = (2 + gn)Xn - (1 + gn)Xn-1 + ηn f(Xn).
-        '''
         x=self.conv1(x)
         #x=self.bn1(x)
         #x=self.relu(x)
@@ -227,8 +224,6 @@ class MResNet(nn.Module):
         x=x.view(x.size(0), -1)
         x=self.fc(x) 
         return x
-
-
 class MResNetC(nn.Module):
 
     def __init__(self,block,layers,pretrain=False,num_classes=100):
@@ -579,3 +574,55 @@ class ResNet(nn.Module):
         x=x.view(x.size(0), -1)
         x=self.fc(x) 
         return x    
+    
+def MResNet110(**kwargs) :
+    
+    return MResNet(BasicBlock,[18,18,18],**kwargs)
+
+def MResNet164(**kwargs):
+    return MResNet(Bottleneck,[18,18,18],**kwargs)           
+
+def ResNet_N20(**kwargs) :
+    
+    return ResNet_N(BasicBlock,[3,3,3],**kwargs)
+
+def ResNet_20(**kwargs) :
+    
+    return ResNet(BasicBlock,[3,3,3],**kwargs)
+def ResNet_N110(**kwargs) :
+    
+    return ResNet_N(BasicBlock,[18,18,18],**kwargs)
+def MResNet20(**kwargs) :
+    
+    return MResNet(BasicBlock,[3,3,3],**kwargs)
+
+def MResNetSD20(**kwargs) :
+    
+    return MResNet(BasicBlockWithDeathRate,[3,3,3],stochastic_depth=True,**kwargs)
+def MResNetSD110(**kwargs) :
+    
+    return MResNet(BasicBlockWithDeathRate,[18,18,18],stochastic_depth=True,**kwargs)
+def MResNetC20(**kwargs) :
+    
+    return MResNetC(BasicBlock,[3,3,3],**kwargs)
+def MResNetC32(**kwargs) :
+    
+    return MResNetC(BasicBlock,[5,5,5],**kwargs)
+def MResNetC44(**kwargs) :
+    
+    return MResNetC(BasicBlock,[7,7,7],**kwargs)
+def MResNet44(**kwargs) :
+    
+    return MResNet(BasicBlock,[7,7,7],**kwargs)
+def MResNetC56(**kwargs) :
+    
+    return MResNetC(BasicBlock,[9,9,9],**kwargs)
+def DenseResNet20(**kwargs) :
+    
+    return DenseResNet(BasicBlock,[3,3,3],**kwargs)
+def DenseResNet110(**kwargs) :
+    
+    return DenseResNet(BasicBlock,[18,18,18],**kwargs)
+def MResNet56(**kwargs):
+    return MResNet(BasicBlock,[9,9,9],**kwargs)
+
