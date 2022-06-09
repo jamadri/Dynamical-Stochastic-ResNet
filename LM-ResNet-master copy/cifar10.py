@@ -156,7 +156,7 @@ def train_epoch(net,optimizer,trainloader,testloader,it,control_dict,global_outp
 
 
 class NN_SGDTrainer(object):
-    def __init__(self,net,sgd_para,trainloader,testloader,lr_adjust,global_output_filename = "out.txt"):
+    def __init__(self,net,sgd_para,trainloader,testloader,lr_adjust,device,global_output_filename = "out.txt"): # Added device
         self.net = net
         self.sgd_para = sgd_para
         self.optimizer = optim.SGD(net.parameters(), **sgd_para)
@@ -166,6 +166,7 @@ class NN_SGDTrainer(object):
         self.lr_adjust = lr_adjust
         self.iter_time = 0
         self.max = 0
+        self.device = device # New parameter
 
     def renew_trainer(self):
         self.optimizer = optim.SGD(self.net.parameters(), **self.sgd_para)
@@ -188,8 +189,10 @@ class NN_SGDTrainer(object):
             for data in self.testloader:
                 inputs, labels = data
                 inputs, labels = Variable(inputs), Variable(labels)
-                if torch.cuda.is_available():
-                    inputs, labels = inputs.cuda(), labels.cuda()
+                # Change here, not interested in cuda, want to do it on TPU
+                #if torch.cuda.is_available(): 
+                #    inputs, labels = inputs.cuda(), labels.cuda()
+                inputs, labels = inputs.to(self.device), labels.to(self.device)
                 outputs = self.net(inputs)
                 _, predicted = torch.max(outputs.data, 1)
                 total_ctr += labels.size()[0]
@@ -370,10 +373,10 @@ if __name__=="__main__":
     net=MResNet20().to(device=dev)
     ###
     model_name = "Resnet20"
-    inp=Variable(torch.FloatTensor(128,3,32,32).uniform_(0,1))
+    #inp=Variable(torch.FloatTensor(128,3,32,32).uniform_(0,1))
     trainloader,testloader = get_cifar10(batch_size)
     sgd_para = {"lr":1e-3}
-    Trainer = NN_SGDTrainer(net,sgd_para, trainloader, testloader, {200:1e-3}, model_name + '.txt')
-    for i in range(3):
+    Trainer = NN_SGDTrainer(net,sgd_para, trainloader, testloader, {200:1e-3}, dev, model_name + '.txt')  # Added device
+    for i in range(1):
         Trainer.train()
 
