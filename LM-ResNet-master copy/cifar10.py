@@ -364,7 +364,7 @@ def get_cifar100(batch_size):
 
 
 
-if __name__=="main":
+if __name__=="__main__":
     ### SUPER IMPORTANT
     dev = xm.xla_device()
     net=MResNet20().to(device=dev)
