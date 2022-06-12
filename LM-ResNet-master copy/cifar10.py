@@ -217,7 +217,7 @@ class NN_SGDTrainer(object):
         acc = train_epoch(self.net,self.optimizer,self.trainloader,self.testloader,self.iter_time,self.lr_adjust,self.device,self.output)
         if acc > self.max:
             model_filename = generate_filename(model_name, 1)
-            torch.save(self.net, model_filename)
+            xm.save(self.net, model_filename)   # xm.save instead of torch.save to go back to cpu
             self.max = acc
 
     def net_test(self):
