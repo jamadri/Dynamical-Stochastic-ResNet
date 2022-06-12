@@ -111,7 +111,7 @@ def train_epoch(net,optimizer,trainloader,testloader,it,control_dict,device,glob
 
     criterion = nn.CrossEntropyLoss()
 
-    #global_cuda_available = torch.cuda.is_available()
+    # global_cuda_available = False # torch.cuda.is_available()
     #if global_cuda_available:
     #    net = net.cuda()
 
@@ -142,8 +142,10 @@ def train_epoch(net,optimizer,trainloader,testloader,it,control_dict,device,glob
         for data in testloader:
             inputs, labels = data
             inputs, labels = Variable(inputs,volatile=True), Variable(labels,volatile=True)
-            if global_cuda_available:
-                inputs, labels = inputs.cuda(), labels.cuda()
+            inputs, labels = inputs.to(device), labels.to(device)  # Changes here interested in TPUs not cuda
+            #if global_cuda_available:
+            #    inputs, labels = inputs.cuda(), labels.cuda()
+
             outputs = net(inputs)
             _, predicted = torch.max(outputs.data, 1)
             total_ctr += labels.size()[0]
@@ -181,7 +183,7 @@ def train_epoch(net,optimizer,trainloader,testloader,it,control_dict,device,glob
                          "Epoch {:d} finished, average loss: {:.10f}"
                          .format(it, total_loss_sum / total_ctr)
                          )
-    if True:
+    if True: # True:  Changed to false because I don't want ot run any test yet.
         write_file_and_close(global_output_filename, "Starting testing")
         info = [0., 0., 0.]
         test(info)
