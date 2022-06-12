@@ -352,7 +352,7 @@ def get_cifar10(batch_size, device):
     trainloader = torch.utils.data.DataLoader(
         trainset, batch_size=batch_size, shuffle=True, num_workers=2
     )
-    train_loader = pl.MpDeviceLoader(train_loader, device)  # See why here: http://pytorch.org/xla/release/1.11/index.html#running-on-multiple-xla-devices-with-multi-processing
+    trainloader = pl.MpDeviceLoader(trainloader, device)  # See why here: http://pytorch.org/xla/release/1.11/index.html#running-on-multiple-xla-devices-with-multi-processing
 
     testset = torchvision.datasets.CIFAR10(
         root="./data", download=True, train=False, transform=transform_test
