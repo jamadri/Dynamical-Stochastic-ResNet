@@ -86,7 +86,7 @@ def generate_filename(modelname,code = None):
     # if code = None, generate tim as the code
     if code == None:
         return 'result/'+modelname + '-' + datetime.datetime.now().strftime("%Y%m%d%H%M%S%f") + ".mdlpkl"
-    return 'result/'+modelname + '-test' + str(code) + ".mdlpkl"
+    return 'result/'+modelname + '-test' + str(code) + ".pt"
 
 
 def train_epoch(net,optimizer,trainloader,testloader,it,control_dict,device,global_output_filename = "out.txt"):
@@ -217,7 +217,7 @@ class NN_SGDTrainer(object):
         acc = train_epoch(self.net,self.optimizer,self.trainloader,self.testloader,self.iter_time,self.lr_adjust,self.device,self.output)
         if acc > self.max:
             model_filename = generate_filename(model_name, 1)
-            xm.save(self.net, model_filename)   # xm.save instead of torch.save to go back to cpu
+            xm.save(self.net.state_dict(), model_filename)   # xm.save instead of torch.save to go back to cpu
             self.max = acc
 
     def net_test(self):
