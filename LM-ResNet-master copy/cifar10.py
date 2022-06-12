@@ -29,6 +29,7 @@ import re
 import numpy
 import sys, time
 import argparse
+import datetime
 '''
 Trying to optimize memory access with sharding see https://cloud.google.com/blog/topics/developers-practitioners/scaling-deep-learning-workloads-pytorch-xla-and-cloud-tpu-vm
 
