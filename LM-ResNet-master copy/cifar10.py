@@ -412,7 +412,7 @@ def get_cifar100(batch_size):
 def _run():  # See https://www.kaggle.com/code/tanulsingh077/pytorch-xla-understanding-tpu-s-and-xla/notebook
     ### SUPER IMPORTANT
     dev = xm.xla_device()
-    state_dict = torch.load('/result/test-test1.pt')
+    state_dict = torch.load('result/test-test1.pt')
     net = MResNet20().to(device=dev)
     net.load_state_dict(state_dict)
     ###
@@ -423,7 +423,7 @@ def _run():  # See https://www.kaggle.com/code/tanulsingh077/pytorch-xla-underst
     trainloader,testloader = get_cifar10(batch_size, dev)
     sgd_para = {"lr":1e-3}
     Trainer = NN_SGDTrainer(net,sgd_para, trainloader, testloader, {200:1e-3}, dev, model_name + '.txt')  # Added device
-    for i in range(15):
+    for i in range(40):
         Trainer.train()
 def _mp_fn(rank, flags):
     torch.set_default_tensor_type('torch.FloatTensor')
