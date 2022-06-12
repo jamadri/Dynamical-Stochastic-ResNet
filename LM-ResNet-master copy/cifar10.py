@@ -85,7 +85,7 @@ def check_control(filename):
 def generate_filename(modelname,code = None):
     # if code = None, generate tim as the code
     if code == None:
-        return 'result/'+modelname + '-' + datetime.datetime.now().strftime("%Y%m%d%H%M%S%f") + ".mdlpkl"
+        return 'result/'+modelname + '-' + datetime.datetime.now().strftime("%Y%m%d%H%M%S%f") + ".pt"
     return 'result/'+modelname + '-test' + str(code) + ".pt"
 
 
