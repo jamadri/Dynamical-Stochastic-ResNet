@@ -139,19 +139,20 @@ def train_epoch(net,optimizer,trainloader,testloader,it,control_dict,device,glob
         correct_sum = 0
         total_loss_sum = 0.
         total_ctr = 0
-        for data in testloader:
-            inputs, labels = data
-            inputs, labels = Variable(inputs,volatile=True), Variable(labels,volatile=True)
-            inputs, labels = inputs.to(device), labels.to(device)  # Changes here interested in TPUs not cuda
-            #if global_cuda_available:
-            #    inputs, labels = inputs.cuda(), labels.cuda()
+        with torch.no_grad():
+            for data in testloader:
+                inputs, labels = data
+                inputs, labels = Variable(inputs), Variable(labels)  # Volatile =True change to with torch.no_grad because of a pytorch update.
+                inputs, labels = inputs.to(device), labels.to(device)  # Changes here interested in TPUs not cuda
+                #if global_cuda_available:
+                #    inputs, labels = inputs.cuda(), labels.cuda()
 
-            outputs = net(inputs)
-            _, predicted = torch.max(outputs.data, 1)
-            total_ctr += labels.size()[0]
-            correct_sum += (predicted == labels.data).sum()
-            loss = criterion(outputs, labels)
-            total_loss_sum += loss.data[0]
+                outputs = net(inputs)
+                _, predicted = torch.max(outputs.data, 1)
+                total_ctr += labels.size()[0]
+                correct_sum += (predicted == labels.data).sum()
+                loss = criterion(outputs, labels)
+                total_loss_sum += loss.data # [0]
         info[0] = correct_sum
         info[1] = total_ctr
         info[2] = total_loss_sum
