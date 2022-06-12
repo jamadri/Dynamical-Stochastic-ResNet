@@ -13,6 +13,8 @@ Adapted as a python file to run on google's TPUs
 
 ### SUPER IMPORTANT ###
 import torch_xla.core.xla_model as xm
+import torch_xla.distributed.parallel_loader as pl
+import torch_xla.distributed.xla_multiprocessing as xmp
 ###
 
 import torch
@@ -27,7 +29,40 @@ import re
 import numpy
 import sys, time
 import argparse
+'''
+Trying to optimize memory access with sharding see https://cloud.google.com/blog/topics/developers-practitioners/scaling-deep-learning-workloads-pytorch-xla-and-cloud-tpu-vm
 
+def my_worker_splitter(urls):
+   """Split urls per worker
+   Selects a subset of urls based on Torch get_worker_info.
+   Used as a shard selection function in Dataset.
+   replaces wds.split_by_worker"""
+
+   urls = [url for url in urls]
+
+   assert isinstance(urls, list)
+
+   worker_info = torch.utils.data.get_worker_info()
+   if worker_info is not None:
+       wid = worker_info.id
+       num_workers = worker_info.num_workers
+
+       return urls[wid::num_workers]
+   else:
+       return urls
+def my_node_splitter(urls):
+   """Split urls_ correctly per accelerator node
+   :param urls:
+   :return: slice of urls_
+   """
+   rank=xm.get_ordinal()
+   num_replicas=xm.xrt_world_size()
+
+   urls_this = urls[rank::num_replicas]
+  
+   return urls_this
+# The two functions above were definetly new
+'''
 
 def write_file_and_close(filename, *arg, flag = "a"):
     with open(filename, flag) as output_file:
@@ -75,9 +110,9 @@ def train_epoch(net,optimizer,trainloader,testloader,it,control_dict,device,glob
 
     criterion = nn.CrossEntropyLoss()
 
-    global_cuda_available = torch.cuda.is_available()
-    if global_cuda_available:
-        net = net.cuda()
+    #global_cuda_available = torch.cuda.is_available()
+    #if global_cuda_available:
+    #    net = net.cuda()
 
 
 
@@ -92,7 +127,8 @@ def train_epoch(net,optimizer,trainloader,testloader,it,control_dict,device,glob
         outputs = net(inputs)
         loss = criterion(outputs, labels)
         loss.backward()
-        optimizer.step()
+        # optimizer.step()
+        xm.optimizer_step(optimizer) # After the local gradients are computed, the xm.optimizer_step() function synchronizes the local gradients between cores by applying an AllReduce(SUM) operation, and then calls the PyTorch optimizer_step(optimizer), which updates the local weights with the synchronized gradients.See https://cloud.google.com/blog/topics/developers-practitioners/scaling-deep-learning-workloads-pytorch-xla-and-cloud-tpu-vm
         print("loss.data: ",loss.data)
         info[0] = loss.data #[0]
         info[1] = labels.size()[0]
@@ -248,7 +284,6 @@ class NN_SGDTrainer(object):
     def write(self,out_txt):
         write_file_and_close(self.output,out_txt)
 
-batch_size = 128
 
 
 import torch
@@ -290,7 +325,7 @@ class Reflect_Pad(object):
 
 
 
-def get_cifar10(batch_size):
+def get_cifar10(batch_size, device):
     '''
     :param batch_size:
     :return: trainloader,testloader
@@ -317,6 +352,7 @@ def get_cifar10(batch_size):
     trainloader = torch.utils.data.DataLoader(
         trainset, batch_size=batch_size, shuffle=True, num_workers=2
     )
+    train_loader = pl.MpDeviceLoader(train_loader, device)  # See why here: http://pytorch.org/xla/release/1.11/index.html#running-on-multiple-xla-devices-with-multi-processing
 
     testset = torchvision.datasets.CIFAR10(
         root="./data", download=True, train=False, transform=transform_test
@@ -324,7 +360,7 @@ def get_cifar10(batch_size):
     testloader = torch.utils.data.DataLoader(
         testset, batch_size=batch_size, shuffle=False, num_workers=2
     )
-
+    
     return trainloader,testloader
 
 def get_cifar100(batch_size):
@@ -368,16 +404,23 @@ def get_cifar100(batch_size):
 
 
 
-if __name__=="__main__":
+def _run():  # See https://www.kaggle.com/code/tanulsingh077/pytorch-xla-understanding-tpu-s-and-xla/notebook
     ### SUPER IMPORTANT
     dev = xm.xla_device()
     net=MResNet20().to(device=dev)
     ###
+    batch_size = 128
     model_name = "Resnet20"
     #inp=Variable(torch.FloatTensor(128,3,32,32).uniform_(0,1))
-    trainloader,testloader = get_cifar10(batch_size)
+    trainloader,testloader = get_cifar10(batch_size, dev)
     sgd_para = {"lr":1e-3}
     Trainer = NN_SGDTrainer(net,sgd_para, trainloader, testloader, {200:1e-3}, dev, model_name + '.txt')  # Added device
     for i in range(1):
         Trainer.train()
+def _mp_fn(rank, flags):
+    torch.set_default_tensor_type('torch.FloatTensor')
+    a = _run()
+if __name__=="__main__":
+    FLAGS={}
+    xmp.spawn(_mp_fn, args=(FLAGS,), nprocs=8, start_method='fork')
 
