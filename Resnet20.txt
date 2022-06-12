@@ -1,0 +1,12 @@
+2022-06-12 15:25:06.918524:
+Starting testing
+2022-06-12 15:26:56.062912:
+Starting testing
+2022-06-12 15:30:31.113404:
+Starting testing
+2022-06-12 15:32:17.718231:
+Starting testing
+2022-06-12 15:36:21.829918:
+Starting testing
+2022-06-12 15:37:14.411658:
+Correct: 1152, total: 10000, accuracy: 0.1151999980, average loss: 0.0332991853

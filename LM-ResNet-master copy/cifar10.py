@@ -239,7 +239,7 @@ class NN_SGDTrainer(object):
                 total_ctr += labels.size()[0]
                 correct_sum += (predicted == labels.data).sum()
                 loss = criterion(outputs, labels)
-                total_loss_sum += loss.data[0]
+                total_loss_sum += loss.data
             info[0] = correct_sum
             info[1] = total_ctr
             info[2] = total_loss_sum
@@ -364,7 +364,8 @@ def get_cifar10(batch_size, device):
     testloader = torch.utils.data.DataLoader(
         testset, batch_size=batch_size, shuffle=False, num_workers=2
     )
-    
+    testloader = pl.MpDeviceLoader(testloader, device)  # See why here: http://pytorch.org/xla/release/1.11/index.html#running-on-multiple-xla-devices-with-multi-processing
+
     return trainloader,testloader
 
 def get_cifar100(batch_size):
@@ -419,7 +420,7 @@ def _run():  # See https://www.kaggle.com/code/tanulsingh077/pytorch-xla-underst
     trainloader,testloader = get_cifar10(batch_size, dev)
     sgd_para = {"lr":1e-3}
     Trainer = NN_SGDTrainer(net,sgd_para, trainloader, testloader, {200:1e-3}, dev, model_name + '.txt')  # Added device
-    for i in range(1):
+    for i in range(15):
         Trainer.train()
 def _mp_fn(rank, flags):
     torch.set_default_tensor_type('torch.FloatTensor')
