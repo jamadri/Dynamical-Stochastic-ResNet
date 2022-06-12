@@ -412,7 +412,7 @@ def get_cifar100(batch_size):
 def _run():  # See https://www.kaggle.com/code/tanulsingh077/pytorch-xla-understanding-tpu-s-and-xla/notebook
     ### SUPER IMPORTANT
     dev = xm.xla_device()
-    state_dict = xm.load('./Dynamical-Stochastic-ResNet/LM-ResNet-master copy/result/test-test1.pt')
+    state_dict = torch.load('Dynamical-Stochastic-ResNet/LM-ResNet-master copy/result/test-test1.pt')
     net = MResNet20().to(device=dev)
     net.load_state_dict(state_dict)
     ###
