@@ -10,7 +10,7 @@ from random import random
 class BasicBlockWithDeathRate(nn.Module):
     expansion = 1
 
-    def __init__(self, in_planes, planes, stride=1,death_rate=0., downsample=None):
+    def __init__(self, in_planes, planes, stride=1,death_rate=0., downsample=None, device='cuda'):
         super(BasicBlockWithDeathRate,self).__init__()
         self.bn1=nn.BatchNorm2d(in_planes)
         self.conv1=nn.Conv2d(in_planes,planes,kernel_size=3,stride=stride,padding=1,bias=False)
@@ -21,6 +21,7 @@ class BasicBlockWithDeathRate(nn.Module):
         self.in_planes=in_planes
         self.planes=planes
         self.death_rate=death_rate
+        self.device=device
     def forward(self,x):
         if not self.training or torch.rand(1)[0] >= self.death_rate:
             out=self.bn1(x)
@@ -33,7 +34,7 @@ class BasicBlockWithDeathRate(nn.Module):
                 out /= (1. - self.death_rate)
         else:
             if self.stride==1:
-                out=Variable(torch.FloatTensor(x.size()).cuda().zero_(),requires_grad=False)
+                out=Variable(torch.FloatTensor(x.size()).zero_(),requires_grad=False).to(self.device)  #removed .cuda()
             else:
                 
                 size=list(x.size())
@@ -41,7 +42,8 @@ class BasicBlockWithDeathRate(nn.Module):
                 size[-2]//=2
                 size[-3]*=2
                 size=torch.Size(size)
-                out=Variable(torch.FloatTensor(size).cuda().zero_(),requires_grad=False)
+                out=Variable(torch.FloatTensor(size).zero_(),requires_grad=False).to(self.device)
+                # removed .cuda()
         return out    
 
 class BasicBlock(nn.Module):
