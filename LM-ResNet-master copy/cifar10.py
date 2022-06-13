@@ -130,7 +130,7 @@ def train_epoch(net,optimizer,trainloader,testloader,it,control_dict,device,glob
         loss.backward()
         # optimizer.step()
         xm.optimizer_step(optimizer) # After the local gradients are computed, the xm.optimizer_step() function synchronizes the local gradients between cores by applying an AllReduce(SUM) operation, and then calls the PyTorch optimizer_step(optimizer), which updates the local weights with the synchronized gradients.See https://cloud.google.com/blog/topics/developers-practitioners/scaling-deep-learning-workloads-pytorch-xla-and-cloud-tpu-vm
-        print("loss.data: ",loss.data)
+        # print("loss.data: ",loss.data)
         info[0] = loss.data #[0]
         info[1] = labels.size()[0]
 
@@ -413,16 +413,23 @@ def _run():  # See https://www.kaggle.com/code/tanulsingh077/pytorch-xla-underst
     ### SUPER IMPORTANT
     dev = xm.xla_device()
     state_dict = torch.load('/result/test-test1.pt')
-    net = MResNet20().to(device=dev)
-    net.load_state_dict(state_dict)
-    ###
+    '''
+    In our experiments, we select pL = 0.8 for LM-ResNet56 and pL = 0.5 for LM-ResNet110.
+    '''
+    MResNetParameters={"block":BasicBlockWithDeathRate,"layers":[9,9,9],"pretrain":False,"num_classes":10,"stochastic_depth":True,"PL":0.8}
 
+    net=(MResNet(**MResNetParameters)).to(device=dev)
+    model_name = "LM-Resnet56"
+    # net.load_state_dict(state_dict)
+    ###
     batch_size = 128
-    model_name = "Resnet20"
     #inp=Variable(torch.FloatTensor(128,3,32,32).uniform_(0,1))
     trainloader,testloader = get_cifar10(batch_size, dev)
-    sgd_para = {"lr":1e-3}
-    Trainer = NN_SGDTrainer(net,sgd_para, trainloader, testloader, {200:1e-3}, dev, model_name + '.txt')  # Added device
+    '''During training with SGD, the initial learning rate is 0.1, and is divided 
+    by a factor of 10 after epoch 250 and 375, and terminated at 500 epochs.
+    In addition, we use a weight decay of 0.0001 and a momentum of 0.9.'''
+    sgd_para = {"lr":0.1, "momentum":0.9, "weight_decay":0.0001}  
+    Trainer = NN_SGDTrainer(net,sgd_para, trainloader, testloader, {250:0.1,375:0.01,500:0.001}, model_name + '.txt')
     for i in range(15):
         Trainer.train()
 def _mp_fn(rank, flags):
