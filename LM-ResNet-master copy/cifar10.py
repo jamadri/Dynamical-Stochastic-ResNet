@@ -418,7 +418,8 @@ def _run():  # See https://www.kaggle.com/code/tanulsingh077/pytorch-xla-underst
     '''
     MResNetParameters={"block":BasicBlockWithDeathRate,"layers":[9,9,9],"pretrain":False,"num_classes":10,"stochastic_depth":True,"PL":0.8}
 
-    net=(MResNet(**MResNetParameters)).to(device=dev)
+    net=MResNet(**MResNetParameters)
+    net.to(device=dev)
     model_name = "LM-Resnet56"
     # net.load_state_dict(state_dict)
     ###
