@@ -412,7 +412,7 @@ def get_cifar100(batch_size):
 def _run():  # See https://www.kaggle.com/code/tanulsingh077/pytorch-xla-understanding-tpu-s-and-xla/notebook
     ### SUPER IMPORTANT
     dev = xm.xla_device()
-    state_dict = torch.load('/result/test-test1.pt')
+    # state_dict = torch.load('/result/test-test1.pt')
     '''
     In our experiments, we select pL = 0.8 for LM-ResNet56 and pL = 0.5 for LM-ResNet110.
     '''
