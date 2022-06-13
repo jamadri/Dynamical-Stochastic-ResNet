@@ -154,10 +154,10 @@ class MResNet(nn.Module):
             death_rates=[i/(n-1)*(1-PL) for i in range(n)]
             print(death_rates)
             for i in range(3):
-                blocks.append(block(self.in_planes,self.planes[i],self.strides[i],death_rate=death_rates[i*layers[0]]))
+                blocks.append(block(self.in_planes,self.planes[i],self.strides[i],death_rate=death_rates[i*layers[0]],device=self.device))
                 self.in_planes=self.planes[i]*block.expansion
                 for j in range(1,layers[i]):
-                    blocks.append(block(self.in_planes,self.planes[i],death_rate=death_rates[i*layers[0]+j]))
+                    blocks.append(block(self.in_planes,self.planes[i],death_rate=death_rates[i*layers[0]+j],device=self.device))
         self.blocks=nn.ModuleList(blocks)
         self.downsample1=Downsample(16,64,stride=1)
         #self.downsample1=nn.Conv2d(16, 64,
