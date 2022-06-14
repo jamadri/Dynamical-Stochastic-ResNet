@@ -179,7 +179,7 @@ def train_epoch(net,optimizer,trainloader,testloader,it,control_dict,device,glob
                                 .format(it, i, running_loss_sum / ctr_sum)
                                 )
         running_loss_sum = 0.0
-            ctr_sum = 0
+        ctr_sum = 0
         # it = it + 1
     write_file_and_close(global_output_filename,
                          "Epoch {:d} finished, average loss: {:.10f}"
