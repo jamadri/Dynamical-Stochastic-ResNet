@@ -2,9 +2,9 @@ import torch
 import torch.nn as nn
 import torch.nn.functional as functional
 import math
-from torch.autograd import Variable
+# from torch.autograd import Variable  # Variable is deprecated see https://pytorch.org/docs/stable/autograd.html#variable-deprecated
 
-# from init import *
+# from init import *  # I don't know what init is supposed to be and this line doesn't seem to be necessary
 from random import random
 
 class BasicBlockWithDeathRate(nn.Module):
@@ -34,15 +34,16 @@ class BasicBlockWithDeathRate(nn.Module):
                 out /= (1. - self.death_rate)
         else:
             if self.stride==1:
-                out=Variable(torch.FloatTensor(x.size()).zero_(),requires_grad=False).to(self.device)  #removed .cuda()
+                out=torch.zeros(x.size(), requires_grad=False, device=self.device) # Variable(torch.FloatTensor(x.size()).zero_(),requires_grad=False).to(self.device)  #removed .cuda() 
+                # See https://pytorch.org/docs/stable/generated/torch.zeros.html
+                # the default type is FloatTensor, no need to complicate.
             else:
-                
                 size=list(x.size())
                 size[-1]//=2
                 size[-2]//=2
                 size[-3]*=2
                 size=torch.Size(size)
-                out=Variable(torch.FloatTensor(size).zero_(),requires_grad=False).to(self.device)
+                out=torch.zeros(size, requires_grad=False, device=self.device) # torch.Variable(torch.FloatTensor(size).zero_(),requires_grad=False).to(self.device)
                 # removed .cuda()
         return out    
 
@@ -69,7 +70,8 @@ class BasicBlock(nn.Module):
 
         return out
     
-
+'''
+This is not used yet and some things are deprecated
 class GaussianNoise(nn.Module):
     def __init__(self, stddev):
         super(GaussianNoise,self).__init__()
@@ -79,7 +81,8 @@ class GaussianNoise(nn.Module):
         if self.training:
             return x + torch.autograd.Variable(torch.randn(x.size()).cuda() * self.stddev,requires_grad=False)
         return x
-    
+'''
+
 class Bottleneck(nn.Module):
     expansion = 4
 
@@ -227,6 +230,8 @@ class MResNet(nn.Module):
         x=x.view(x.size(0), -1)
         x=self.fc(x) 
         return x
+'''
+Not used yet
 class MResNetC(nn.Module):
 
     def __init__(self,block,layers,pretrain=False,num_classes=100):
@@ -318,6 +323,7 @@ class MResNetC(nn.Module):
         x=x.view(x.size(0), -1)
         x=self.fc(x) 
         return x
+'''
 class DenseBlock(nn.Module):
     def __init__(self,block,layers,in_planes,planes,stride=2,pretrain=False):
         super(DenseBlock,self).__init__()
@@ -409,7 +415,8 @@ class DenseResNet(nn.Module):
         x=self.fc(x) 
         return x             
 
-
+'''
+Not used yet
 class ResNet_N(nn.Module):
 
     def __init__(self,block,layers,noise_level=0.001,pretrain=True,num_classes=100):
@@ -495,7 +502,7 @@ class ResNet_N(nn.Module):
         x=x.view(x.size(0), -1)
         x=self.fc(x) 
         return x    
-    
+'''
 
 class ResNet(nn.Module):
 
