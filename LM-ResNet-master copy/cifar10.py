@@ -66,12 +66,13 @@ def my_node_splitter(urls):
 '''
 
 def write_file_and_close(filename, *arg, flag = "a"):
-    with open(filename, flag) as output_file:
-        output_file.write(str(datetime.datetime.now()))
-        output_file.write(":\n")
-        output_file.write(*arg)
-        output_file.write("\n")
-        print(*arg)
+    if xm.is_master_ordinal():  # To only run on the main chore and not on all of them.
+        with open(filename, flag) as output_file:
+            output_file.write(str(datetime.datetime.now()))
+            output_file.write(":\n")
+            output_file.write(*arg)
+            output_file.write("\n")
+            print(*arg) 
 
 def check_control(filename):
     with open(filename, "r") as filename:
@@ -170,21 +171,21 @@ def train_epoch(net,optimizer,trainloader,testloader,it,control_dict,device,glob
         total_loss_sum += info[0]
         ctr_sum += 1
         total_ctr += info[1]
-        if (i + 1) % 20 == 0:
-            write_file_and_close(global_output_filename,
-                                 "epoch: {:d}, "
-                                 "train set index: {:d}, "
-                                 "average loss: {:.10f}"
-                                 .format(it, i, running_loss_sum / ctr_sum)
-                                 )
-            running_loss_sum = 0.0
+        # if (i + 1) % 20 == 0:  # I want more prints to estimate the time it takes
+        write_file_and_close(global_output_filename,
+                                "epoch: {:d}, "
+                                "train set index: {:d}, "
+                                "average loss: {:.10f}"
+                                .format(it, i, running_loss_sum / ctr_sum)
+                                )
+        running_loss_sum = 0.0
             ctr_sum = 0
         # it = it + 1
     write_file_and_close(global_output_filename,
                          "Epoch {:d} finished, average loss: {:.10f}"
                          .format(it, total_loss_sum / total_ctr)
                          )
-    if True: # True:  Changed to false because I don't want ot run any test yet.
+    if True: # True:  Changed to false because I don't want to run any test yet.
         write_file_and_close(global_output_filename, "Starting testing")
         info = [0., 0., 0.]
         test(info)
