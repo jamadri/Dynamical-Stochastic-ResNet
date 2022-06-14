@@ -417,7 +417,7 @@ def _run():  # See https://www.kaggle.com/code/tanulsingh077/pytorch-xla-underst
     '''
     In our experiments, we select pL = 0.8 for LM-ResNet56 and pL = 0.5 for LM-ResNet110.
     '''
-    MResNetParameters={"block":BasicBlockWithDeathRate,"layers":[9,9,9],"pretrain":False,"num_classes":10,"stochastic_depth":True,"PL":0.8,"device":dev}
+    MResNetParameters={"block":BasicBlockWithDeathRate,"layers":[3,3,3],"pretrain":False,"num_classes":10,"stochastic_depth":True,"PL":0.8,"device":dev}
 
     net=MResNet(**MResNetParameters)
     net.to(device=dev)
@@ -435,7 +435,12 @@ def _run():  # See https://www.kaggle.com/code/tanulsingh077/pytorch-xla-underst
     for i in range(15):
         Trainer.train()
 def _mp_fn(rank, flags):
+    '''
     torch.set_default_tensor_type('torch.FloatTensor')
+    This is not necessary: the default type is already FloatTensor
+    "The default floating point tensor type is initially torch.FloatTensor." see 
+    https://pytorch.org/docs/stable/generated/torch.set_default_tensor_type.html
+    '''
     a = _run()
 if __name__=="__main__":
     FLAGS={}
