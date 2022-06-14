@@ -417,7 +417,7 @@ def _run():  # See https://www.kaggle.com/code/tanulsingh077/pytorch-xla-underst
     '''
     In our experiments, we select pL = 0.8 for LM-ResNet56 and pL = 0.5 for LM-ResNet110.
     '''
-    MResNetParameters={"block":BasicBlock,"layers":[3,3,3],"pretrain":False,"num_classes":10,"stochastic_depth":False,"PL":0.8,"device":dev}
+    MResNetParameters={"block":BasicBlockWithDeathRate,"layers":[3,3,3],"pretrain":False,"num_classes":10,"stochastic_depth":False,"PL":0.8,"device":dev}
 
     net=MResNet(**MResNetParameters)
     net.to(device=dev)
@@ -445,4 +445,3 @@ def _mp_fn(rank, flags):
 if __name__=="__main__":
     FLAGS={}
     xmp.spawn(_mp_fn, args=(FLAGS,), nprocs=8, start_method='fork')
-
