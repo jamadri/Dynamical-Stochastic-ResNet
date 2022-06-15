@@ -10,7 +10,7 @@ import math
 class BasicBlockWithDeathRate(nn.Module):
     expansion = 1
 
-    def __init__(self, in_planes, planes, stride=1,death_rate=0., downsample=None, device='cuda'):
+    def __init__(self, in_planes, planes, stride=1,death_rate=0., downsample=None):
         super(BasicBlockWithDeathRate,self).__init__()
         self.bn1=nn.BatchNorm2d(in_planes)
         self.conv1=nn.Conv2d(in_planes,planes,kernel_size=3,stride=stride,padding=1,bias=False)
@@ -21,7 +21,6 @@ class BasicBlockWithDeathRate(nn.Module):
         self.in_planes=in_planes
         self.planes=planes
         self.death_rate=death_rate
-        self.device=device
     def forward(self,x):
         if not self.training or torch.rand(1)[0] >= self.death_rate:
             out=self.bn1(x)
@@ -50,7 +49,7 @@ class BasicBlockWithDeathRate(nn.Module):
 class BasicBlock(nn.Module):
     expansion = 1
 
-    def __init__(self, in_planes, planes, stride=1, downsample=None, device=None):  # added a device arg which will not be used but helps switchin easily between BasicBlock and BasicBlockWithDeathRate
+    def __init__(self, in_planes, planes, stride=1, downsample=None):  # added a device arg which will not be used but helps switchin easily between BasicBlock and BasicBlockWithDeathRate
         super(BasicBlock,self).__init__()
         self.bn1=nn.BatchNorm2d(in_planes)
         self.conv1=nn.Conv2d(in_planes,planes,kernel_size=3,stride=stride,padding=1,bias=False)
@@ -130,7 +129,7 @@ class Downsample(nn.Module):
 
 class MResNet(nn.Module):
 
-    def __init__(self,block,layers,pretrain=True,num_classes=100,stochastic_depth=False,PL=0.5,noise_level=0.001,noise=False,device='cuda'):
+    def __init__(self,block,layers,pretrain=True,num_classes=100,stochastic_depth=False,PL=0.5,noise_level=0.001,noise=False):
         self.in_planes=16
         self.planes=[16,32,64]
         self.strides=[1,2,2]
@@ -143,24 +142,23 @@ class MResNet(nn.Module):
         self.pretrain=pretrain
         self.ks=nn.ParameterList([nn.Parameter(torch.Tensor(1).uniform_(1.0, 1.1))for i in range(layers[0]+layers[1]+layers[2])])
         self.stochastic_depth=stochastic_depth
-        self.device=device
         blocks=[]
         n=layers[0]+layers[1]+layers[2]
         
         if not self.stochastic_depth:
             for i in range(3):
-                blocks.append(block(self.in_planes,self.planes[i],self.strides[i],device=self.device))
+                blocks.append(block(self.in_planes,self.planes[i],self.strides[i]))
                 self.in_planes=self.planes[i]*block.expansion
                 for j in range(1,layers[i]):
-                    blocks.append(block(self.in_planes,self.planes[i],device=self.device))  # added device=self.device for the basicBlockWithDeathRate which generate 0s outputs sometimes which have to be treated in parallel as xla tensors.
+                    blocks.append(block(self.in_planes,self.planes[i]))  # added device=self.device for the basicBlockWithDeathRate which generate 0s outputs sometimes which have to be treated in parallel as xla tensors.
         else:
             death_rates=[i/(n-1)*(1-PL) for i in range(n)]
             print(death_rates)
             for i in range(3):
-                blocks.append(block(self.in_planes,self.planes[i],self.strides[i],death_rate=death_rates[i*layers[0]],device=self.device))
+                blocks.append(block(self.in_planes,self.planes[i],self.strides[i],death_rate=death_rates[i*layers[0]]))
                 self.in_planes=self.planes[i]*block.expansion
                 for j in range(1,layers[i]):
-                    blocks.append(block(self.in_planes,self.planes[i],death_rate=death_rates[i*layers[0]+j],device=self.device))
+                    blocks.append(block(self.in_planes,self.planes[i],death_rate=death_rates[i*layers[0]+j]))
         self.blocks=nn.ModuleList(blocks)
         self.downsample1=Downsample(16,64,stride=1)
         #self.downsample1=nn.Conv2d(16, 64,
