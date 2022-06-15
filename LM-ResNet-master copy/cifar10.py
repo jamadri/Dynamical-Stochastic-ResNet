@@ -171,13 +171,13 @@ def train_epoch(net,optimizer,trainloader,testloader,it,control_dict,device,glob
         total_loss_sum += info[0]
         ctr_sum += 1
         total_ctr += info[1]
-        # if (i + 1) % 20 == 0:  # I want more prints to estimate the time it takes
-        write_file_and_close(global_output_filename,
-                                "epoch: {:d}, "
-                                "train set index: {:d}, "
-                                "average loss: {:.10f}"
-                                .format(it, i, running_loss_sum / ctr_sum)
-                                )
+        if (i + 1) % 20 == 0:  # I want more prints to estimate the time it takes
+            write_file_and_close(global_output_filename,
+                                    "epoch: {:d}, "
+                                    "train set index: {:d}, "
+                                    "average loss: {:.10f}"
+                                    .format(it, i, running_loss_sum / ctr_sum)
+                                    )
         running_loss_sum = 0.0
         ctr_sum = 0
         # it = it + 1
