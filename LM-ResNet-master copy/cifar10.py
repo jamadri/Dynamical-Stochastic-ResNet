@@ -433,9 +433,12 @@ def _run():  # See https://www.kaggle.com/code/tanulsingh077/pytorch-xla-underst
     '''During training with SGD, the initial learning rate is 0.1, and is divided 
     by a factor of 10 after epoch 250 and 375, and terminated at 500 epochs.
     In addition, we use a weight decay of 0.0001 and a momentum of 0.9.'''
+    '''
+    For LM-ResNet on CIFAR10 (CIFAR100), we start with the learning rate of 0.1, divide it by 10 at 80 (150) and 120 (225) epochs and terminate training at 160 (300) epochs.
+    '''
     sgd_para = {"lr":0.1, "momentum":0.9, "weight_decay":0.0001}  
-    Trainer = NN_SGDTrainer(net,sgd_para, trainloader, testloader, {250:0.1,375:0.01,500:0.001}, dev, model_name + '.txt')
-    for i in range(500):
+    Trainer = NN_SGDTrainer(net,sgd_para, trainloader, testloader, {80:0.1,120:0.01,160:0.001}, dev, model_name + '.txt')
+    for i in range(160):
         Trainer.train()
 def _mp_fn(rank, flags):
     '''
