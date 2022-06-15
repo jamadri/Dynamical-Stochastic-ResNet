@@ -426,13 +426,16 @@ def _run():  # See https://www.kaggle.com/code/tanulsingh077/pytorch-xla-underst
     ###
     batch_size = 128
     #inp=Variable(torch.FloatTensor(128,3,32,32).uniform_(0,1))
+    # Adding rendezvous :see here an example https://colab.research.google.com/github/pytorch/xla/blob/master/contrib/colab/multi-core-alexnet-fashion-mnist.ipynb?hl=id-id&skip_cache=true#scrollTo=pqx-VgEizPiF
+    
     trainloader,testloader = get_cifar10(batch_size, dev)
+
     '''During training with SGD, the initial learning rate is 0.1, and is divided 
     by a factor of 10 after epoch 250 and 375, and terminated at 500 epochs.
     In addition, we use a weight decay of 0.0001 and a momentum of 0.9.'''
     sgd_para = {"lr":0.1, "momentum":0.9, "weight_decay":0.0001}  
     Trainer = NN_SGDTrainer(net,sgd_para, trainloader, testloader, {250:0.1,375:0.01,500:0.001}, dev, model_name + '.txt')
-    for i in range(15):
+    for i in range(500):
         Trainer.train()
 def _mp_fn(rank, flags):
     '''
