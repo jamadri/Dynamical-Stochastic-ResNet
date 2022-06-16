@@ -443,7 +443,7 @@ def _run():  # See https://www.kaggle.com/code/tanulsingh077/pytorch-xla-underst
     '''
     sgd_para = {"lr":0.1, "momentum":0.9, "weight_decay":0.0001}  
     Trainer = NN_SGDTrainer(net,sgd_para, trainloader, testloader, {80:0.1,120:0.01,160:0.001}, dev, model_name+'.txt', code)
-    for i in range(2):
+    for i in range(160):
         Trainer.train()
 def _mp_fn(rank, flags):
     '''
