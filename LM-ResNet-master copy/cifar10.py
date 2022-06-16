@@ -440,8 +440,8 @@ def _run():  # See https://www.kaggle.com/code/tanulsingh077/pytorch-xla-underst
     For LM-ResNet on CIFAR10 (CIFAR100), we start with the learning rate of 0.1, divide it by 10 at 80 (150) and 120 (225) epochs and terminate training at 160 (300) epochs.
     '''
     sgd_para = {"lr":0.1, "momentum":0.9, "weight_decay":0.0001}  
-    Trainer = NN_SGDTrainer(net,sgd_para, trainloader, testloader, {80:0.1,120:0.01,160:0.001}, dev, model_name + '.txt')
-    for i in range(160):
+    Trainer = NN_SGDTrainer(net,sgd_para, trainloader, testloader, {80:0.1,120:0.01,160:0.001}, dev, FLAGS.model_name+'txt')
+    for i in range(2):
         Trainer.train()
 def _mp_fn(rank, flags):
     '''
@@ -452,5 +452,5 @@ def _mp_fn(rank, flags):
     '''
     a = _run()
 if __name__=="__main__":
-    FLAGS={}
+    FLAGS={model_name:"testxyz"}
     xmp.spawn(_mp_fn, args=(FLAGS,), nprocs=8, start_method='fork')
