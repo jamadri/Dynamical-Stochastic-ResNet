@@ -423,7 +423,7 @@ def _run():  # See https://www.kaggle.com/code/tanulsingh077/pytorch-xla-underst
 
     net=MResNet(**MResNetParameters)
     net.to(device=dev)
-    model_name = "exp"+code
+    model_name = "exp"+str(code)
     # net.load_state_dict(state_dict)
     ###
     batch_size = 128
