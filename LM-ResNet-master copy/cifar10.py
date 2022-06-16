@@ -421,7 +421,7 @@ def _run():  # See https://www.kaggle.com/code/tanulsingh077/pytorch-xla-underst
 
     net=MResNet(**MResNetParameters)
     net.to(device=dev)
-    model_name = "LM-Resnet56"+str(datetime.datetime.now())
+    model_name = "testxyz"
     # net.load_state_dict(state_dict)
     ###
     batch_size = 128
@@ -452,5 +452,5 @@ def _mp_fn(rank, flags):
     '''
     a = _run()
 if __name__=="__main__":
-    FLAGS={model_name:"testxyz"}
+    FLAGS={}
     xmp.spawn(_mp_fn, args=(FLAGS,), nprocs=8, start_method='fork')
