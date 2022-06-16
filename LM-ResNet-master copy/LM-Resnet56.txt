@@ -39092,3 +39092,47 @@ Epoch 160 finished, average loss: 0.0003452301
 Starting testing
 2022-06-15 16:24:08.263771:
 Correct: 9218, total: 10000, accuracy: 0.9218750000, average loss: 0.0019378662
+2022-06-16 08:43:36.152853:
+epoch: 1, train set index: 19, average loss: 1.9752990007
+2022-06-16 08:43:37.408507:
+epoch: 1, train set index: 39, average loss: 1.8664239645
+2022-06-16 08:43:38.728367:
+epoch: 1, train set index: 59, average loss: 1.8426289558
+2022-06-16 08:43:39.930640:
+epoch: 1, train set index: 79, average loss: 1.7084980011
+2022-06-16 08:43:41.176450:
+epoch: 1, train set index: 99, average loss: 1.6210142374
+2022-06-16 08:43:42.383494:
+epoch: 1, train set index: 119, average loss: 1.6540460587
+2022-06-16 08:43:43.646264:
+epoch: 1, train set index: 139, average loss: 1.5536154509
+2022-06-16 08:43:44.878594:
+epoch: 1, train set index: 159, average loss: 1.5080254078
+2022-06-16 08:43:46.073359:
+epoch: 1, train set index: 179, average loss: 1.5685597658
+2022-06-16 08:43:47.337748:
+epoch: 1, train set index: 199, average loss: 1.3423435688
+2022-06-16 08:43:48.582946:
+epoch: 1, train set index: 219, average loss: 1.3531125784
+2022-06-16 08:43:49.851097:
+epoch: 1, train set index: 239, average loss: 1.2363431454
+2022-06-16 08:43:51.084878:
+epoch: 1, train set index: 259, average loss: 1.2270853519
+2022-06-16 08:43:52.333929:
+epoch: 1, train set index: 279, average loss: 1.4619804621
+2022-06-16 08:43:53.585788:
+epoch: 1, train set index: 299, average loss: 1.2025688887
+2022-06-16 08:43:54.784684:
+epoch: 1, train set index: 319, average loss: 1.1370668411
+2022-06-16 08:43:55.994120:
+epoch: 1, train set index: 339, average loss: 1.2944818735
+2022-06-16 08:43:57.259396:
+epoch: 1, train set index: 359, average loss: 1.0014559031
+2022-06-16 08:43:58.487228:
+epoch: 1, train set index: 379, average loss: 1.2959100008
+2022-06-16 08:44:09.769672:
+Epoch 1 finished, average loss: 0.0115998816
+2022-06-16 08:44:09.769824:
+Starting testing
+2022-06-16 08:44:15.455088:
+Correct: 4725, total: 10000, accuracy: 0.4724999964, average loss: 0.0125357276
