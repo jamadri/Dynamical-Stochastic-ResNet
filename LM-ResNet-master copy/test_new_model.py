@@ -205,8 +205,9 @@ def get_cifar10(batch_size, device):
 
     return trainloader,testloader
 
-state_dict = torch.load('/media/jamadri/Lexar72/USB2021/DD Lisbonne/2021-2022/Master Thesis/Dynamical-Stochastic-ResNet/LM-ResNet-master copy/result/test-test1.pt')
-model = MResNet20()
+state_dict = torch.load('/media/jamadri/Lexar72/USB2021/DD Lisbonne/2021-2022/Master Thesis/Dynamical-Stochastic-ResNet/LM-ResNet-master copy/result/exp1.pt')
+MResNetParameters={"block":BasicBlock,"layers":[9,9,9],"pretrain":False,"num_classes":10,"stochastic_depth":False,"PL":0.8}
+model = MResNet(**MResNetParameters)
 _ = model.load_state_dict(state_dict)
 
 batch_size = 128
@@ -214,5 +215,5 @@ model_name = "Resnet20"
 #inp=Variable(torch.FloatTensor(128,3,32,32).uniform_(0,1))
 trainloader,testloader = get_cifar10(batch_size, device="cpu")
 sgd_para = {"lr":1e-3}
-Trainer = NN_SGDTrainer(model,sgd_para, trainloader, testloader, {200:1e-3}, "cpu", model_name + '.txt')  # Added device
+# Trainer = NN_SGDTrainer(model,sgd_para, trainloader, testloader, {200:1e-3}, "cpu", model_name + '.txt')  # Added device
 print(model)

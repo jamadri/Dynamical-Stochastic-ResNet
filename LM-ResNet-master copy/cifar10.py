@@ -217,7 +217,7 @@ class NN_SGDTrainer(object):
         self.iter_time += 1
         acc = train_epoch(self.net,self.optimizer,self.trainloader,self.testloader,self.iter_time,self.lr_adjust,self.device,self.output)
         if acc > self.max:
-            model_filename = generate_filename(model_name, 1)
+            model_filename = generate_filename(model_name)
             xm.save(self.net.state_dict(), model_filename)   # xm.save instead of torch.save to go back to cpu
             self.max = acc
 
@@ -438,7 +438,7 @@ def _run():  # See https://www.kaggle.com/code/tanulsingh077/pytorch-xla-underst
     '''
     sgd_para = {"lr":0.1, "momentum":0.9, "weight_decay":0.0001}  
     Trainer = NN_SGDTrainer(net,sgd_para, trainloader, testloader, {80:0.1,120:0.01,160:0.001}, dev, model_name + '.txt')
-    for i in range(160):
+    for i in range(1):
         Trainer.train()
 def _mp_fn(rank, flags):
     '''
