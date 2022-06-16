@@ -414,12 +414,12 @@ def get_cifar100(batch_size):
 def _run():  # See https://www.kaggle.com/code/tanulsingh077/pytorch-xla-understanding-tpu-s-and-xla/notebook
     ### SUPER IMPORTANT
     dev = xm.xla_device()
-    code=3
+    code=3000
     # state_dict = torch.load('/result/test-test1.pt')
     '''
     In our experiments, we select pL = 0.8 for LM-ResNet56 and pL = 0.5 for LM-ResNet110.
     '''
-    MResNetParameters={"block":BasicBlockWithDeathRate,"layers":[9,9,9],"pretrain":False,"num_classes":10,"stochastic_depth":True,"PL":0.8}
+    MResNetParameters={"block":BasicBlockWithDeathRate,"layers":[9,9,9],"pretrain":False,"num_classes":10,"stochastic_depth":True,"PL":1}
 
     net=MResNet(**MResNetParameters)
     net.to(device=dev)
@@ -443,7 +443,7 @@ def _run():  # See https://www.kaggle.com/code/tanulsingh077/pytorch-xla-underst
     '''
     sgd_para = {"lr":0.1, "momentum":0.9, "weight_decay":0.0001}  
     Trainer = NN_SGDTrainer(net,sgd_para, trainloader, testloader, {80:0.1,120:0.01,160:0.001}, dev, model_name+'.txt', code)
-    for i in range(160):
+    for i in range(4):
         Trainer.train()
 def _mp_fn(rank, flags):
     '''
