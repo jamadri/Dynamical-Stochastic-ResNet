@@ -198,7 +198,7 @@ def train_epoch(net,optimizer,trainloader,testloader,it,control_dict,device,glob
 
 
 class NN_SGDTrainer(object):
-    def __init__(self,net,sgd_para,trainloader,testloader,lr_adjust,device,global_output_filename = "out.txt"): # Added device
+    def __init__(self,net,sgd_para,trainloader,testloader,lr_adjust,device,global_output_filename = "out.txt", code=None): # Added device
         self.net = net
         self.sgd_para = sgd_para
         self.optimizer = optim.SGD(net.parameters(), **sgd_para)
@@ -208,6 +208,7 @@ class NN_SGDTrainer(object):
         self.lr_adjust = lr_adjust
         self.iter_time = 0
         self.max = 0
+        self.code = code
         self.device = device # New parameter
 
     def renew_trainer(self):
@@ -217,7 +218,7 @@ class NN_SGDTrainer(object):
         self.iter_time += 1
         acc = train_epoch(self.net,self.optimizer,self.trainloader,self.testloader,self.iter_time,self.lr_adjust,self.device,self.output)
         if acc > self.max:
-            model_filename = generate_filename(model_name)
+            model_filename = generate_filename(model_name, self.code)
             xm.save(self.net.state_dict(), model_filename)   # xm.save instead of torch.save to go back to cpu
             self.max = acc
 
@@ -413,6 +414,7 @@ def get_cifar100(batch_size):
 def _run():  # See https://www.kaggle.com/code/tanulsingh077/pytorch-xla-understanding-tpu-s-and-xla/notebook
     ### SUPER IMPORTANT
     dev = xm.xla_device()
+    code=3
     # state_dict = torch.load('/result/test-test1.pt')
     '''
     In our experiments, we select pL = 0.8 for LM-ResNet56 and pL = 0.5 for LM-ResNet110.
@@ -421,7 +423,7 @@ def _run():  # See https://www.kaggle.com/code/tanulsingh077/pytorch-xla-underst
 
     net=MResNet(**MResNetParameters)
     net.to(device=dev)
-    model_name = "testxyz"
+    model_name = "exp"+code
     # net.load_state_dict(state_dict)
     ###
     batch_size = 128
@@ -440,7 +442,7 @@ def _run():  # See https://www.kaggle.com/code/tanulsingh077/pytorch-xla-underst
     For LM-ResNet on CIFAR10 (CIFAR100), we start with the learning rate of 0.1, divide it by 10 at 80 (150) and 120 (225) epochs and terminate training at 160 (300) epochs.
     '''
     sgd_para = {"lr":0.1, "momentum":0.9, "weight_decay":0.0001}  
-    Trainer = NN_SGDTrainer(net,sgd_para, trainloader, testloader, {80:0.1,120:0.01,160:0.001}, dev, model_name+'txt')
+    Trainer = NN_SGDTrainer(net,sgd_para, trainloader, testloader, {80:0.1,120:0.01,160:0.001}, dev, model_name+'.txt', code)
     for i in range(2):
         Trainer.train()
 def _mp_fn(rank, flags):
