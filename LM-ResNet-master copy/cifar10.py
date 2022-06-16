@@ -419,7 +419,7 @@ def _run():  # See https://www.kaggle.com/code/tanulsingh077/pytorch-xla-underst
     '''
     In our experiments, we select pL = 0.8 for LM-ResNet56 and pL = 0.5 for LM-ResNet110.
     '''
-    MResNetParameters={"block":BasicBlock,"layers":[9,9,9],"pretrain":False,"num_classes":10,"stochastic_depth":False,"PL":0.8}
+    MResNetParameters={"block":BasicBlock,"layers":[3,3,3],"pretrain":False,"num_classes":10,"stochastic_depth":False,"PL":0.8}
 
     net=MResNet(**MResNetParameters)
     net.to(device=dev)
