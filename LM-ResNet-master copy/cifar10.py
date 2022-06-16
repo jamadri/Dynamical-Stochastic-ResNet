@@ -87,7 +87,7 @@ def generate_filename(modelname,code = None):
     # if code = None, generate tim as the code
     if code == None:
         return 'result/'+modelname + '-' + datetime.datetime.now().strftime("%Y%m%d%H%M%S%f") + ".pt"
-    return 'result/'+modelname + '-test' + str(code) + ".pt"
+    return 'result/'+modelname + str(code) + ".pt"
 
 
 def train_epoch(net,optimizer,trainloader,testloader,it,control_dict,device,global_output_filename = "out.txt"):
@@ -214,7 +214,7 @@ class NN_SGDTrainer(object):
     def renew_trainer(self):
         self.optimizer = optim.SGD(self.net.parameters(), **self.sgd_para)
 
-    def train(self,model_name="test"):
+    def train(self,model_name="exp"):
         self.iter_time += 1
         acc = train_epoch(self.net,self.optimizer,self.trainloader,self.testloader,self.iter_time,self.lr_adjust,self.device,self.output)
         if acc > self.max:
