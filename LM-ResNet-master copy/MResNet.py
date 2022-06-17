@@ -31,12 +31,7 @@ class BasicBlockWithDeathRate(nn.Module):
             out=self.relu(out)
             out=self.conv2(out)
         else:
-            out=self.bn1(x)
-            out=self.relu(out)
-            out=self.conv1(out)
-            out=self.bn2(out)
-            out=self.relu(out)
-            out=self.conv2(out)
+            out=self.conv1(x)
         '''	if self.training:
                 out /= (1. - self.death_rate)
         else:
