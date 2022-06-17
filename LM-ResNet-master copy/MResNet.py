@@ -164,7 +164,7 @@ class MResNet(nn.Module):
                 for j in range(1,layers[i]):
                     blocks.append(block(self.in_planes,self.planes[i],device=self.device))  # added device=self.device for the basicBlockWithDeathRate which generate 0s outputs sometimes which have to be treated in parallel as xla tensors.
         else:
-            death_rates=[i/(n-1)*(1-PL) for i in range(n)]
+            death_rates=torch.Tensor([i/(n-1)*(1-PL) for i in range(n)])
             print(death_rates)
             for i in range(3):
                 blocks.append(block(self.in_planes,self.planes[i],self.strides[i],death_rate=death_rates[i*layers[0]], device=self.device))
