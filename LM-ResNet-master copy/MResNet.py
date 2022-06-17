@@ -34,7 +34,7 @@ class BasicBlockWithDeathRate(nn.Module):
                 out /= (1. - self.death_rate)
         else:
             if self.stride==1:
-                out=torch.zeros(x.size(), requires_grad=False, device=self.device) # Variable(torch.FloatTensor(x.size()).zero_(),requires_grad=False).to(self.device)  #removed .cuda() 
+                out=torch.zeros(x.size(), requires_grad=False).to(self.device) # Variable(torch.FloatTensor(x.size()).zero_(),requires_grad=False).to(self.device)  #removed .cuda() 
                 # See https://pytorch.org/docs/stable/generated/torch.zeros.html
                 # the default type is FloatTensor, no need to complicate.
             else:
@@ -43,7 +43,7 @@ class BasicBlockWithDeathRate(nn.Module):
                 size[-2]//=2
                 size[-3]*=2
                 size=torch.Size(size)
-                out=torch.zeros(size, requires_grad=False, device=self.device) # torch.Variable(torch.FloatTensor(size).zero_(),requires_grad=False).to(self.device)
+                out=torch.zeros(size, requires_grad=False).to(self.device) # torch.Variable(torch.FloatTensor(size).zero_(),requires_grad=False).to(self.device)
                 # removed .cuda()
         return out    
 
