@@ -16,25 +16,25 @@ class BasicBlockWithDeathRate(nn.Module):
         self.conv1=nn.Conv2d(in_planes,planes,kernel_size=3,stride=stride,padding=1,bias=False)
         self.bn2=nn.BatchNorm2d(planes)
         self.conv2=nn.Conv2d(planes,planes,kernel_size=3,padding=1,bias=False)
-        self.relu=nn.ReLU(inplace=True) 
+        self.relu=nn.ReLU(inplace=True)
         self.stride=stride
         self.in_planes=in_planes
         self.planes=planes
         self.death_rate=death_rate
         self.device=device
     def forward(self,x):
-        if not self.training or torch.rand(1)[0] >= self.death_rate:
-            out=self.bn1(x)
-            out=self.relu(out)
-            out=self.conv1(out)
-            out=self.bn2(out)
-            out=self.relu(out)
-            out=self.conv2(out)
-            if self.training:
+        # if not self.training or torch.rand(1,device=self.device) >= self.death_rate:
+	out=self.bn1(x)
+	out=self.relu(out)
+        out=self.conv1(out)
+        out=self.bn2(out)
+        out=self.relu(out)
+        out=self.conv2(out)
+        '''	if self.training:
                 out /= (1. - self.death_rate)
         else:
-            out=(torch.zeros((self.conv1(x)).size(),requires_grad=False))
-            '''
+            out=self.conv1(x) # torch.zeros((self.conv1(x)).size(),requires_grad=False, device=self.device)
+            
             if self.stride==1:
                 out=torch.zeros(x.size(), requires_grad=False).to(self.device) # Variable(torch.FloatTensor(x.size()).zero_(),requires_grad=False).to(self.device)  #removed .cuda() 
                 # See https://pytorch.org/docs/stable/generated/torch.zeros.html
@@ -48,7 +48,7 @@ class BasicBlockWithDeathRate(nn.Module):
                 out=torch.zeros(size, requires_grad=False).to(self.device) # torch.Variable(torch.FloatTensor(size).zero_(),requires_grad=False).to(self.device)
                 # removed .cuda()
             '''
-        return out    
+        return out
 
 class BasicBlock(nn.Module):
     expansion = 1
