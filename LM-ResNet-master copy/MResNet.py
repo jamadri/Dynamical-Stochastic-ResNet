@@ -23,13 +23,20 @@ class BasicBlockWithDeathRate(nn.Module):
         self.death_rate=death_rate
         self.device=device
     def forward(self,x):
-        # if not self.training or torch.rand(1,device=self.device) >= self.death_rate:
-        out=self.bn1(x)
-        out=self.relu(out)
-        out=self.conv1(out)
-        out=self.bn2(out)
-        out=self.relu(out)
-        out=self.conv2(out)
+        if not self.training:  # or torch.rand(1,device=self.device) >= self.death_rate:
+            out=self.bn1(x)
+            out=self.relu(out)
+            out=self.conv1(out)
+            out=self.bn2(out)
+            out=self.relu(out)
+            out=self.conv2(out)
+        else:
+            out=self.bn1(x)
+            out=self.relu(out)
+            out=self.conv1(out)
+            out=self.bn2(out)
+            out=self.relu(out)
+            out=self.conv2(out)
         '''	if self.training:
                 out /= (1. - self.death_rate)
         else:
