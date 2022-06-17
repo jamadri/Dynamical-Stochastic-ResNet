@@ -33,7 +33,7 @@ class BasicBlockWithDeathRate(nn.Module):
             if self.training:
                 out /= (1. - self.death_rate)
         else:
-            out=(torch.zeros((self.conv1(x)).size(),requires_grad=False)).to(self.device)
+            out=(torch.zeros((self.conv1(x)).size(),requires_grad=False))
             '''
             if self.stride==1:
                 out=torch.zeros(x.size(), requires_grad=False).to(self.device) # Variable(torch.FloatTensor(x.size()).zero_(),requires_grad=False).to(self.device)  #removed .cuda() 
