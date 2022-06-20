@@ -589,6 +589,35 @@ class ResNet(nn.Module):
         x=x.view(x.size(0), -1)
         x=self.fc(x) 
         return x    
+
+class AttackPGD(nn.Module):  # Taken and adapted from https://github.com/BaoWangMath/EnResNet/blob/master/ResNet20/main_pgd_enresnet5_20.py
+    """
+    PGD Adversarial training    
+    """
+    def __init__(self, basic_net, config):
+        super(AttackPGD, self).__init__()
+        self.basic_net = basic_net
+        self.rand = config['random_start']
+        self.step_size = config['step_size']
+        self.epsilon = config['epsilon']
+        self.num_steps = config['num_steps']
+        assert config['loss_func'] == 'xent', 'Only xent supported for now.'
+    
+    def forward(self, inputs, targets):
+        x = inputs
+        if self.rand:
+            x = x + torch.zeros_like(x).uniform_(-self.epsilon, self.epsilon)
+        for i in range(self.num_steps): # iFGSM attack
+            x.requires_grad_()
+            with torch.enable_grad():
+                logits = self.basic_net(x)
+                loss = F.cross_entropy(logits, targets, size_average=False)
+            grad = torch.autograd.grad(loss, [x])[0]
+            x = x.detach() + self.step_size*torch.sign(grad.detach())
+            x = torch.min(torch.max(x, inputs - self.epsilon), inputs + self.epsilon)
+            x = torch.clamp(x, 0, 1)
+
+        return self.basic_net(x), x
     
 def MResNet110(**kwargs) :
     
