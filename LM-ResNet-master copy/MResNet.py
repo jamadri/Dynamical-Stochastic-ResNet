@@ -30,9 +30,7 @@ class BasicBlockWithDeathRate(nn.Module):
             out=self.bn2(out)
             out=self.relu(out)
             out=self.conv2(out)
-        else:
-            out=self.conv1(x)
-        '''	if self.training:
+            if self.training:
                 out /= (1. - self.death_rate)
         else:
             out=self.conv1(x) # torch.zeros((self.conv1(x)).size(),requires_grad=False, device=self.device)
@@ -49,13 +47,12 @@ class BasicBlockWithDeathRate(nn.Module):
                 size=torch.Size(size)
                 out=torch.zeros(size, requires_grad=False).to(self.device) # torch.Variable(torch.FloatTensor(size).zero_(),requires_grad=False).to(self.device)
                 # removed .cuda()
-            '''
         return out
 
 class BasicBlock(nn.Module):
     expansion = 1
 
-    def __init__(self, in_planes, planes, stride=1, downsample=None, device="cuda"):  # added a device arg which will not be used but helps switchin easily between BasicBlock and BasicBlockWithDeathRate
+    def __init__(self, in_planes, planes, stride=1, downsample=None, device="cuda",noise_coef=None):  # added a device arg which will not be used but helps switchin easily between BasicBlock and BasicBlockWithDeathRate
         super(BasicBlock,self).__init__()
         self.bn1=nn.BatchNorm2d(in_planes)
         self.conv1=nn.Conv2d(in_planes,planes,kernel_size=3,stride=stride,padding=1,bias=False)
@@ -65,6 +62,7 @@ class BasicBlock(nn.Module):
         self.stride=stride
         self.in_planes=in_planes
         self.planes=planes
+        self.noise_coef = torch.Tensor([noise_coef])
     def forward(self,x):
         out=self.bn1(x)
         out=self.relu(out)
@@ -72,8 +70,12 @@ class BasicBlock(nn.Module):
         out=self.bn2(out)
         out=self.relu(out)
         out=self.conv2(out)
-
-        return out
+        if self.noise_coef is not None and not self.training:
+            print('Noise is present!')
+            #return out + self.noise_coef * torch.std(out) * Variable(torch.randn(out.shape).cuda())
+            return out + self.noise_coef * torch.std(out) * torch.randn_like(out)
+        else:
+            return out
     
 '''
 This is not used yet and some things are deprecated
@@ -135,12 +137,13 @@ class Downsample(nn.Module):
 
 class MResNet(nn.Module):
 
-    def __init__(self,block,layers,pretrain=True,num_classes=100,stochastic_depth=False,PL=0.5,noise_level=0.001,noise=False, device="cuda"):
+    def __init__(self,block,layers,pretrain=True,num_classes=100,stochastic_depth=False,PL=0.5,noise_level=0.1,noise=False, device="cuda"):
         self.in_planes=16
         self.planes=[16,32,64]
         self.strides=[1,2,2]
         super(MResNet,self).__init__()
         self.noise=noise
+        self.noise_level =noise_level
         self.block=block
         self.conv1=nn.Conv2d(3,16,kernel_size=3,padding=1,bias=False)
         self.bn1=nn.BatchNorm2d(16)
@@ -162,7 +165,7 @@ class MResNet(nn.Module):
             death_rates=torch.Tensor([i/(n-1)*(1-PL) for i in range(n)])
             print(death_rates)
             for i in range(3):
-                blocks.append(block(self.in_planes,self.planes[i],self.strides[i],death_rate=death_rates[i*layers[0]], device=self.device))
+                blocks.append(block(self.in_planes,self.planes[i],self.strides[i],death_rate=death_rates[i*layers[0]], device=self.device,noise_coef = self.noise_level))
                 self.in_planes=self.planes[i]*block.expansion
                 for j in range(1,layers[i]):
                     blocks.append(block(self.in_planes,self.planes[i],death_rate=death_rates[i*layers[0]+j], device=self.device))
