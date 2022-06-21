@@ -62,7 +62,7 @@ class BasicBlock(nn.Module):
         self.stride=stride
         self.in_planes=in_planes
         self.planes=planes
-        self.noise_coef = torch.Tensor([noise_coef])
+        self.noise_coef = noise_coef
     def forward(self,x):
         out=self.bn1(x)
         out=self.relu(out)
@@ -143,7 +143,7 @@ class MResNet(nn.Module):
         self.strides=[1,2,2]
         super(MResNet,self).__init__()
         self.noise=noise
-        self.noise_level =noise_level
+        self.noise_level = noise_level
         self.block=block
         self.conv1=nn.Conv2d(3,16,kernel_size=3,padding=1,bias=False)
         self.bn1=nn.BatchNorm2d(16)
