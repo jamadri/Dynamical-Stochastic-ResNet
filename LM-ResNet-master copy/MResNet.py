@@ -157,10 +157,10 @@ class MResNet(nn.Module):
         
         if not self.stochastic_depth:
             for i in range(3):
-                blocks.append(block(self.in_planes,self.planes[i],self.strides[i], device=self.device))
+                blocks.append(block(self.in_planes,self.planes[i],self.strides[i], device=self.device,noise_coef = self.noise_level))
                 self.in_planes=self.planes[i]*block.expansion
                 for j in range(1,layers[i]):
-                    blocks.append(block(self.in_planes,self.planes[i],device=self.device))  # added device=self.device for the basicBlockWithDeathRate which generate 0s outputs sometimes which have to be treated in parallel as xla tensors.
+                    blocks.append(block(self.in_planes,self.planes[i],device=self.device,noise_coef = self.noise_level))  # added device=self.device for the basicBlockWithDeathRate which generate 0s outputs sometimes which have to be treated in parallel as xla tensors.
         else:
             death_rates=torch.Tensor([i/(n-1)*(1-PL) for i in range(n)])
             print(death_rates)
@@ -168,7 +168,7 @@ class MResNet(nn.Module):
                 blocks.append(block(self.in_planes,self.planes[i],self.strides[i],death_rate=death_rates[i*layers[0]], device=self.device,noise_coef = self.noise_level))
                 self.in_planes=self.planes[i]*block.expansion
                 for j in range(1,layers[i]):
-                    blocks.append(block(self.in_planes,self.planes[i],death_rate=death_rates[i*layers[0]+j], device=self.device))
+                    blocks.append(block(self.in_planes,self.planes[i],death_rate=death_rates[i*layers[0]+j], device=self.device,noise_coef = self.noise_level))
         self.blocks=nn.ModuleList(blocks)
         self.downsample1=Downsample(16,64,stride=1)
         #self.downsample1=nn.Conv2d(16, 64,
