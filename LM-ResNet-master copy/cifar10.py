@@ -439,7 +439,7 @@ def _run():  # See https://www.kaggle.com/code/tanulsingh077/pytorch-xla-underst
     MResNetParameters={"block":BasicBlock,"layers":[3,3,3],"pretrain":False,"num_classes":10,"stochastic_depth":False,"PL":0, "device":dev}
 
     net=MResNet(**MResNetParameters)
-    net=AttackPGD(MResNet, configPGD)
+    net=AttackPGD(net, configPGD)
     net.to(device=dev)
     model_name = "exp"+str(code)
     # net.load_state_dict(state_dict)
