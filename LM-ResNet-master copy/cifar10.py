@@ -415,14 +415,31 @@ def get_cifar100(batch_size):
 def _run():  # See https://www.kaggle.com/code/tanulsingh077/pytorch-xla-understanding-tpu-s-and-xla/notebook
     ### SUPER IMPORTANT
     dev = xm.xla_device()
-    code=3001
+    MEAN = torch.Tensor([0.4914, 0.4822, 0.4465])
+    STD = torch.Tensor([0.2023, 0.1994, 0.2010])
+    NORMALIZED_MIN = -MEAN/STD
+    NORMALIZED_MAX = (1-MEAN)/STD
+    normalized_min_clip = NORMALIZED_MIN.unsqueeze(0).unsqueeze(-1).unsqueeze(-1).to(device)
+    normalized_max_clip = NORMALIZED_MAX.unsqueeze(0).unsqueeze(-1).unsqueeze(-1).to(device)
+
+    code=71
+    configPGD={
+    'epsilon':0.031,
+    'num_steps':10,
+    'step_size':0.007, # $\alpha$ in the paper
+    'random_start':True,
+    'loss_func':'xent',
+    'normalized_min_clip':normalized_min_clip,
+    'normalized_max_clip':normalized_max_clip
+    }
     # state_dict = torch.load('/result/test-test1.pt')
     '''
     In our experiments, we select pL = 0.8 for LM-ResNet56 and pL = 0.5 for LM-ResNet110.
     '''
-    MResNetParameters={"block":BasicBlockWithDeathRate,"layers":[9,9,9],"pretrain":False,"num_classes":10,"stochastic_depth":True,"PL":0, "device":dev}
+    MResNetParameters={"block":BasicBlockWithDeathRate,"layers":[3,3,3],"pretrain":False,"num_classes":10,"stochastic_depth":True,"PL":0, "device":dev}
 
     net=MResNet(**MResNetParameters)
+    net=AttackPGD(MResNet, configPGD)
     net.to(device=dev)
     model_name = "exp"+str(code)
     # net.load_state_dict(state_dict)
@@ -443,8 +460,8 @@ def _run():  # See https://www.kaggle.com/code/tanulsingh077/pytorch-xla-underst
     For LM-ResNet on CIFAR10 (CIFAR100), we start with the learning rate of 0.1, divide it by 10 at 80 (150) and 120 (225) epochs and terminate training at 160 (300) epochs.
     '''
     sgd_para = {"lr":0.1, "momentum":0.9, "weight_decay":0.0001}  
-    Trainer = NN_SGDTrainer(net,sgd_para, trainloader, testloader, {80:0.1,120:0.01,160:0.001}, dev, model_name+'.txt', code)
-    for i in range(4):
+    Trainer = NN_SGDTrainer(net,sgd_para, trainloader, testloader, {80:0.1,120:0.01,160:0.001,200:0.0001}, dev, model_name+'.txt', code)
+    for i in range(3):
         Trainer.train()
 def _mp_fn(rank, flags):
     '''

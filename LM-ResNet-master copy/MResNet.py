@@ -76,7 +76,7 @@ class BasicBlock(nn.Module):
             return out + self.noise_coef * torch.std(out) * torch.randn_like(out)
         else:
             return out
-    
+
 '''
 This is not used yet and some things are deprecated
 class GaussianNoise(nn.Module):
@@ -604,6 +604,8 @@ class AttackPGD(nn.Module):  # Taken and adapted from https://github.com/BaoWang
         self.step_size = config['step_size']
         self.epsilon = config['epsilon']
         self.num_steps = config['num_steps']
+        self.normalized_min_clip = config['normalized_min_clip']
+        self.normalized_max_clip = config['normalized_max_clip']
         assert config['loss_func'] == 'xent', 'Only xent supported for now.'
     
     def forward(self, inputs, targets):
@@ -617,20 +619,22 @@ class AttackPGD(nn.Module):  # Taken and adapted from https://github.com/BaoWang
                 loss = F.cross_entropy(logits, targets, size_average=False)
             grad = torch.autograd.grad(loss, [x])[0]
             x = x.detach() + self.step_size*torch.sign(grad.detach())
+            perturbed_image = torch.clip(perturbed_image,normalized_min_clip,normalized_max_clip)#NORMALIZED_MIN.unsqueeze(0).unsqueeze(-1).unsqueeze(-1).to(device), NORMALIZED_MAX.unsqueeze(0).unsqueeze(-1).unsqueeze(-1).to(device))
+
             x = torch.min(torch.max(x, inputs - self.epsilon), inputs + self.epsilon)
-            x = torch.clamp(x, 0, 1)
+            x = torch.clamp(x, self.normalized_min_clip, self.normalized_max_clip)
 
         return self.basic_net(x), x
     
 def MResNet110(**kwargs) :
-    
+
     return MResNet(BasicBlock,[18,18,18],**kwargs)
 
 def MResNet164(**kwargs):
     return MResNet(Bottleneck,[18,18,18],**kwargs)           
 
 def ResNet_N20(**kwargs) :
-    
+
     return ResNet_N(BasicBlock,[3,3,3],**kwargs)
 
 def ResNet_20(**kwargs) :
