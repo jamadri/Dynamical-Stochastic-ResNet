@@ -419,8 +419,8 @@ def _run():  # See https://www.kaggle.com/code/tanulsingh077/pytorch-xla-underst
     STD = torch.Tensor([0.2023, 0.1994, 0.2010])
     NORMALIZED_MIN = -MEAN/STD
     NORMALIZED_MAX = (1-MEAN)/STD
-    normalized_min_clip = NORMALIZED_MIN.unsqueeze(0).unsqueeze(-1).unsqueeze(-1).to(device)
-    normalized_max_clip = NORMALIZED_MAX.unsqueeze(0).unsqueeze(-1).unsqueeze(-1).to(device)
+    normalized_min_clip = NORMALIZED_MIN.unsqueeze(0).unsqueeze(-1).unsqueeze(-1).to(dev)
+    normalized_max_clip = NORMALIZED_MAX.unsqueeze(0).unsqueeze(-1).unsqueeze(-1).to(dev)
 
     code=71
     configPGD={
