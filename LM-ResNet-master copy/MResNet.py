@@ -70,7 +70,7 @@ class BasicBlock(nn.Module):
         out=self.bn2(out)
         out=self.relu(out)
         out=self.conv2(out)
-        if self.noise_coef is not None and not self.training:
+        if self.noise_coef is not None:# and not self.training:
             #print('Noise is present!')
             #return out + self.noise_coef * torch.std(out) * Variable(torch.randn(out.shape).cuda())
             return out + self.noise_coef * torch.std(out) * torch.randn_like(out)

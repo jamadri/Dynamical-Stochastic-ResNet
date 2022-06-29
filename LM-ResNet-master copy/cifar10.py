@@ -148,7 +148,6 @@ def train_epoch(net,optimizer,trainloader,testloader,it,control_dict,device,glob
                 inputs, labels = inputs.to(device), labels.to(device)  # Changes here interested in TPUs not cuda
                 #if global_cuda_available:
                 #    inputs, labels = inputs.cuda(), labels.cuda()
-
                 outputs, _ = net(inputs,labels)
                 _, predicted = torch.max(outputs.data, 1)
                 total_ctr += labels.size()[0]
@@ -436,7 +435,7 @@ def _run():  # See https://www.kaggle.com/code/tanulsingh077/pytorch-xla-underst
     '''
     In our experiments, we select pL = 0.8 for LM-ResNet56 and pL = 0.5 for LM-ResNet110.
     '''
-    MResNetParameters={"block":BasicBlock,"layers":[3,3,3],"pretrain":False,"num_classes":10,"stochastic_depth":False,"PL":0, "device":dev}
+    MResNetParameters={"block":BasicBlock,"layers":[3,3,3],"pretrain":False,"num_classes":10,"stochastic_depth":False,"PL":0, "device":dev,"noise_level":.1}
 
     net=MResNet(**MResNetParameters)
     net=AttackPGD(net, configPGD)
@@ -461,7 +460,7 @@ def _run():  # See https://www.kaggle.com/code/tanulsingh077/pytorch-xla-underst
     '''
     sgd_para = {"lr":0.1, "momentum":0.9, "weight_decay":0.0001}  
     Trainer = NN_SGDTrainer(net,sgd_para, trainloader, testloader, {80:0.1,120:0.01,160:0.001,200:0.0001}, dev, model_name+'.txt', code)
-    for i in range(3):
+    for i in range(200):
         Trainer.train()
 def _mp_fn(rank, flags):
     '''
