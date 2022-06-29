@@ -616,7 +616,7 @@ class AttackPGD(nn.Module):  # Taken and adapted from https://github.com/BaoWang
             x.requires_grad_()
             with torch.enable_grad():
                 logits = self.basic_net(x)
-                loss = nn.CrossEntropyLoss(logits, targets)  # no need to specify size_average (default None) and changed from F to nn to have consistency with other files
+                loss = nn.CrossEntropyLoss(logits, targets,reduce="sum")  # size_average=False is now reduction="sum" in pytorch
             grad = torch.autograd.grad(loss, [x])[0]
             x = x.detach() + self.step_size*torch.sign(grad.detach())
             x = torch.min(torch.max(x, inputs - self.epsilon), inputs + self.epsilon)
