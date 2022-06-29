@@ -149,7 +149,7 @@ def train_epoch(net,optimizer,trainloader,testloader,it,control_dict,device,glob
                 #if global_cuda_available:
                 #    inputs, labels = inputs.cuda(), labels.cuda()
 
-                outputs, perturbated_inputs = net(inputs)
+                outputs, _ = net(inputs,labels)
                 _, predicted = torch.max(outputs.data, 1)
                 total_ctr += labels.size()[0]
                 correct_sum += (predicted == labels.data).sum()
