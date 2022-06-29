@@ -629,10 +629,10 @@ class En_LM_ResNet(nn.Module):
       super(En_LM_ResNet, self).__init__()
       self.num_ensembles = num_ensembles
       self.ensemble = nn.ModuleList([net for i in range(num_ensembles)])
-    def forward(self, x):
+    def forward(self, x,y):
       ret = 0.0
       for net in self.ensemble:
-        out,_ = net(x)
+        out,_ = net(x,y)
         ret+=out
         #ret += net(x)
         #ret += net(x, target)
