@@ -127,7 +127,7 @@ def train_epoch(net,optimizer,trainloader,testloader,it,control_dict,device,glob
         # if global_cuda_available:
         #     inputs, labels = inputs.cuda(), labels.cuda()
         optimizer.zero_grad()
-        outputs = net(inputs)
+        outputs,_ = net(inputs,labels)
         loss = criterion(outputs, labels)
         loss.backward()
         # optimizer.step()
@@ -149,7 +149,7 @@ def train_epoch(net,optimizer,trainloader,testloader,it,control_dict,device,glob
                 #if global_cuda_available:
                 #    inputs, labels = inputs.cuda(), labels.cuda()
 
-                outputs = net(inputs)
+                outputs, perturbated_inputs = net(inputs)
                 _, predicted = torch.max(outputs.data, 1)
                 total_ctr += labels.size()[0]
                 correct_sum += (predicted == labels.data).sum()
@@ -222,8 +222,8 @@ class NN_SGDTrainer(object):
             model_filename = generate_filename(model_name, self.code)
             xm.save(self.net.state_dict(), model_filename)   # xm.save instead of torch.save to go back to cpu
             self.max = acc
-
-    def net_test(self):
+    ''' Not called
+    def net_test(self): 
         criterion = nn.CrossEntropyLoss()
         def test(info):
             self.net.eval()  # trun to eval mode
@@ -255,7 +255,7 @@ class NN_SGDTrainer(object):
                              "accuracy: {:.10f}, average loss: {:.10f}"
                              .format(info[0], info[1], info[0] / info[1], info[2] / info[1])
                              )
-
+    '''
 
     def plot_loss(self,label,filename):
         extract_loss = re.compile(r"Epoch (\d+) finished, average loss: (\d.\d+)")
