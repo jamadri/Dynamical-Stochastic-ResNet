@@ -421,7 +421,7 @@ def _run():  # See https://www.kaggle.com/code/tanulsingh077/pytorch-xla-underst
     normalized_min_clip = NORMALIZED_MIN.unsqueeze(0).unsqueeze(-1).unsqueeze(-1).to(dev)
     normalized_max_clip = NORMALIZED_MAX.unsqueeze(0).unsqueeze(-1).unsqueeze(-1).to(dev)
 
-    code=71
+    code=72
     configPGD={
     'epsilon':0.031,
     'num_steps':10,
@@ -439,6 +439,7 @@ def _run():  # See https://www.kaggle.com/code/tanulsingh077/pytorch-xla-underst
 
     net=MResNet(**MResNetParameters)
     net=AttackPGD(net, configPGD)
+    net=En_LM_ResNet(net,num_ensembles=2)
     net.to(device=dev)
     model_name = "exp"+str(code)
     # net.load_state_dict(state_dict)
