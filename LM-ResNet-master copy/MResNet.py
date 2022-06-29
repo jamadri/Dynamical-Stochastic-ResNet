@@ -616,11 +616,9 @@ class AttackPGD(nn.Module):  # Taken and adapted from https://github.com/BaoWang
             x.requires_grad_()
             with torch.enable_grad():
                 logits = self.basic_net(x)
-                loss = F.cross_entropy(logits, targets, size_average=False)
+                loss = nn.CrossEntropyLoss(logits, targets)  # no need to specify size_average (default None) and changed from F to nn to have consistency with other files
             grad = torch.autograd.grad(loss, [x])[0]
             x = x.detach() + self.step_size*torch.sign(grad.detach())
-            perturbed_image = torch.clip(perturbed_image,normalized_min_clip,normalized_max_clip)#NORMALIZED_MIN.unsqueeze(0).unsqueeze(-1).unsqueeze(-1).to(device), NORMALIZED_MAX.unsqueeze(0).unsqueeze(-1).unsqueeze(-1).to(device))
-
             x = torch.min(torch.max(x, inputs - self.epsilon), inputs + self.epsilon)
             x = torch.clamp(x, self.normalized_min_clip, self.normalized_max_clip)
 
