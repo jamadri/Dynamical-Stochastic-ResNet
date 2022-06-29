@@ -136,3 +136,3921 @@ epoch: 4, train set index: 19, average loss: 1.1322957277
 epoch: 4, train set index: 39, average loss: 1.2300348282
 2022-06-29 16:25:38.984334:
 epoch: 4, train set index: 59, average loss: 1.1999812126
+2022-06-29 18:29:28.280755:
+epoch: 1, train set index: 19, average loss: 2.1517221928
+2022-06-29 18:29:34.596526:
+epoch: 1, train set index: 39, average loss: 2.0289051533
+2022-06-29 18:29:40.885090:
+epoch: 1, train set index: 59, average loss: 2.0288183689
+2022-06-29 18:29:47.159200:
+epoch: 1, train set index: 79, average loss: 1.9052643776
+2022-06-29 18:29:53.438474:
+epoch: 1, train set index: 99, average loss: 1.7976466417
+2022-06-29 18:29:59.747010:
+epoch: 1, train set index: 119, average loss: 1.6818631887
+2022-06-29 18:30:06.047883:
+epoch: 1, train set index: 139, average loss: 1.8455853462
+2022-06-29 18:30:12.365319:
+epoch: 1, train set index: 159, average loss: 1.7259474993
+2022-06-29 18:30:18.725743:
+epoch: 1, train set index: 179, average loss: 1.7699847221
+2022-06-29 18:30:25.038808:
+epoch: 1, train set index: 199, average loss: 1.6241700649
+2022-06-29 18:30:31.345572:
+epoch: 1, train set index: 219, average loss: 1.5616711378
+2022-06-29 18:30:37.688805:
+epoch: 1, train set index: 239, average loss: 1.6272975206
+2022-06-29 18:30:44.018485:
+epoch: 1, train set index: 259, average loss: 1.4747600555
+2022-06-29 18:30:50.351945:
+epoch: 1, train set index: 279, average loss: 1.5169150829
+2022-06-29 18:30:56.663064:
+epoch: 1, train set index: 299, average loss: 1.5403687954
+2022-06-29 18:31:02.955734:
+epoch: 1, train set index: 319, average loss: 1.4800649881
+2022-06-29 18:31:09.255363:
+epoch: 1, train set index: 339, average loss: 1.6336917877
+2022-06-29 18:31:15.522212:
+epoch: 1, train set index: 359, average loss: 1.5724616051
+2022-06-29 18:31:21.783272:
+epoch: 1, train set index: 379, average loss: 1.5445702076
+2022-06-29 18:32:26.008518:
+Epoch 1 finished, average loss: 0.0137146991
+2022-06-29 18:32:26.008660:
+Starting testing
+2022-06-29 18:32:38.775111:
+Correct: 5100, total: 10000, accuracy: 0.5099999905, average loss: 0.0107358377
+2022-06-29 18:34:10.250177:
+epoch: 2, train set index: 19, average loss: 1.3555418253
+2022-06-29 18:34:16.601212:
+epoch: 2, train set index: 39, average loss: 1.5682517290
+2022-06-29 18:34:22.935731:
+epoch: 2, train set index: 59, average loss: 1.5719138384
+2022-06-29 18:34:29.259802:
+epoch: 2, train set index: 79, average loss: 1.5203822851
+2022-06-29 18:34:35.624621:
+epoch: 2, train set index: 99, average loss: 1.5893030167
+2022-06-29 18:34:41.962160:
+epoch: 2, train set index: 119, average loss: 1.5379636288
+2022-06-29 18:34:48.279292:
+epoch: 2, train set index: 139, average loss: 1.4561467171
+2022-06-29 18:34:54.586769:
+epoch: 2, train set index: 159, average loss: 1.4786663055
+2022-06-29 18:35:00.876396:
+epoch: 2, train set index: 179, average loss: 1.2782497406
+2022-06-29 18:35:07.150689:
+epoch: 2, train set index: 199, average loss: 1.3901433945
+2022-06-29 18:35:13.497428:
+epoch: 2, train set index: 219, average loss: 1.3414905071
+2022-06-29 18:35:19.795095:
+epoch: 2, train set index: 239, average loss: 1.3717576265
+2022-06-29 18:35:26.124708:
+epoch: 2, train set index: 259, average loss: 1.5080902576
+2022-06-29 18:35:32.464133:
+epoch: 2, train set index: 279, average loss: 1.3491661549
+2022-06-29 18:35:38.807764:
+epoch: 2, train set index: 299, average loss: 1.4492807388
+2022-06-29 18:35:45.106800:
+epoch: 2, train set index: 319, average loss: 1.4148292542
+2022-06-29 18:35:51.429349:
+epoch: 2, train set index: 339, average loss: 1.3451184034
+2022-06-29 18:35:57.734870:
+epoch: 2, train set index: 359, average loss: 1.2916184664
+2022-06-29 18:36:04.092267:
+epoch: 2, train set index: 379, average loss: 1.4640127420
+2022-06-29 18:36:07.896989:
+Epoch 2 finished, average loss: 0.0111994185
+2022-06-29 18:36:07.897150:
+Starting testing
+2022-06-29 18:36:10.311688:
+Correct: 5979, total: 10000, accuracy: 0.5978999734, average loss: 0.0088070044
+2022-06-29 18:36:18.308631:
+epoch: 3, train set index: 19, average loss: 1.2974363565
+2022-06-29 18:36:24.677572:
+epoch: 3, train set index: 39, average loss: 1.5668517351
+2022-06-29 18:36:31.037320:
+epoch: 3, train set index: 59, average loss: 1.3281257153
+2022-06-29 18:36:37.418054:
+epoch: 3, train set index: 79, average loss: 1.2133879662
+2022-06-29 18:36:43.758510:
+epoch: 3, train set index: 99, average loss: 1.3393348455
+2022-06-29 18:36:50.087848:
+epoch: 3, train set index: 119, average loss: 1.2381066084
+2022-06-29 18:36:56.434600:
+epoch: 3, train set index: 139, average loss: 1.2933083773
+2022-06-29 18:37:02.778237:
+epoch: 3, train set index: 159, average loss: 1.4612720013
+2022-06-29 18:37:09.135768:
+epoch: 3, train set index: 179, average loss: 1.3355201483
+2022-06-29 18:37:15.453423:
+epoch: 3, train set index: 199, average loss: 1.2866609097
+2022-06-29 18:37:21.779243:
+epoch: 3, train set index: 219, average loss: 1.1529070139
+2022-06-29 18:37:28.105442:
+epoch: 3, train set index: 239, average loss: 1.2229659557
+2022-06-29 18:37:34.432202:
+epoch: 3, train set index: 259, average loss: 1.3163766861
+2022-06-29 18:37:40.757477:
+epoch: 3, train set index: 279, average loss: 1.4106171131
+2022-06-29 18:37:47.074059:
+epoch: 3, train set index: 299, average loss: 1.2147086859
+2022-06-29 18:37:53.393720:
+epoch: 3, train set index: 319, average loss: 1.3270862103
+2022-06-29 18:37:59.726103:
+epoch: 3, train set index: 339, average loss: 1.2033621073
+2022-06-29 18:38:06.061425:
+epoch: 3, train set index: 359, average loss: 1.1703933477
+2022-06-29 18:38:12.373930:
+epoch: 3, train set index: 379, average loss: 1.0851402283
+2022-06-29 18:38:16.326235:
+Epoch 3 finished, average loss: 0.0099615790
+2022-06-29 18:38:16.326363:
+Starting testing
+2022-06-29 18:38:18.852206:
+Correct: 6608, total: 10000, accuracy: 0.6607999802, average loss: 0.0076469183
+2022-06-29 18:38:26.976616:
+epoch: 4, train set index: 19, average loss: 1.2666622400
+2022-06-29 18:38:33.341512:
+epoch: 4, train set index: 39, average loss: 1.1580479145
+2022-06-29 18:38:39.699318:
+epoch: 4, train set index: 59, average loss: 1.3822536469
+2022-06-29 18:38:46.052563:
+epoch: 4, train set index: 79, average loss: 1.0266665220
+2022-06-29 18:38:52.417012:
+epoch: 4, train set index: 99, average loss: 1.1943423748
+2022-06-29 18:38:58.770336:
+epoch: 4, train set index: 119, average loss: 1.1408540010
+2022-06-29 18:39:05.125226:
+epoch: 4, train set index: 139, average loss: 1.0579243898
+2022-06-29 18:39:11.460030:
+epoch: 4, train set index: 159, average loss: 1.0747035742
+2022-06-29 18:39:17.790023:
+epoch: 4, train set index: 179, average loss: 1.1073850393
+2022-06-29 18:39:24.136744:
+epoch: 4, train set index: 199, average loss: 1.1077528000
+2022-06-29 18:39:30.464899:
+epoch: 4, train set index: 219, average loss: 1.2002294064
+2022-06-29 18:39:36.808255:
+epoch: 4, train set index: 239, average loss: 0.9438567758
+2022-06-29 18:39:43.139370:
+epoch: 4, train set index: 259, average loss: 1.3614146709
+2022-06-29 18:39:49.472296:
+epoch: 4, train set index: 279, average loss: 1.2585674524
+2022-06-29 18:39:55.796854:
+epoch: 4, train set index: 299, average loss: 1.0316441059
+2022-06-29 18:40:02.115681:
+epoch: 4, train set index: 319, average loss: 1.1465373039
+2022-06-29 18:40:08.434836:
+epoch: 4, train set index: 339, average loss: 1.1476528645
+2022-06-29 18:40:14.775278:
+epoch: 4, train set index: 359, average loss: 1.0926027298
+2022-06-29 18:40:21.129263:
+epoch: 4, train set index: 379, average loss: 1.1802016497
+2022-06-29 18:40:25.096215:
+Epoch 4 finished, average loss: 0.0090967398
+2022-06-29 18:40:25.096370:
+Starting testing
+2022-06-29 18:40:27.474879:
+Correct: 6934, total: 10000, accuracy: 0.6933999658, average loss: 0.0068412991
+2022-06-29 18:40:35.652241:
+epoch: 5, train set index: 19, average loss: 1.0234340429
+2022-06-29 18:40:42.012397:
+epoch: 5, train set index: 39, average loss: 1.0651564598
+2022-06-29 18:40:48.363128:
+epoch: 5, train set index: 59, average loss: 1.2248376608
+2022-06-29 18:40:54.740204:
+epoch: 5, train set index: 79, average loss: 1.0030239820
+2022-06-29 18:41:01.086944:
+epoch: 5, train set index: 99, average loss: 1.2000409365
+2022-06-29 18:41:07.422900:
+epoch: 5, train set index: 119, average loss: 0.9789839387
+2022-06-29 18:41:13.763936:
+epoch: 5, train set index: 139, average loss: 1.0756604671
+2022-06-29 18:41:20.101163:
+epoch: 5, train set index: 159, average loss: 1.1517424583
+2022-06-29 18:41:26.446029:
+epoch: 5, train set index: 179, average loss: 1.2576076984
+2022-06-29 18:41:32.770164:
+epoch: 5, train set index: 199, average loss: 1.0904113054
+2022-06-29 18:41:39.105268:
+epoch: 5, train set index: 219, average loss: 1.0310252905
+2022-06-29 18:41:45.453674:
+epoch: 5, train set index: 239, average loss: 1.0842877626
+2022-06-29 18:41:51.801041:
+epoch: 5, train set index: 259, average loss: 1.1869027615
+2022-06-29 18:41:58.131946:
+epoch: 5, train set index: 279, average loss: 1.0019669533
+2022-06-29 18:42:04.458838:
+epoch: 5, train set index: 299, average loss: 1.0088359118
+2022-06-29 18:42:10.806454:
+epoch: 5, train set index: 319, average loss: 1.0889041424
+2022-06-29 18:42:17.140956:
+epoch: 5, train set index: 339, average loss: 0.9356825948
+2022-06-29 18:42:23.470351:
+epoch: 5, train set index: 359, average loss: 1.0715534687
+2022-06-29 18:42:29.832664:
+epoch: 5, train set index: 379, average loss: 0.9823809862
+2022-06-29 18:42:33.814089:
+Epoch 5 finished, average loss: 0.0084600868
+2022-06-29 18:42:33.814204:
+Starting testing
+2022-06-29 18:42:36.233804:
+Correct: 7167, total: 10000, accuracy: 0.7166999578, average loss: 0.0064858459
+2022-06-29 18:42:44.317334:
+epoch: 6, train set index: 19, average loss: 0.9081688523
+2022-06-29 18:42:50.698718:
+epoch: 6, train set index: 39, average loss: 1.0674196482
+2022-06-29 18:42:57.067702:
+epoch: 6, train set index: 59, average loss: 1.0747005939
+2022-06-29 18:43:03.449474:
+epoch: 6, train set index: 79, average loss: 1.0871438980
+2022-06-29 18:43:09.817095:
+epoch: 6, train set index: 99, average loss: 1.0601055622
+2022-06-29 18:43:16.161152:
+epoch: 6, train set index: 119, average loss: 1.1584382057
+2022-06-29 18:43:22.510405:
+epoch: 6, train set index: 139, average loss: 1.0318366289
+2022-06-29 18:43:28.852120:
+epoch: 6, train set index: 159, average loss: 1.1398911476
+2022-06-29 18:43:35.230447:
+epoch: 6, train set index: 179, average loss: 1.0747240782
+2022-06-29 18:43:41.579645:
+epoch: 6, train set index: 199, average loss: 1.0448297262
+2022-06-29 18:43:47.935589:
+epoch: 6, train set index: 219, average loss: 1.1048933268
+2022-06-29 18:43:54.304231:
+epoch: 6, train set index: 239, average loss: 0.9004234672
+2022-06-29 18:44:00.659008:
+epoch: 6, train set index: 259, average loss: 1.0250351429
+2022-06-29 18:44:07.017145:
+epoch: 6, train set index: 279, average loss: 1.0528261662
+2022-06-29 18:44:13.371162:
+epoch: 6, train set index: 299, average loss: 1.0700521469
+2022-06-29 18:44:19.724694:
+epoch: 6, train set index: 319, average loss: 0.8329522014
+2022-06-29 18:44:26.092422:
+epoch: 6, train set index: 339, average loss: 0.9100191593
+2022-06-29 18:44:32.456872:
+epoch: 6, train set index: 359, average loss: 1.0126291513
+2022-06-29 18:44:38.798974:
+epoch: 6, train set index: 379, average loss: 0.9719989300
+2022-06-29 18:44:42.810639:
+Epoch 6 finished, average loss: 0.0080450587
+2022-06-29 18:44:42.810794:
+Starting testing
+2022-06-29 18:44:45.272575:
+Correct: 7485, total: 10000, accuracy: 0.7484999895, average loss: 0.0058778543
+2022-06-29 18:44:53.215860:
+epoch: 7, train set index: 19, average loss: 0.9671949148
+2022-06-29 18:44:59.565443:
+epoch: 7, train set index: 39, average loss: 0.9637372494
+2022-06-29 18:45:05.933031:
+epoch: 7, train set index: 59, average loss: 1.0301388502
+2022-06-29 18:45:12.302361:
+epoch: 7, train set index: 79, average loss: 0.9963942766
+2022-06-29 18:45:18.726731:
+epoch: 7, train set index: 99, average loss: 1.0089372396
+2022-06-29 18:45:25.069732:
+epoch: 7, train set index: 119, average loss: 0.9738088250
+2022-06-29 18:45:31.407551:
+epoch: 7, train set index: 139, average loss: 0.9877805710
+2022-06-29 18:45:37.763969:
+epoch: 7, train set index: 159, average loss: 0.9559595585
+2022-06-29 18:45:44.088646:
+epoch: 7, train set index: 179, average loss: 1.0977715254
+2022-06-29 18:45:50.424686:
+epoch: 7, train set index: 199, average loss: 0.9618387818
+2022-06-29 18:45:56.762291:
+epoch: 7, train set index: 219, average loss: 0.9431877732
+2022-06-29 18:46:03.092854:
+epoch: 7, train set index: 239, average loss: 1.0838133097
+2022-06-29 18:46:09.420587:
+epoch: 7, train set index: 259, average loss: 1.0680422783
+2022-06-29 18:46:15.745768:
+epoch: 7, train set index: 279, average loss: 1.0198947191
+2022-06-29 18:46:22.110580:
+epoch: 7, train set index: 299, average loss: 0.8911490440
+2022-06-29 18:46:28.457652:
+epoch: 7, train set index: 319, average loss: 0.9010637403
+2022-06-29 18:46:34.843438:
+epoch: 7, train set index: 339, average loss: 1.0407769680
+2022-06-29 18:46:41.219463:
+epoch: 7, train set index: 359, average loss: 1.1076520681
+2022-06-29 18:46:47.612271:
+epoch: 7, train set index: 379, average loss: 0.9994392395
+2022-06-29 18:46:51.670245:
+Epoch 7 finished, average loss: 0.0076793265
+2022-06-29 18:46:51.670341:
+Starting testing
+2022-06-29 18:46:54.136022:
+Correct: 7607, total: 10000, accuracy: 0.7606999874, average loss: 0.0055941720
+2022-06-29 18:47:02.144259:
+epoch: 8, train set index: 19, average loss: 1.1874643564
+2022-06-29 18:47:08.497290:
+epoch: 8, train set index: 39, average loss: 0.9944733381
+2022-06-29 18:47:14.843110:
+epoch: 8, train set index: 59, average loss: 0.8949050903
+2022-06-29 18:47:21.219576:
+epoch: 8, train set index: 79, average loss: 0.9534765482
+2022-06-29 18:47:27.553968:
+epoch: 8, train set index: 99, average loss: 0.9099761248
+2022-06-29 18:47:33.891896:
+epoch: 8, train set index: 119, average loss: 1.0477744341
+2022-06-29 18:47:40.256813:
+epoch: 8, train set index: 139, average loss: 1.0311298370
+2022-06-29 18:47:46.577129:
+epoch: 8, train set index: 159, average loss: 0.7768179178
+2022-06-29 18:47:52.908961:
+epoch: 8, train set index: 179, average loss: 0.9164350033
+2022-06-29 18:47:59.234895:
+epoch: 8, train set index: 199, average loss: 0.9115725160
+2022-06-29 18:48:05.568939:
+epoch: 8, train set index: 219, average loss: 0.9578442574
+2022-06-29 18:48:11.904345:
+epoch: 8, train set index: 239, average loss: 1.0275965929
+2022-06-29 18:48:18.256055:
+epoch: 8, train set index: 259, average loss: 0.9743752480
+2022-06-29 18:48:24.593267:
+epoch: 8, train set index: 279, average loss: 0.8909720778
+2022-06-29 18:48:30.922730:
+epoch: 8, train set index: 299, average loss: 0.8252200484
+2022-06-29 18:48:37.269031:
+epoch: 8, train set index: 319, average loss: 0.8883185983
+2022-06-29 18:48:43.612169:
+epoch: 8, train set index: 339, average loss: 0.9039954543
+2022-06-29 18:48:49.939608:
+epoch: 8, train set index: 359, average loss: 0.8036909699
+2022-06-29 18:48:56.278920:
+epoch: 8, train set index: 379, average loss: 0.8336495757
+2022-06-29 18:49:00.322247:
+Epoch 8 finished, average loss: 0.0074261813
+2022-06-29 18:49:00.322387:
+Starting testing
+2022-06-29 18:49:02.788676:
+Correct: 7767, total: 10000, accuracy: 0.7766999602, average loss: 0.0052435887
+2022-06-29 18:49:10.733001:
+epoch: 9, train set index: 19, average loss: 0.9627700448
+2022-06-29 18:49:17.136755:
+epoch: 9, train set index: 39, average loss: 0.9145942330
+2022-06-29 18:49:23.507250:
+epoch: 9, train set index: 59, average loss: 0.9100143909
+2022-06-29 18:49:29.877503:
+epoch: 9, train set index: 79, average loss: 0.9529424906
+2022-06-29 18:49:36.223247:
+epoch: 9, train set index: 99, average loss: 0.7664033771
+2022-06-29 18:49:42.548940:
+epoch: 9, train set index: 119, average loss: 0.9445920587
+2022-06-29 18:49:48.878929:
+epoch: 9, train set index: 139, average loss: 0.8966231346
+2022-06-29 18:49:55.189084:
+epoch: 9, train set index: 159, average loss: 0.9356997609
+2022-06-29 18:50:01.503309:
+epoch: 9, train set index: 179, average loss: 0.8357339501
+2022-06-29 18:50:07.835547:
+epoch: 9, train set index: 199, average loss: 0.8577713370
+2022-06-29 18:50:14.173840:
+epoch: 9, train set index: 219, average loss: 0.9516360760
+2022-06-29 18:50:20.527670:
+epoch: 9, train set index: 239, average loss: 1.0143903494
+2022-06-29 18:50:26.896869:
+epoch: 9, train set index: 259, average loss: 0.8205389977
+2022-06-29 18:50:33.255355:
+epoch: 9, train set index: 279, average loss: 0.9322560430
+2022-06-29 18:50:39.635785:
+epoch: 9, train set index: 299, average loss: 0.8410235643
+2022-06-29 18:50:45.998902:
+epoch: 9, train set index: 319, average loss: 1.0904927254
+2022-06-29 18:50:52.335881:
+epoch: 9, train set index: 339, average loss: 0.9232342839
+2022-06-29 18:50:58.671800:
+epoch: 9, train set index: 359, average loss: 0.9624005556
+2022-06-29 18:51:05.016009:
+epoch: 9, train set index: 379, average loss: 0.9473875761
+2022-06-29 18:51:09.017216:
+Epoch 9 finished, average loss: 0.0071893558
+2022-06-29 18:51:09.017349:
+Starting testing
+2022-06-29 18:51:11.578434:
+Correct: 7702, total: 10000, accuracy: 0.7701999545, average loss: 0.0052568833
+2022-06-29 18:51:19.323243:
+epoch: 10, train set index: 19, average loss: 0.7295820117
+2022-06-29 18:51:25.721610:
+epoch: 10, train set index: 39, average loss: 0.9757435918
+2022-06-29 18:51:32.107683:
+epoch: 10, train set index: 59, average loss: 0.9741561413
+2022-06-29 18:51:38.464488:
+epoch: 10, train set index: 79, average loss: 1.0000700951
+2022-06-29 18:51:44.804104:
+epoch: 10, train set index: 99, average loss: 0.9068726897
+2022-06-29 18:51:51.121829:
+epoch: 10, train set index: 119, average loss: 0.7434130311
+2022-06-29 18:51:57.444180:
+epoch: 10, train set index: 139, average loss: 0.7853396535
+2022-06-29 18:52:03.767862:
+epoch: 10, train set index: 159, average loss: 0.8388337493
+2022-06-29 18:52:10.093239:
+epoch: 10, train set index: 179, average loss: 0.8529103398
+2022-06-29 18:52:16.436897:
+epoch: 10, train set index: 199, average loss: 0.9826196432
+2022-06-29 18:52:22.775293:
+epoch: 10, train set index: 219, average loss: 0.9508650899
+2022-06-29 18:52:29.131735:
+epoch: 10, train set index: 239, average loss: 1.0403631926
+2022-06-29 18:52:35.507520:
+epoch: 10, train set index: 259, average loss: 0.8633775711
+2022-06-29 18:52:41.860649:
+epoch: 10, train set index: 279, average loss: 0.8231382370
+2022-06-29 18:52:48.178833:
+epoch: 10, train set index: 299, average loss: 0.8126527071
+2022-06-29 18:52:54.547366:
+epoch: 10, train set index: 319, average loss: 0.7286174297
+2022-06-29 18:53:00.914285:
+epoch: 10, train set index: 339, average loss: 0.8558596969
+2022-06-29 18:53:07.256268:
+epoch: 10, train set index: 359, average loss: 0.8357795477
+2022-06-29 18:53:13.576506:
+epoch: 10, train set index: 379, average loss: 0.7716737390
+2022-06-29 18:53:17.636884:
+Epoch 10 finished, average loss: 0.0069823582
+2022-06-29 18:53:17.636977:
+Starting testing
+2022-06-29 18:53:20.028259:
+Correct: 7934, total: 10000, accuracy: 0.7933999896, average loss: 0.0049200794
+2022-06-29 18:53:27.983857:
+epoch: 11, train set index: 19, average loss: 0.9426309466
+2022-06-29 18:53:34.388557:
+epoch: 11, train set index: 39, average loss: 0.8836502433
+2022-06-29 18:53:40.752925:
+epoch: 11, train set index: 59, average loss: 0.8548127413
+2022-06-29 18:53:47.159011:
+epoch: 11, train set index: 79, average loss: 0.9205420017
+2022-06-29 18:53:53.607348:
+epoch: 11, train set index: 99, average loss: 0.7929557562
+2022-06-29 18:53:59.957511:
+epoch: 11, train set index: 119, average loss: 0.7458577752
+2022-06-29 18:54:06.304191:
+epoch: 11, train set index: 139, average loss: 0.7561205029
+2022-06-29 18:54:12.658663:
+epoch: 11, train set index: 159, average loss: 0.9341750741
+2022-06-29 18:54:19.007622:
+epoch: 11, train set index: 179, average loss: 0.8224738240
+2022-06-29 18:54:25.332676:
+epoch: 11, train set index: 199, average loss: 1.1251970530
+2022-06-29 18:54:31.662835:
+epoch: 11, train set index: 219, average loss: 0.9558854103
+2022-06-29 18:54:37.983731:
+epoch: 11, train set index: 239, average loss: 0.9242646098
+2022-06-29 18:54:44.324963:
+epoch: 11, train set index: 259, average loss: 0.9311395884
+2022-06-29 18:54:50.709537:
+epoch: 11, train set index: 279, average loss: 0.8355451822
+2022-06-29 18:54:57.079746:
+epoch: 11, train set index: 299, average loss: 0.9686885476
+2022-06-29 18:55:03.446338:
+epoch: 11, train set index: 319, average loss: 0.9528818727
+2022-06-29 18:55:09.807569:
+epoch: 11, train set index: 339, average loss: 0.6913705468
+2022-06-29 18:55:16.151787:
+epoch: 11, train set index: 359, average loss: 0.8594800234
+2022-06-29 18:55:22.493144:
+epoch: 11, train set index: 379, average loss: 0.7883058786
+2022-06-29 18:55:26.530413:
+Epoch 11 finished, average loss: 0.0067861578
+2022-06-29 18:55:26.530517:
+Starting testing
+2022-06-29 18:55:29.070919:
+Correct: 7778, total: 10000, accuracy: 0.7777999640, average loss: 0.0050716968
+2022-06-29 18:55:36.922390:
+epoch: 12, train set index: 19, average loss: 0.8132027984
+2022-06-29 18:55:43.297429:
+epoch: 12, train set index: 39, average loss: 0.8844664097
+2022-06-29 18:55:49.661024:
+epoch: 12, train set index: 59, average loss: 0.8287974596
+2022-06-29 18:55:56.053259:
+epoch: 12, train set index: 79, average loss: 0.7918951511
+2022-06-29 18:56:02.413987:
+epoch: 12, train set index: 99, average loss: 0.8872526884
+2022-06-29 18:56:08.781741:
+epoch: 12, train set index: 119, average loss: 0.9537845850
+2022-06-29 18:56:15.150298:
+epoch: 12, train set index: 139, average loss: 0.6703135371
+2022-06-29 18:56:21.529803:
+epoch: 12, train set index: 159, average loss: 0.8709650636
+2022-06-29 18:56:27.890601:
+epoch: 12, train set index: 179, average loss: 0.7975986004
+2022-06-29 18:56:34.245413:
+epoch: 12, train set index: 199, average loss: 0.9400262833
+2022-06-29 18:56:40.592543:
+epoch: 12, train set index: 219, average loss: 0.9677411914
+2022-06-29 18:56:46.949789:
+epoch: 12, train set index: 239, average loss: 0.9261218905
+2022-06-29 18:56:53.298587:
+epoch: 12, train set index: 259, average loss: 0.8606856465
+2022-06-29 18:56:59.670648:
+epoch: 12, train set index: 279, average loss: 0.9377599359
+2022-06-29 18:57:06.046541:
+epoch: 12, train set index: 299, average loss: 0.9010757804
+2022-06-29 18:57:12.398539:
+epoch: 12, train set index: 319, average loss: 0.9309797287
+2022-06-29 18:57:18.709533:
+epoch: 12, train set index: 339, average loss: 0.6899603009
+2022-06-29 18:57:25.022632:
+epoch: 12, train set index: 359, average loss: 0.6979945898
+2022-06-29 18:57:31.342292:
+epoch: 12, train set index: 379, average loss: 0.9592484236
+2022-06-29 18:57:35.338525:
+Epoch 12 finished, average loss: 0.0066807549
+2022-06-29 18:57:35.338657:
+Starting testing
+2022-06-29 18:57:37.786770:
+Correct: 8056, total: 10000, accuracy: 0.8055999875, average loss: 0.0046581877
+2022-06-29 18:57:45.697531:
+epoch: 13, train set index: 19, average loss: 1.0146299601
+2022-06-29 18:57:52.086242:
+epoch: 13, train set index: 39, average loss: 0.8927941322
+2022-06-29 18:57:58.453987:
+epoch: 13, train set index: 59, average loss: 0.7844241858
+2022-06-29 18:58:04.791599:
+epoch: 13, train set index: 79, average loss: 0.8520196676
+2022-06-29 18:58:11.131067:
+epoch: 13, train set index: 99, average loss: 0.8447183371
+2022-06-29 18:58:17.495315:
+epoch: 13, train set index: 119, average loss: 0.6312418580
+2022-06-29 18:58:23.835622:
+epoch: 13, train set index: 139, average loss: 1.0609883070
+2022-06-29 18:58:30.226768:
+epoch: 13, train set index: 159, average loss: 0.8461366296
+2022-06-29 18:58:36.563032:
+epoch: 13, train set index: 179, average loss: 0.8489040732
+2022-06-29 18:58:42.905163:
+epoch: 13, train set index: 199, average loss: 1.0051196814
+2022-06-29 18:58:49.221852:
+epoch: 13, train set index: 219, average loss: 0.8061060309
+2022-06-29 18:58:55.538398:
+epoch: 13, train set index: 239, average loss: 0.8172783852
+2022-06-29 18:59:01.862187:
+epoch: 13, train set index: 259, average loss: 0.8646136522
+2022-06-29 18:59:08.256893:
+epoch: 13, train set index: 279, average loss: 0.8211937547
+2022-06-29 18:59:14.580332:
+epoch: 13, train set index: 299, average loss: 0.8231273293
+2022-06-29 18:59:20.919579:
+epoch: 13, train set index: 319, average loss: 0.8043318987
+2022-06-29 18:59:27.276582:
+epoch: 13, train set index: 339, average loss: 0.8729503155
+2022-06-29 18:59:33.623742:
+epoch: 13, train set index: 359, average loss: 0.7778385878
+2022-06-29 18:59:39.984732:
+epoch: 13, train set index: 379, average loss: 0.9636934400
+2022-06-29 18:59:44.050207:
+Epoch 13 finished, average loss: 0.0065373434
+2022-06-29 18:59:44.050382:
+Starting testing
+2022-06-29 18:59:46.666139:
+Correct: 7930, total: 10000, accuracy: 0.7929999828, average loss: 0.0047916323
+2022-06-29 18:59:54.455117:
+epoch: 14, train set index: 19, average loss: 0.9863989949
+2022-06-29 19:00:00.805006:
+epoch: 14, train set index: 39, average loss: 0.8826748133
+2022-06-29 19:00:07.137911:
+epoch: 14, train set index: 59, average loss: 0.6766309142
+2022-06-29 19:00:13.456936:
+epoch: 14, train set index: 79, average loss: 0.9284253120
+2022-06-29 19:00:19.764930:
+epoch: 14, train set index: 99, average loss: 0.6623337865
+2022-06-29 19:00:26.112898:
+epoch: 14, train set index: 119, average loss: 0.8742030263
+2022-06-29 19:00:32.437026:
+epoch: 14, train set index: 139, average loss: 0.8907298446
+2022-06-29 19:00:38.772409:
+epoch: 14, train set index: 159, average loss: 0.9941014647
+2022-06-29 19:00:45.117926:
+epoch: 14, train set index: 179, average loss: 0.7340200543
+2022-06-29 19:00:51.461929:
+epoch: 14, train set index: 199, average loss: 0.6827130318
+2022-06-29 19:00:57.821219:
+epoch: 14, train set index: 219, average loss: 0.7868921161
+2022-06-29 19:01:04.183039:
+epoch: 14, train set index: 239, average loss: 0.8081406951
+2022-06-29 19:01:10.540973:
+epoch: 14, train set index: 259, average loss: 0.8004539609
+2022-06-29 19:01:16.903542:
+epoch: 14, train set index: 279, average loss: 0.7428929210
+2022-06-29 19:01:23.267798:
+epoch: 14, train set index: 299, average loss: 0.7951144576
+2022-06-29 19:01:29.603183:
+epoch: 14, train set index: 319, average loss: 0.9350275993
+2022-06-29 19:01:35.935906:
+epoch: 14, train set index: 339, average loss: 0.7819209099
+2022-06-29 19:01:42.283614:
+epoch: 14, train set index: 359, average loss: 0.7586657405
+2022-06-29 19:01:48.602701:
+epoch: 14, train set index: 379, average loss: 0.9322951436
+2022-06-29 19:01:52.650023:
+Epoch 14 finished, average loss: 0.0063867206
+2022-06-29 19:01:52.650133:
+Starting testing
+2022-06-29 19:01:55.049512:
+Correct: 8084, total: 10000, accuracy: 0.8083999753, average loss: 0.0045284489
+2022-06-29 19:02:02.913520:
+epoch: 15, train set index: 19, average loss: 0.8281233311
+2022-06-29 19:02:09.275057:
+epoch: 15, train set index: 39, average loss: 0.6477113962
+2022-06-29 19:02:15.620420:
+epoch: 15, train set index: 59, average loss: 0.7345788479
+2022-06-29 19:02:21.947442:
+epoch: 15, train set index: 79, average loss: 0.7711292505
+2022-06-29 19:02:28.303135:
+epoch: 15, train set index: 99, average loss: 0.6829894781
+2022-06-29 19:02:34.675337:
+epoch: 15, train set index: 119, average loss: 0.7805042863
+2022-06-29 19:02:41.049117:
+epoch: 15, train set index: 139, average loss: 0.9181626439
+2022-06-29 19:02:47.412788:
+epoch: 15, train set index: 159, average loss: 0.7811731696
+2022-06-29 19:02:53.743911:
+epoch: 15, train set index: 179, average loss: 0.6845716238
+2022-06-29 19:03:00.101918:
+epoch: 15, train set index: 199, average loss: 0.9096549749
+2022-06-29 19:03:06.433831:
+epoch: 15, train set index: 219, average loss: 0.7502422929
+2022-06-29 19:03:12.757436:
+epoch: 15, train set index: 239, average loss: 0.8974231482
+2022-06-29 19:03:19.073538:
+epoch: 15, train set index: 259, average loss: 0.8288955092
+2022-06-29 19:03:25.394136:
+epoch: 15, train set index: 279, average loss: 0.8545133471
+2022-06-29 19:03:31.702068:
+epoch: 15, train set index: 299, average loss: 0.6711218953
+2022-06-29 19:03:38.011853:
+epoch: 15, train set index: 319, average loss: 0.7888407111
+2022-06-29 19:03:44.354183:
+epoch: 15, train set index: 339, average loss: 0.9585037231
+2022-06-29 19:03:50.688504:
+epoch: 15, train set index: 359, average loss: 0.8093101978
+2022-06-29 19:03:57.016526:
+epoch: 15, train set index: 379, average loss: 0.8058257103
+2022-06-29 19:04:01.069865:
+Epoch 15 finished, average loss: 0.0062898868
+2022-06-29 19:04:01.069967:
+Starting testing
+2022-06-29 19:04:03.603622:
+Correct: 8045, total: 10000, accuracy: 0.8044999838, average loss: 0.0045197709
+2022-06-29 19:04:11.434389:
+epoch: 16, train set index: 19, average loss: 0.8021757007
+2022-06-29 19:04:17.808575:
+epoch: 16, train set index: 39, average loss: 0.7368173003
+2022-06-29 19:04:24.164554:
+epoch: 16, train set index: 59, average loss: 0.6661993265
+2022-06-29 19:04:30.512959:
+epoch: 16, train set index: 79, average loss: 0.7322951555
+2022-06-29 19:04:36.858589:
+epoch: 16, train set index: 99, average loss: 0.8384215832
+2022-06-29 19:04:43.196659:
+epoch: 16, train set index: 119, average loss: 0.7318519354
+2022-06-29 19:04:49.528464:
+epoch: 16, train set index: 139, average loss: 0.7005850673
+2022-06-29 19:04:55.851243:
+epoch: 16, train set index: 159, average loss: 0.8582824469
+2022-06-29 19:05:02.187714:
+epoch: 16, train set index: 179, average loss: 0.8465135098
+2022-06-29 19:05:08.515662:
+epoch: 16, train set index: 199, average loss: 0.9321702719
+2022-06-29 19:05:14.856044:
+epoch: 16, train set index: 219, average loss: 0.9369769096
+2022-06-29 19:05:21.197726:
+epoch: 16, train set index: 239, average loss: 0.7897660136
+2022-06-29 19:05:27.558181:
+epoch: 16, train set index: 259, average loss: 0.9934872389
+2022-06-29 19:05:33.898547:
+epoch: 16, train set index: 279, average loss: 0.7565383911
+2022-06-29 19:05:40.224146:
+epoch: 16, train set index: 299, average loss: 0.7988632917
+2022-06-29 19:05:46.569495:
+epoch: 16, train set index: 319, average loss: 0.7782955170
+2022-06-29 19:05:52.901147:
+epoch: 16, train set index: 339, average loss: 0.9354181290
+2022-06-29 19:05:59.232730:
+epoch: 16, train set index: 359, average loss: 0.7307088971
+2022-06-29 19:06:05.599863:
+epoch: 16, train set index: 379, average loss: 0.6752433181
+2022-06-29 19:06:09.672038:
+Epoch 16 finished, average loss: 0.0061902399
+2022-06-29 19:06:09.672145:
+Starting testing
+2022-06-29 19:06:12.114728:
+Correct: 8194, total: 10000, accuracy: 0.8193999529, average loss: 0.0042111436
+2022-06-29 19:06:20.166146:
+epoch: 17, train set index: 19, average loss: 0.7444053292
+2022-06-29 19:06:26.603650:
+epoch: 17, train set index: 39, average loss: 0.6648182273
+2022-06-29 19:06:33.023565:
+epoch: 17, train set index: 59, average loss: 0.6547762156
+2022-06-29 19:06:39.420246:
+epoch: 17, train set index: 79, average loss: 0.7563610077
+2022-06-29 19:06:45.793739:
+epoch: 17, train set index: 99, average loss: 0.7430099249
+2022-06-29 19:06:52.156822:
+epoch: 17, train set index: 119, average loss: 0.7384610772
+2022-06-29 19:06:58.573086:
+epoch: 17, train set index: 139, average loss: 0.7169416547
+2022-06-29 19:07:04.958016:
+epoch: 17, train set index: 159, average loss: 0.9269605875
+2022-06-29 19:07:11.332081:
+epoch: 17, train set index: 179, average loss: 0.6416939497
+2022-06-29 19:07:17.709786:
+epoch: 17, train set index: 199, average loss: 0.8838241696
+2022-06-29 19:07:24.083223:
+epoch: 17, train set index: 219, average loss: 0.6307155490
+2022-06-29 19:07:30.444188:
+epoch: 17, train set index: 239, average loss: 0.8486991525
+2022-06-29 19:07:36.788033:
+epoch: 17, train set index: 259, average loss: 0.6527375579
+2022-06-29 19:07:43.098385:
+epoch: 17, train set index: 279, average loss: 0.9231979847
+2022-06-29 19:07:49.412117:
+epoch: 17, train set index: 299, average loss: 0.7400361300
+2022-06-29 19:07:55.755204:
+epoch: 17, train set index: 319, average loss: 0.8291526437
+2022-06-29 19:08:02.098765:
+epoch: 17, train set index: 339, average loss: 0.7141883969
+2022-06-29 19:08:08.436861:
+epoch: 17, train set index: 359, average loss: 0.8573644161
+2022-06-29 19:08:14.749203:
+epoch: 17, train set index: 379, average loss: 0.7656685114
+2022-06-29 19:08:18.812051:
+Epoch 17 finished, average loss: 0.0060540764
+2022-06-29 19:08:18.812173:
+Starting testing
+2022-06-29 19:08:21.390932:
+Correct: 8048, total: 10000, accuracy: 0.8047999740, average loss: 0.0043814676
+2022-06-29 19:08:29.188609:
+epoch: 18, train set index: 19, average loss: 0.7797831297
+2022-06-29 19:08:35.563605:
+epoch: 18, train set index: 39, average loss: 0.7438910604
+2022-06-29 19:08:41.903154:
+epoch: 18, train set index: 59, average loss: 0.6889408231
+2022-06-29 19:08:48.245839:
+epoch: 18, train set index: 79, average loss: 0.6155911684
+2022-06-29 19:08:54.570485:
+epoch: 18, train set index: 99, average loss: 0.7172462344
+2022-06-29 19:09:00.907235:
+epoch: 18, train set index: 119, average loss: 0.8228164315
+2022-06-29 19:09:07.225004:
+epoch: 18, train set index: 139, average loss: 0.7265097499
+2022-06-29 19:09:13.548716:
+epoch: 18, train set index: 159, average loss: 0.6832956672
+2022-06-29 19:09:19.903473:
+epoch: 18, train set index: 179, average loss: 0.8283503652
+2022-06-29 19:09:26.269834:
+epoch: 18, train set index: 199, average loss: 0.8003355265
+2022-06-29 19:09:32.657506:
+epoch: 18, train set index: 219, average loss: 0.7215005755
+2022-06-29 19:09:39.035557:
+epoch: 18, train set index: 239, average loss: 0.8363720775
+2022-06-29 19:09:45.379072:
+epoch: 18, train set index: 259, average loss: 1.0324981213
+2022-06-29 19:09:51.694290:
+epoch: 18, train set index: 279, average loss: 0.8127468824
+2022-06-29 19:09:57.995812:
+epoch: 18, train set index: 299, average loss: 0.8329029083
+2022-06-29 19:10:04.295442:
+epoch: 18, train set index: 319, average loss: 0.6797479391
+2022-06-29 19:10:10.603095:
+epoch: 18, train set index: 339, average loss: 0.6563152075
+2022-06-29 19:10:16.922092:
+epoch: 18, train set index: 359, average loss: 0.8463050723
+2022-06-29 19:10:23.223219:
+epoch: 18, train set index: 379, average loss: 0.6946733594
+2022-06-29 19:10:27.189429:
+Epoch 18 finished, average loss: 0.0059892200
+2022-06-29 19:10:27.189535:
+Starting testing
+2022-06-29 19:10:29.738178:
+Correct: 8104, total: 10000, accuracy: 0.8104000092, average loss: 0.0043822131
+2022-06-29 19:10:37.565019:
+epoch: 19, train set index: 19, average loss: 0.8574670553
+2022-06-29 19:10:43.935307:
+epoch: 19, train set index: 39, average loss: 0.7816904187
+2022-06-29 19:10:50.287658:
+epoch: 19, train set index: 59, average loss: 0.8256868720
+2022-06-29 19:10:56.636980:
+epoch: 19, train set index: 79, average loss: 0.8153762221
+2022-06-29 19:11:02.999367:
+epoch: 19, train set index: 99, average loss: 0.7721278667
+2022-06-29 19:11:09.379336:
+epoch: 19, train set index: 119, average loss: 0.7784618139
+2022-06-29 19:11:15.749557:
+epoch: 19, train set index: 139, average loss: 0.8052430749
+2022-06-29 19:11:22.117553:
+epoch: 19, train set index: 159, average loss: 0.7380164266
+2022-06-29 19:11:28.487106:
+epoch: 19, train set index: 179, average loss: 0.7861109972
+2022-06-29 19:11:34.818337:
+epoch: 19, train set index: 199, average loss: 0.8359369636
+2022-06-29 19:11:41.175003:
+epoch: 19, train set index: 219, average loss: 0.8490633965
+2022-06-29 19:11:47.497608:
+epoch: 19, train set index: 239, average loss: 0.7571042180
+2022-06-29 19:11:53.859935:
+epoch: 19, train set index: 259, average loss: 0.7213776708
+2022-06-29 19:12:00.199394:
+epoch: 19, train set index: 279, average loss: 0.7365604639
+2022-06-29 19:12:06.539728:
+epoch: 19, train set index: 299, average loss: 0.7323545218
+2022-06-29 19:12:12.908675:
+epoch: 19, train set index: 319, average loss: 0.7934570909
+2022-06-29 19:12:19.216002:
+epoch: 19, train set index: 339, average loss: 0.8499870300
+2022-06-29 19:12:25.512807:
+epoch: 19, train set index: 359, average loss: 0.9504101872
+2022-06-29 19:12:31.856228:
+epoch: 19, train set index: 379, average loss: 0.6202945113
+2022-06-29 19:12:35.896803:
+Epoch 19 finished, average loss: 0.0059612375
+2022-06-29 19:12:35.896917:
+Starting testing
+2022-06-29 19:12:38.389879:
+Correct: 8079, total: 10000, accuracy: 0.8078999519, average loss: 0.0044025844
+2022-06-29 19:12:46.314677:
+epoch: 20, train set index: 19, average loss: 0.6084098816
+2022-06-29 19:12:52.696978:
+epoch: 20, train set index: 39, average loss: 0.7362182140
+2022-06-29 19:12:59.069478:
+epoch: 20, train set index: 59, average loss: 0.7024364471
+2022-06-29 19:13:05.451628:
+epoch: 20, train set index: 79, average loss: 0.8185701966
+2022-06-29 19:13:11.813427:
+epoch: 20, train set index: 99, average loss: 0.7446274757
+2022-06-29 19:13:18.165563:
+epoch: 20, train set index: 119, average loss: 0.8669700623
+2022-06-29 19:13:24.543204:
+epoch: 20, train set index: 139, average loss: 0.7967591286
+2022-06-29 19:13:30.906325:
+epoch: 20, train set index: 159, average loss: 0.6246521473
+2022-06-29 19:13:37.245061:
+epoch: 20, train set index: 179, average loss: 0.7109705210
+2022-06-29 19:13:43.565871:
+epoch: 20, train set index: 199, average loss: 0.7153853178
+2022-06-29 19:13:49.950262:
+epoch: 20, train set index: 219, average loss: 0.6626399159
+2022-06-29 19:13:56.339550:
+epoch: 20, train set index: 239, average loss: 0.6711691618
+2022-06-29 19:14:02.668354:
+epoch: 20, train set index: 259, average loss: 0.8249381781
+2022-06-29 19:14:08.994297:
+epoch: 20, train set index: 279, average loss: 0.6541711092
+2022-06-29 19:14:15.375283:
+epoch: 20, train set index: 299, average loss: 0.8538840413
+2022-06-29 19:14:21.727101:
+epoch: 20, train set index: 319, average loss: 0.7371270657
+2022-06-29 19:14:28.088643:
+epoch: 20, train set index: 339, average loss: 0.7285261750
+2022-06-29 19:14:34.456134:
+epoch: 20, train set index: 359, average loss: 0.7691847682
+2022-06-29 19:14:40.810949:
+epoch: 20, train set index: 379, average loss: 0.6551286578
+2022-06-29 19:14:44.832054:
+Epoch 20 finished, average loss: 0.0058547952
+2022-06-29 19:14:44.832154:
+Starting testing
+2022-06-29 19:14:47.259141:
+Correct: 8211, total: 10000, accuracy: 0.8210999966, average loss: 0.0041599604
+2022-06-29 19:14:55.409624:
+epoch: 21, train set index: 19, average loss: 0.6494895816
+2022-06-29 19:15:01.769023:
+epoch: 21, train set index: 39, average loss: 0.7352305055
+2022-06-29 19:15:08.099331:
+epoch: 21, train set index: 59, average loss: 0.7576490641
+2022-06-29 19:15:14.406931:
+epoch: 21, train set index: 79, average loss: 0.6535933018
+2022-06-29 19:15:20.721865:
+epoch: 21, train set index: 99, average loss: 0.6347557306
+2022-06-29 19:15:27.022625:
+epoch: 21, train set index: 119, average loss: 0.7526116371
+2022-06-29 19:15:33.339894:
+epoch: 21, train set index: 139, average loss: 0.8261783123
+2022-06-29 19:15:39.660988:
+epoch: 21, train set index: 159, average loss: 0.7068526745
+2022-06-29 19:15:46.021612:
+epoch: 21, train set index: 179, average loss: 0.7144137621
+2022-06-29 19:15:52.372746:
+epoch: 21, train set index: 199, average loss: 0.6912963986
+2022-06-29 19:15:58.708414:
+epoch: 21, train set index: 219, average loss: 0.6670498252
+2022-06-29 19:16:05.020542:
+epoch: 21, train set index: 239, average loss: 0.7523230314
+2022-06-29 19:16:11.381715:
+epoch: 21, train set index: 259, average loss: 0.7085888386
+2022-06-29 19:16:17.712937:
+epoch: 21, train set index: 279, average loss: 0.9179860950
+2022-06-29 19:16:24.074949:
+epoch: 21, train set index: 299, average loss: 0.7836980820
+2022-06-29 19:16:30.407897:
+epoch: 21, train set index: 319, average loss: 0.7625544071
+2022-06-29 19:16:36.755813:
+epoch: 21, train set index: 339, average loss: 0.9542644024
+2022-06-29 19:16:43.111283:
+epoch: 21, train set index: 359, average loss: 0.7991223931
+2022-06-29 19:16:49.483203:
+epoch: 21, train set index: 379, average loss: 0.7122074366
+2022-06-29 19:16:53.526533:
+Epoch 21 finished, average loss: 0.0058275205
+2022-06-29 19:16:53.526699:
+Starting testing
+2022-06-29 19:16:55.989901:
+Correct: 8233, total: 10000, accuracy: 0.8233000040, average loss: 0.0041876598
+2022-06-29 19:17:03.873380:
+epoch: 22, train set index: 19, average loss: 0.7348601222
+2022-06-29 19:17:10.223479:
+epoch: 22, train set index: 39, average loss: 0.7795614600
+2022-06-29 19:17:16.611768:
+epoch: 22, train set index: 59, average loss: 0.7911767364
+2022-06-29 19:17:22.976953:
+epoch: 22, train set index: 79, average loss: 0.7336108685
+2022-06-29 19:17:29.340480:
+epoch: 22, train set index: 99, average loss: 0.7783942819
+2022-06-29 19:17:35.696574:
+epoch: 22, train set index: 119, average loss: 0.7993873358
+2022-06-29 19:17:42.053931:
+epoch: 22, train set index: 139, average loss: 0.6939442754
+2022-06-29 19:17:48.418194:
+epoch: 22, train set index: 159, average loss: 0.7144714594
+2022-06-29 19:17:54.788723:
+epoch: 22, train set index: 179, average loss: 0.6544525623
+2022-06-29 19:18:01.124061:
+epoch: 22, train set index: 199, average loss: 0.7619849443
+2022-06-29 19:18:07.454587:
+epoch: 22, train set index: 219, average loss: 0.7191122770
+2022-06-29 19:18:13.795572:
+epoch: 22, train set index: 239, average loss: 0.6940562725
+2022-06-29 19:18:20.116438:
+epoch: 22, train set index: 259, average loss: 0.5939658284
+2022-06-29 19:18:26.443130:
+epoch: 22, train set index: 279, average loss: 0.7512889504
+2022-06-29 19:18:32.767966:
+epoch: 22, train set index: 299, average loss: 0.6433301568
+2022-06-29 19:18:39.076716:
+epoch: 22, train set index: 319, average loss: 0.8814653754
+2022-06-29 19:18:45.396655:
+epoch: 22, train set index: 339, average loss: 0.6740381122
+2022-06-29 19:18:51.754181:
+epoch: 22, train set index: 359, average loss: 0.7071630955
+2022-06-29 19:18:58.130078:
+epoch: 22, train set index: 379, average loss: 0.7323070765
+2022-06-29 19:19:02.184072:
+Epoch 22 finished, average loss: 0.0057680607
+2022-06-29 19:19:02.184224:
+Starting testing
+2022-06-29 19:19:04.649930:
+Correct: 7991, total: 10000, accuracy: 0.7990999818, average loss: 0.0045150872
+2022-06-29 19:19:12.680345:
+epoch: 23, train set index: 19, average loss: 0.6249268651
+2022-06-29 19:19:19.050621:
+epoch: 23, train set index: 39, average loss: 0.6327152252
+2022-06-29 19:19:25.420632:
+epoch: 23, train set index: 59, average loss: 0.7820830345
+2022-06-29 19:19:31.789554:
+epoch: 23, train set index: 79, average loss: 0.6700760722
+2022-06-29 19:19:38.128523:
+epoch: 23, train set index: 99, average loss: 0.6469714046
+2022-06-29 19:19:44.446540:
+epoch: 23, train set index: 119, average loss: 0.7315732241
+2022-06-29 19:19:50.820800:
+epoch: 23, train set index: 139, average loss: 0.7048220634
+2022-06-29 19:19:57.133594:
+epoch: 23, train set index: 159, average loss: 0.7788231373
+2022-06-29 19:20:03.471426:
+epoch: 23, train set index: 179, average loss: 0.7769224048
+2022-06-29 19:20:09.799701:
+epoch: 23, train set index: 199, average loss: 0.7881737947
+2022-06-29 19:20:16.128954:
+epoch: 23, train set index: 219, average loss: 0.7703109980
+2022-06-29 19:20:22.513870:
+epoch: 23, train set index: 239, average loss: 0.8992064595
+2022-06-29 19:20:28.849828:
+epoch: 23, train set index: 259, average loss: 0.9558660984
+2022-06-29 19:20:35.221705:
+epoch: 23, train set index: 279, average loss: 0.5616486073
+2022-06-29 19:20:41.563448:
+epoch: 23, train set index: 299, average loss: 0.8110420704
+2022-06-29 19:20:47.892857:
+epoch: 23, train set index: 319, average loss: 0.7408145666
+2022-06-29 19:20:54.236498:
+epoch: 23, train set index: 339, average loss: 0.8021392226
+2022-06-29 19:21:00.599494:
+epoch: 23, train set index: 359, average loss: 0.7275689840
+2022-06-29 19:21:06.907002:
+epoch: 23, train set index: 379, average loss: 0.9655104876
+2022-06-29 19:21:11.040183:
+Epoch 23 finished, average loss: 0.0057295808
+2022-06-29 19:21:11.040280:
+Starting testing
+2022-06-29 19:21:13.467965:
+Correct: 8256, total: 10000, accuracy: 0.8255999684, average loss: 0.0040483130
+2022-06-29 19:21:21.452564:
+epoch: 24, train set index: 19, average loss: 0.6037974358
+2022-06-29 19:21:27.808981:
+epoch: 24, train set index: 39, average loss: 0.7945292592
+2022-06-29 19:21:34.170811:
+epoch: 24, train set index: 59, average loss: 0.6237566471
+2022-06-29 19:21:40.560501:
+epoch: 24, train set index: 79, average loss: 0.7193921804
+2022-06-29 19:21:46.923676:
+epoch: 24, train set index: 99, average loss: 0.7256218195
+2022-06-29 19:21:53.285402:
+epoch: 24, train set index: 119, average loss: 0.6403819323
+2022-06-29 19:21:59.652553:
+epoch: 24, train set index: 139, average loss: 0.6590825915
+2022-06-29 19:22:05.996980:
+epoch: 24, train set index: 159, average loss: 0.8033814430
+2022-06-29 19:22:12.360841:
+epoch: 24, train set index: 179, average loss: 0.7298072577
+2022-06-29 19:22:18.717061:
+epoch: 24, train set index: 199, average loss: 0.9535721540
+2022-06-29 19:22:25.083570:
+epoch: 24, train set index: 219, average loss: 0.6001748443
+2022-06-29 19:22:31.457030:
+epoch: 24, train set index: 239, average loss: 0.7526461482
+2022-06-29 19:22:37.804502:
+epoch: 24, train set index: 259, average loss: 0.6945691109
+2022-06-29 19:22:44.162625:
+epoch: 24, train set index: 279, average loss: 0.6434667706
+2022-06-29 19:22:50.545441:
+epoch: 24, train set index: 299, average loss: 0.6411455274
+2022-06-29 19:22:56.900154:
+epoch: 24, train set index: 319, average loss: 0.6251299977
+2022-06-29 19:23:03.249558:
+epoch: 24, train set index: 339, average loss: 0.7424338460
+2022-06-29 19:23:09.606973:
+epoch: 24, train set index: 359, average loss: 0.6428424716
+2022-06-29 19:23:15.989839:
+epoch: 24, train set index: 379, average loss: 0.7977561355
+2022-06-29 19:23:20.037046:
+Epoch 24 finished, average loss: 0.0056305551
+2022-06-29 19:23:20.037153:
+Starting testing
+2022-06-29 19:23:22.530674:
+Correct: 8279, total: 10000, accuracy: 0.8278999925, average loss: 0.0040193107
+2022-06-29 19:23:30.512599:
+epoch: 25, train set index: 19, average loss: 0.7623193264
+2022-06-29 19:23:36.880620:
+epoch: 25, train set index: 39, average loss: 0.7501867414
+2022-06-29 19:23:43.254955:
+epoch: 25, train set index: 59, average loss: 0.6568290591
+2022-06-29 19:23:49.628831:
+epoch: 25, train set index: 79, average loss: 0.7198338509
+2022-06-29 19:23:55.941072:
+epoch: 25, train set index: 99, average loss: 0.8010745645
+2022-06-29 19:24:02.260345:
+epoch: 25, train set index: 119, average loss: 0.6695599556
+2022-06-29 19:24:08.581052:
+epoch: 25, train set index: 139, average loss: 0.7943563461
+2022-06-29 19:24:14.901501:
+epoch: 25, train set index: 159, average loss: 0.5329484344
+2022-06-29 19:24:21.246295:
+epoch: 25, train set index: 179, average loss: 0.6833193898
+2022-06-29 19:24:27.621784:
+epoch: 25, train set index: 199, average loss: 0.6316715479
+2022-06-29 19:24:34.027728:
+epoch: 25, train set index: 219, average loss: 0.6668150425
+2022-06-29 19:24:40.411087:
+epoch: 25, train set index: 239, average loss: 0.6577036381
+2022-06-29 19:24:46.762374:
+epoch: 25, train set index: 259, average loss: 0.6831950545
+2022-06-29 19:24:53.107206:
+epoch: 25, train set index: 279, average loss: 0.8231500983
+2022-06-29 19:24:59.470803:
+epoch: 25, train set index: 299, average loss: 0.5290431380
+2022-06-29 19:25:05.807970:
+epoch: 25, train set index: 319, average loss: 0.6754426956
+2022-06-29 19:25:12.160087:
+epoch: 25, train set index: 339, average loss: 0.7608701587
+2022-06-29 19:25:18.539568:
+epoch: 25, train set index: 359, average loss: 0.8161129951
+2022-06-29 19:25:24.905288:
+epoch: 25, train set index: 379, average loss: 0.6332722306
+2022-06-29 19:25:29.006897:
+Epoch 25 finished, average loss: 0.0055692215
+2022-06-29 19:25:29.007028:
+Starting testing
+2022-06-29 19:25:31.676347:
+Correct: 8260, total: 10000, accuracy: 0.8259999752, average loss: 0.0039878716
+2022-06-29 19:25:39.538757:
+epoch: 26, train set index: 19, average loss: 0.6587509513
+2022-06-29 19:25:45.901638:
+epoch: 26, train set index: 39, average loss: 0.8213551044
+2022-06-29 19:25:52.271194:
+epoch: 26, train set index: 59, average loss: 0.7041561007
+2022-06-29 19:25:58.651542:
+epoch: 26, train set index: 79, average loss: 0.9310798645
+2022-06-29 19:26:04.984850:
+epoch: 26, train set index: 99, average loss: 0.5869151950
+2022-06-29 19:26:11.326584:
+epoch: 26, train set index: 119, average loss: 0.5719403625
+2022-06-29 19:26:17.680590:
+epoch: 26, train set index: 139, average loss: 0.6190829277
+2022-06-29 19:26:24.017949:
+epoch: 26, train set index: 159, average loss: 0.7521087527
+2022-06-29 19:26:30.361034:
+epoch: 26, train set index: 179, average loss: 0.6720562577
+2022-06-29 19:26:36.707165:
+epoch: 26, train set index: 199, average loss: 0.7151316404
+2022-06-29 19:26:43.064400:
+epoch: 26, train set index: 219, average loss: 0.6334685683
+2022-06-29 19:26:49.405852:
+epoch: 26, train set index: 239, average loss: 0.7338390946
+2022-06-29 19:26:55.752963:
+epoch: 26, train set index: 259, average loss: 0.7581455708
+2022-06-29 19:27:02.097605:
+epoch: 26, train set index: 279, average loss: 0.8181835413
+2022-06-29 19:27:08.433225:
+epoch: 26, train set index: 299, average loss: 0.7037811279
+2022-06-29 19:27:14.771920:
+epoch: 26, train set index: 319, average loss: 0.6005220413
+2022-06-29 19:27:21.114178:
+epoch: 26, train set index: 339, average loss: 0.8487604856
+2022-06-29 19:27:27.448517:
+epoch: 26, train set index: 359, average loss: 0.8047726154
+2022-06-29 19:27:33.796900:
+epoch: 26, train set index: 379, average loss: 0.6764754653
+2022-06-29 19:27:37.864742:
+Epoch 26 finished, average loss: 0.0055752969
+2022-06-29 19:27:37.864853:
+Starting testing
+2022-06-29 19:27:40.362700:
+Correct: 8334, total: 10000, accuracy: 0.8333999515, average loss: 0.0039289263
+2022-06-29 19:27:48.350338:
+epoch: 27, train set index: 19, average loss: 0.5855206251
+2022-06-29 19:27:54.707229:
+epoch: 27, train set index: 39, average loss: 0.7910300493
+2022-06-29 19:28:01.054505:
+epoch: 27, train set index: 59, average loss: 0.6414032578
+2022-06-29 19:28:07.397730:
+epoch: 27, train set index: 79, average loss: 0.5944716334
+2022-06-29 19:28:13.731099:
+epoch: 27, train set index: 99, average loss: 0.7161817551
+2022-06-29 19:28:20.045008:
+epoch: 27, train set index: 119, average loss: 0.8028390408
+2022-06-29 19:28:26.358858:
+epoch: 27, train set index: 139, average loss: 0.6778076291
+2022-06-29 19:28:32.666070:
+epoch: 27, train set index: 159, average loss: 0.8155516386
+2022-06-29 19:28:39.006399:
+epoch: 27, train set index: 179, average loss: 0.7078576088
+2022-06-29 19:28:45.362929:
+epoch: 27, train set index: 199, average loss: 0.6324604750
+2022-06-29 19:28:51.742599:
+epoch: 27, train set index: 219, average loss: 0.8336113691
+2022-06-29 19:28:58.125531:
+epoch: 27, train set index: 239, average loss: 0.7977190614
+2022-06-29 19:29:04.498610:
+epoch: 27, train set index: 259, average loss: 0.6721104980
+2022-06-29 19:29:10.875232:
+epoch: 27, train set index: 279, average loss: 0.8404473662
+2022-06-29 19:29:17.253946:
+epoch: 27, train set index: 299, average loss: 0.6930266619
+2022-06-29 19:29:23.618487:
+epoch: 27, train set index: 319, average loss: 0.6263722777
+2022-06-29 19:29:29.973913:
+epoch: 27, train set index: 339, average loss: 0.6429579854
+2022-06-29 19:29:36.328273:
+epoch: 27, train set index: 359, average loss: 0.6934717894
+2022-06-29 19:29:42.683898:
+epoch: 27, train set index: 379, average loss: 0.7475777864
+2022-06-29 19:29:46.784490:
+Epoch 27 finished, average loss: 0.0055112559
+2022-06-29 19:29:46.784593:
+Starting testing
+2022-06-29 19:29:49.285801:
+Correct: 8354, total: 10000, accuracy: 0.8353999853, average loss: 0.0038960495
+2022-06-29 19:29:57.244639:
+epoch: 28, train set index: 19, average loss: 0.7329860330
+2022-06-29 19:30:03.654583:
+epoch: 28, train set index: 39, average loss: 0.7011092305
+2022-06-29 19:30:10.069778:
+epoch: 28, train set index: 59, average loss: 0.6315634251
+2022-06-29 19:30:16.454122:
+epoch: 28, train set index: 79, average loss: 0.6444203854
+2022-06-29 19:30:22.830351:
+epoch: 28, train set index: 99, average loss: 0.8172134757
+2022-06-29 19:30:29.211908:
+epoch: 28, train set index: 119, average loss: 0.6590916514
+2022-06-29 19:30:35.609045:
+epoch: 28, train set index: 139, average loss: 0.7487432957
+2022-06-29 19:30:41.964867:
+epoch: 28, train set index: 159, average loss: 0.7712618709
+2022-06-29 19:30:48.309771:
+epoch: 28, train set index: 179, average loss: 0.7700085640
+2022-06-29 19:30:54.669283:
+epoch: 28, train set index: 199, average loss: 0.6833348274
+2022-06-29 19:31:01.017973:
+epoch: 28, train set index: 219, average loss: 0.5964868069
+2022-06-29 19:31:07.338064:
+epoch: 28, train set index: 239, average loss: 0.7347783446
+2022-06-29 19:31:13.661269:
+epoch: 28, train set index: 259, average loss: 0.5587539673
+2022-06-29 19:31:20.009648:
+epoch: 28, train set index: 279, average loss: 0.7440271378
+2022-06-29 19:31:26.344862:
+epoch: 28, train set index: 299, average loss: 0.7774815559
+2022-06-29 19:31:32.660355:
+epoch: 28, train set index: 319, average loss: 0.7143852711
+2022-06-29 19:31:38.986716:
+epoch: 28, train set index: 339, average loss: 0.6665064692
+2022-06-29 19:31:45.319352:
+epoch: 28, train set index: 359, average loss: 0.6190135479
+2022-06-29 19:31:51.667722:
+epoch: 28, train set index: 379, average loss: 0.6730965376
+2022-06-29 19:31:55.783579:
+Epoch 28 finished, average loss: 0.0054393378
+2022-06-29 19:31:55.783682:
+Starting testing
+2022-06-29 19:31:58.382047:
+Correct: 8348, total: 10000, accuracy: 0.8348000050, average loss: 0.0038645419
+2022-06-29 19:32:06.286840:
+epoch: 29, train set index: 19, average loss: 0.6638354659
+2022-06-29 19:32:12.671023:
+epoch: 29, train set index: 39, average loss: 0.5924600363
+2022-06-29 19:32:19.067591:
+epoch: 29, train set index: 59, average loss: 0.5263860226
+2022-06-29 19:32:25.423881:
+epoch: 29, train set index: 79, average loss: 0.7777313590
+2022-06-29 19:32:31.744588:
+epoch: 29, train set index: 99, average loss: 0.7132896185
+2022-06-29 19:32:38.087439:
+epoch: 29, train set index: 119, average loss: 0.7807785869
+2022-06-29 19:32:44.417523:
+epoch: 29, train set index: 139, average loss: 0.5669722557
+2022-06-29 19:32:50.739577:
+epoch: 29, train set index: 159, average loss: 0.8436362743
+2022-06-29 19:32:57.098184:
+epoch: 29, train set index: 179, average loss: 0.7568925023
+2022-06-29 19:33:03.464122:
+epoch: 29, train set index: 199, average loss: 0.6084142923
+2022-06-29 19:33:09.824847:
+epoch: 29, train set index: 219, average loss: 0.6697919369
+2022-06-29 19:33:16.191172:
+epoch: 29, train set index: 239, average loss: 0.9127787352
+2022-06-29 19:33:22.546714:
+epoch: 29, train set index: 259, average loss: 0.6329736710
+2022-06-29 19:33:28.857909:
+epoch: 29, train set index: 279, average loss: 0.5939050913
+2022-06-29 19:33:35.222161:
+epoch: 29, train set index: 299, average loss: 0.7609303594
+2022-06-29 19:33:41.588223:
+epoch: 29, train set index: 319, average loss: 0.6243031025
+2022-06-29 19:33:47.956828:
+epoch: 29, train set index: 339, average loss: 0.6858916879
+2022-06-29 19:33:54.316348:
+epoch: 29, train set index: 359, average loss: 0.7565271258
+2022-06-29 19:34:00.695812:
+epoch: 29, train set index: 379, average loss: 0.8333042860
+2022-06-29 19:34:04.769207:
+Epoch 29 finished, average loss: 0.0054151649
+2022-06-29 19:34:04.769317:
+Starting testing
+2022-06-29 19:34:07.285227:
+Correct: 8372, total: 10000, accuracy: 0.8371999860, average loss: 0.0037798674
+2022-06-29 19:34:15.349217:
+epoch: 30, train set index: 19, average loss: 0.7802686095
+2022-06-29 19:34:21.763097:
+epoch: 30, train set index: 39, average loss: 0.5731010437
+2022-06-29 19:34:28.118818:
+epoch: 30, train set index: 59, average loss: 0.6406697631
+2022-06-29 19:34:34.480856:
+epoch: 30, train set index: 79, average loss: 0.6355023980
+2022-06-29 19:34:40.849061:
+epoch: 30, train set index: 99, average loss: 0.6452579498
+2022-06-29 19:34:47.203008:
+epoch: 30, train set index: 119, average loss: 0.6805352569
+2022-06-29 19:34:53.568947:
+epoch: 30, train set index: 139, average loss: 0.6806684732
+2022-06-29 19:34:59.914904:
+epoch: 30, train set index: 159, average loss: 0.6443713307
+2022-06-29 19:35:06.308359:
+epoch: 30, train set index: 179, average loss: 0.7017311454
+2022-06-29 19:35:12.701415:
+epoch: 30, train set index: 199, average loss: 0.6355051398
+2022-06-29 19:35:19.079506:
+epoch: 30, train set index: 219, average loss: 0.8577292562
+2022-06-29 19:35:25.434425:
+epoch: 30, train set index: 239, average loss: 0.6020460129
+2022-06-29 19:35:31.828724:
+epoch: 30, train set index: 259, average loss: 0.6742553115
+2022-06-29 19:35:38.210315:
+epoch: 30, train set index: 279, average loss: 0.7236726880
+2022-06-29 19:35:44.577374:
+epoch: 30, train set index: 299, average loss: 0.6315655112
+2022-06-29 19:35:50.931029:
+epoch: 30, train set index: 319, average loss: 0.6262640953
+2022-06-29 19:35:57.295543:
+epoch: 30, train set index: 339, average loss: 0.6177722216
+2022-06-29 19:36:03.651006:
+epoch: 30, train set index: 359, average loss: 0.7310447693
+2022-06-29 19:36:09.976322:
+epoch: 30, train set index: 379, average loss: 0.6894364357
+2022-06-29 19:36:14.015898:
+Epoch 30 finished, average loss: 0.0054013510
+2022-06-29 19:36:14.016034:
+Starting testing
+2022-06-29 19:36:16.477885:
+Correct: 8419, total: 10000, accuracy: 0.8418999910, average loss: 0.0036945906
+2022-06-29 19:36:24.693623:
+epoch: 31, train set index: 19, average loss: 0.5935586095
+2022-06-29 19:36:31.069501:
+epoch: 31, train set index: 39, average loss: 0.6544058323
+2022-06-29 19:36:37.449576:
+epoch: 31, train set index: 59, average loss: 0.7198277116
+2022-06-29 19:36:43.831836:
+epoch: 31, train set index: 79, average loss: 0.6845057607
+2022-06-29 19:36:50.205842:
+epoch: 31, train set index: 99, average loss: 0.7410714030
+2022-06-29 19:36:56.548241:
+epoch: 31, train set index: 119, average loss: 0.5852139592
+2022-06-29 19:37:02.881112:
+epoch: 31, train set index: 139, average loss: 0.7329418063
+2022-06-29 19:37:09.225393:
+epoch: 31, train set index: 159, average loss: 0.8062279224
+2022-06-29 19:37:15.552819:
+epoch: 31, train set index: 179, average loss: 0.6525235772
+2022-06-29 19:37:21.902836:
+epoch: 31, train set index: 199, average loss: 0.8282816410
+2022-06-29 19:37:28.243902:
+epoch: 31, train set index: 219, average loss: 0.6820897460
+2022-06-29 19:37:34.602815:
+epoch: 31, train set index: 239, average loss: 0.7250971794
+2022-06-29 19:37:40.958284:
+epoch: 31, train set index: 259, average loss: 0.6747388244
+2022-06-29 19:37:47.305396:
+epoch: 31, train set index: 279, average loss: 0.5551002026
+2022-06-29 19:37:53.653185:
+epoch: 31, train set index: 299, average loss: 0.6345050335
+2022-06-29 19:38:00.007380:
+epoch: 31, train set index: 319, average loss: 0.7203668356
+2022-06-29 19:38:06.360083:
+epoch: 31, train set index: 339, average loss: 0.6923254728
+2022-06-29 19:38:12.703978:
+epoch: 31, train set index: 359, average loss: 0.8946733475
+2022-06-29 19:38:19.022183:
+epoch: 31, train set index: 379, average loss: 0.8013603687
+2022-06-29 19:38:23.078052:
+Epoch 31 finished, average loss: 0.0053448570
+2022-06-29 19:38:23.078161:
+Starting testing
+2022-06-29 19:38:25.579626:
+Correct: 8427, total: 10000, accuracy: 0.8427000046, average loss: 0.0036645972
+2022-06-29 19:38:33.782141:
+epoch: 32, train set index: 19, average loss: 0.6044996977
+2022-06-29 19:38:40.179249:
+epoch: 32, train set index: 39, average loss: 0.6080245376
+2022-06-29 19:38:46.572267:
+epoch: 32, train set index: 59, average loss: 0.6252011657
+2022-06-29 19:38:52.987117:
+epoch: 32, train set index: 79, average loss: 0.5984486938
+2022-06-29 19:38:59.342758:
+epoch: 32, train set index: 99, average loss: 0.6806209683
+2022-06-29 19:39:05.684363:
+epoch: 32, train set index: 119, average loss: 0.7924433351
+2022-06-29 19:39:12.068662:
+epoch: 32, train set index: 139, average loss: 0.8572089076
+2022-06-29 19:39:18.464590:
+epoch: 32, train set index: 159, average loss: 0.5257482529
+2022-06-29 19:39:24.813940:
+epoch: 32, train set index: 179, average loss: 0.7019238472
+2022-06-29 19:39:31.163666:
+epoch: 32, train set index: 199, average loss: 0.6140393615
+2022-06-29 19:39:37.505846:
+epoch: 32, train set index: 219, average loss: 0.6919545531
+2022-06-29 19:39:43.843567:
+epoch: 32, train set index: 239, average loss: 0.7496064901
+2022-06-29 19:39:50.165751:
+epoch: 32, train set index: 259, average loss: 0.6701701880
+2022-06-29 19:39:56.492147:
+epoch: 32, train set index: 279, average loss: 0.7541958690
+2022-06-29 19:40:02.855553:
+epoch: 32, train set index: 299, average loss: 0.6739470959
+2022-06-29 19:40:09.211932:
+epoch: 32, train set index: 319, average loss: 0.6804426312
+2022-06-29 19:40:15.612114:
+epoch: 32, train set index: 339, average loss: 0.9222853780
+2022-06-29 19:40:21.964787:
+epoch: 32, train set index: 359, average loss: 0.8110630512
+2022-06-29 19:40:28.287466:
+epoch: 32, train set index: 379, average loss: 0.5674015880
+2022-06-29 19:40:32.316184:
+Epoch 32 finished, average loss: 0.0053152386
+2022-06-29 19:40:32.316284:
+Starting testing
+2022-06-29 19:40:35.056231:
+Correct: 8316, total: 10000, accuracy: 0.8315999508, average loss: 0.0038360625
+2022-06-29 19:40:42.827247:
+epoch: 33, train set index: 19, average loss: 0.6349560022
+2022-06-29 19:40:49.218866:
+epoch: 33, train set index: 39, average loss: 0.7504394650
+2022-06-29 19:40:55.587936:
+epoch: 33, train set index: 59, average loss: 0.5952351093
+2022-06-29 19:41:01.960944:
+epoch: 33, train set index: 79, average loss: 0.6694296002
+2022-06-29 19:41:08.332869:
+epoch: 33, train set index: 99, average loss: 0.6584879756
+2022-06-29 19:41:14.698954:
+epoch: 33, train set index: 119, average loss: 0.8053047657
+2022-06-29 19:41:21.033995:
+epoch: 33, train set index: 139, average loss: 0.7275664806
+2022-06-29 19:41:27.373186:
+epoch: 33, train set index: 159, average loss: 0.5768069625
+2022-06-29 19:41:33.679793:
+epoch: 33, train set index: 179, average loss: 0.6693216562
+2022-06-29 19:41:39.991222:
+epoch: 33, train set index: 199, average loss: 0.7217217088
+2022-06-29 19:41:46.352240:
+epoch: 33, train set index: 219, average loss: 0.6835742593
+2022-06-29 19:41:52.678698:
+epoch: 33, train set index: 239, average loss: 0.6546873450
+2022-06-29 19:41:59.002676:
+epoch: 33, train set index: 259, average loss: 0.7066503763
+2022-06-29 19:42:05.327393:
+epoch: 33, train set index: 279, average loss: 0.6980466843
+2022-06-29 19:42:11.660715:
+epoch: 33, train set index: 299, average loss: 0.6909945607
+2022-06-29 19:42:18.010145:
+epoch: 33, train set index: 319, average loss: 0.7179149389
+2022-06-29 19:42:24.383186:
+epoch: 33, train set index: 339, average loss: 0.7649831772
+2022-06-29 19:42:30.740271:
+epoch: 33, train set index: 359, average loss: 0.6132897139
+2022-06-29 19:42:37.127515:
+epoch: 33, train set index: 379, average loss: 0.7147945762
+2022-06-29 19:42:41.183476:
+Epoch 33 finished, average loss: 0.0053068618
+2022-06-29 19:42:41.183625:
+Starting testing
+2022-06-29 19:42:43.800825:
+Correct: 8424, total: 10000, accuracy: 0.8423999548, average loss: 0.0037169666
+2022-06-29 19:42:51.647801:
+epoch: 34, train set index: 19, average loss: 0.5373892188
+2022-06-29 19:42:57.982641:
+epoch: 34, train set index: 39, average loss: 0.6273390055
+2022-06-29 19:43:04.295570:
+epoch: 34, train set index: 59, average loss: 0.7960531712
+2022-06-29 19:43:10.668187:
+epoch: 34, train set index: 79, average loss: 0.6764864326
+2022-06-29 19:43:17.033799:
+epoch: 34, train set index: 99, average loss: 0.7484611273
+2022-06-29 19:43:23.399659:
+epoch: 34, train set index: 119, average loss: 0.6457082629
+2022-06-29 19:43:29.769691:
+epoch: 34, train set index: 139, average loss: 0.5219072700
+2022-06-29 19:43:36.119797:
+epoch: 34, train set index: 159, average loss: 0.5791533589
+2022-06-29 19:43:42.451860:
+epoch: 34, train set index: 179, average loss: 0.6784701943
+2022-06-29 19:43:48.759801:
+epoch: 34, train set index: 199, average loss: 0.5897145271
+2022-06-29 19:43:55.083669:
+epoch: 34, train set index: 219, average loss: 0.7769411206
+2022-06-29 19:44:01.412005:
+epoch: 34, train set index: 239, average loss: 0.7550294399
+2022-06-29 19:44:07.778791:
+epoch: 34, train set index: 259, average loss: 0.6613621116
+2022-06-29 19:44:14.115063:
+epoch: 34, train set index: 279, average loss: 0.6273455620
+2022-06-29 19:44:20.483299:
+epoch: 34, train set index: 299, average loss: 0.5394394398
+2022-06-29 19:44:26.850765:
+epoch: 34, train set index: 319, average loss: 0.7773566842
+2022-06-29 19:44:33.182545:
+epoch: 34, train set index: 339, average loss: 0.6416946054
+2022-06-29 19:44:39.499991:
+epoch: 34, train set index: 359, average loss: 0.4823758304
+2022-06-29 19:44:45.796997:
+epoch: 34, train set index: 379, average loss: 0.7590801716
+2022-06-29 19:44:49.803674:
+Epoch 34 finished, average loss: 0.0052533676
+2022-06-29 19:44:49.803811:
+Starting testing
+2022-06-29 19:44:52.425644:
+Correct: 8409, total: 10000, accuracy: 0.8409000039, average loss: 0.0036864681
+2022-06-29 19:45:00.217304:
+epoch: 35, train set index: 19, average loss: 0.6593790650
+2022-06-29 19:45:06.620120:
+epoch: 35, train set index: 39, average loss: 0.5588117838
+2022-06-29 19:45:13.026494:
+epoch: 35, train set index: 59, average loss: 0.5227121115
+2022-06-29 19:45:19.411358:
+epoch: 35, train set index: 79, average loss: 0.7801868320
+2022-06-29 19:45:25.792458:
+epoch: 35, train set index: 99, average loss: 0.8810532689
+2022-06-29 19:45:32.149092:
+epoch: 35, train set index: 119, average loss: 0.7376298308
+2022-06-29 19:45:38.517127:
+epoch: 35, train set index: 139, average loss: 0.7250369787
+2022-06-29 19:45:44.879285:
+epoch: 35, train set index: 159, average loss: 0.7745123506
+2022-06-29 19:45:51.213182:
+epoch: 35, train set index: 179, average loss: 0.7180787921
+2022-06-29 19:45:57.530812:
+epoch: 35, train set index: 199, average loss: 0.7821078300
+2022-06-29 19:46:03.834446:
+epoch: 35, train set index: 219, average loss: 0.6228449941
+2022-06-29 19:46:10.144434:
+epoch: 35, train set index: 239, average loss: 0.7665908337
+2022-06-29 19:46:16.481519:
+epoch: 35, train set index: 259, average loss: 0.7826911807
+2022-06-29 19:46:22.794632:
+epoch: 35, train set index: 279, average loss: 0.5803201199
+2022-06-29 19:46:29.120622:
+epoch: 35, train set index: 299, average loss: 0.7407119870
+2022-06-29 19:46:35.430759:
+epoch: 35, train set index: 319, average loss: 0.6830075383
+2022-06-29 19:46:41.756660:
+epoch: 35, train set index: 339, average loss: 0.9076350927
+2022-06-29 19:46:48.125000:
+epoch: 35, train set index: 359, average loss: 0.5232280493
+2022-06-29 19:46:54.543781:
+epoch: 35, train set index: 379, average loss: 0.6468998790
+2022-06-29 19:46:58.588754:
+Epoch 35 finished, average loss: 0.0052293781
+2022-06-29 19:46:58.588876:
+Starting testing
+2022-06-29 19:47:01.066424:
+Correct: 8279, total: 10000, accuracy: 0.8278999925, average loss: 0.0039272271
+2022-06-29 19:47:09.017785:
+epoch: 36, train set index: 19, average loss: 0.8050169945
+2022-06-29 19:47:15.395665:
+epoch: 36, train set index: 39, average loss: 0.7374545336
+2022-06-29 19:47:21.755753:
+epoch: 36, train set index: 59, average loss: 0.5504142046
+2022-06-29 19:47:28.062139:
+epoch: 36, train set index: 79, average loss: 0.5768620968
+2022-06-29 19:47:34.386014:
+epoch: 36, train set index: 99, average loss: 0.7108606696
+2022-06-29 19:47:40.726928:
+epoch: 36, train set index: 119, average loss: 1.0018125772
+2022-06-29 19:47:47.078984:
+epoch: 36, train set index: 139, average loss: 0.8632161617
+2022-06-29 19:47:53.416719:
+epoch: 36, train set index: 159, average loss: 0.5801225901
+2022-06-29 19:47:59.759415:
+epoch: 36, train set index: 179, average loss: 0.6961532831
+2022-06-29 19:48:06.115905:
+epoch: 36, train set index: 199, average loss: 0.6117620468
+2022-06-29 19:48:12.432975:
+epoch: 36, train set index: 219, average loss: 0.5302011371
+2022-06-29 19:48:18.755405:
+epoch: 36, train set index: 239, average loss: 0.7078813910
+2022-06-29 19:48:25.084164:
+epoch: 36, train set index: 259, average loss: 0.7970089316
+2022-06-29 19:48:31.414190:
+epoch: 36, train set index: 279, average loss: 0.5836246014
+2022-06-29 19:48:37.732875:
+epoch: 36, train set index: 299, average loss: 0.6697449088
+2022-06-29 19:48:44.076399:
+epoch: 36, train set index: 319, average loss: 0.5876061320
+2022-06-29 19:48:50.433716:
+epoch: 36, train set index: 339, average loss: 0.6567797661
+2022-06-29 19:48:56.821634:
+epoch: 36, train set index: 359, average loss: 0.8495051265
+2022-06-29 19:49:03.204481:
+epoch: 36, train set index: 379, average loss: 0.6721671820
+2022-06-29 19:49:07.270022:
+Epoch 36 finished, average loss: 0.0052334629
+2022-06-29 19:49:07.270180:
+Starting testing
+2022-06-29 19:49:09.932231:
+Correct: 8389, total: 10000, accuracy: 0.8388999701, average loss: 0.0037359495
+2022-06-29 19:49:17.733835:
+epoch: 37, train set index: 19, average loss: 0.6250522137
+2022-06-29 19:49:24.160899:
+epoch: 37, train set index: 39, average loss: 0.5974541306
+2022-06-29 19:49:30.545939:
+epoch: 37, train set index: 59, average loss: 0.6774842143
+2022-06-29 19:49:36.939373:
+epoch: 37, train set index: 79, average loss: 0.5935875177
+2022-06-29 19:49:43.309794:
+epoch: 37, train set index: 99, average loss: 0.5476579070
+2022-06-29 19:49:49.675276:
+epoch: 37, train set index: 119, average loss: 0.7166047096
+2022-06-29 19:49:56.036731:
+epoch: 37, train set index: 139, average loss: 0.6979905367
+2022-06-29 19:50:02.395165:
+epoch: 37, train set index: 159, average loss: 0.7029770017
+2022-06-29 19:50:08.766480:
+epoch: 37, train set index: 179, average loss: 0.8574512005
+2022-06-29 19:50:15.106540:
+epoch: 37, train set index: 199, average loss: 0.6707481742
+2022-06-29 19:50:21.443816:
+epoch: 37, train set index: 219, average loss: 0.5560454726
+2022-06-29 19:50:27.810928:
+epoch: 37, train set index: 239, average loss: 0.8260600567
+2022-06-29 19:50:34.169011:
+epoch: 37, train set index: 259, average loss: 0.8531299829
+2022-06-29 19:50:40.508509:
+epoch: 37, train set index: 279, average loss: 0.6817608476
+2022-06-29 19:50:46.843043:
+epoch: 37, train set index: 299, average loss: 0.7087991238
+2022-06-29 19:50:53.182723:
+epoch: 37, train set index: 319, average loss: 0.7413368821
+2022-06-29 19:50:59.549219:
+epoch: 37, train set index: 339, average loss: 0.7442571521
+2022-06-29 19:51:05.919070:
+epoch: 37, train set index: 359, average loss: 0.6327808499
+2022-06-29 19:51:12.267915:
+epoch: 37, train set index: 379, average loss: 0.8631935716
+2022-06-29 19:51:16.296031:
+Epoch 37 finished, average loss: 0.0051648454
+2022-06-29 19:51:16.296134:
+Starting testing
+2022-06-29 19:51:18.835375:
+Correct: 8367, total: 10000, accuracy: 0.8366999626, average loss: 0.0039083054
+2022-06-29 19:51:26.778644:
+epoch: 38, train set index: 19, average loss: 0.5615355968
+2022-06-29 19:51:33.230565:
+epoch: 38, train set index: 39, average loss: 0.5246005654
+2022-06-29 19:51:39.639254:
+epoch: 38, train set index: 59, average loss: 0.5575708747
+2022-06-29 19:51:46.031951:
+epoch: 38, train set index: 79, average loss: 0.6481470466
+2022-06-29 19:51:52.430560:
+epoch: 38, train set index: 99, average loss: 0.6955757141
+2022-06-29 19:51:58.819078:
+epoch: 38, train set index: 119, average loss: 0.6801812649
+2022-06-29 19:52:05.227328:
+epoch: 38, train set index: 139, average loss: 0.6604625583
+2022-06-29 19:52:11.618524:
+epoch: 38, train set index: 159, average loss: 0.6520150304
+2022-06-29 19:52:17.997068:
+epoch: 38, train set index: 179, average loss: 0.6841652989
+2022-06-29 19:52:24.358649:
+epoch: 38, train set index: 199, average loss: 0.6461529136
+2022-06-29 19:52:30.734441:
+epoch: 38, train set index: 219, average loss: 0.6126251817
+2022-06-29 19:52:37.099709:
+epoch: 38, train set index: 239, average loss: 0.7708482146
+2022-06-29 19:52:43.486438:
+epoch: 38, train set index: 259, average loss: 0.7212680578
+2022-06-29 19:52:49.859202:
+epoch: 38, train set index: 279, average loss: 0.6271843910
+2022-06-29 19:52:56.220596:
+epoch: 38, train set index: 299, average loss: 0.8092554808
+2022-06-29 19:53:02.594533:
+epoch: 38, train set index: 319, average loss: 0.6109439135
+2022-06-29 19:53:08.979459:
+epoch: 38, train set index: 339, average loss: 0.7263262272
+2022-06-29 19:53:15.334286:
+epoch: 38, train set index: 359, average loss: 0.6094176769
+2022-06-29 19:53:21.676381:
+epoch: 38, train set index: 379, average loss: 0.7289271951
+2022-06-29 19:53:25.755910:
+Epoch 38 finished, average loss: 0.0051431959
+2022-06-29 19:53:25.756014:
+Starting testing
+2022-06-29 19:53:28.366872:
+Correct: 8387, total: 10000, accuracy: 0.8386999965, average loss: 0.0036760948
+2022-06-29 19:53:36.214720:
+epoch: 39, train set index: 19, average loss: 0.6074612737
+2022-06-29 19:53:42.568211:
+epoch: 39, train set index: 39, average loss: 0.6079404950
+2022-06-29 19:53:48.915448:
+epoch: 39, train set index: 59, average loss: 0.5006906390
+2022-06-29 19:53:55.258033:
+epoch: 39, train set index: 79, average loss: 0.6645740867
+2022-06-29 19:54:01.595380:
+epoch: 39, train set index: 99, average loss: 0.5291419029
+2022-06-29 19:54:07.927480:
+epoch: 39, train set index: 119, average loss: 0.6412222385
+2022-06-29 19:54:14.269838:
+epoch: 39, train set index: 139, average loss: 0.6937987804
+2022-06-29 19:54:20.624106:
+epoch: 39, train set index: 159, average loss: 0.6257690191
+2022-06-29 19:54:26.972775:
+epoch: 39, train set index: 179, average loss: 0.8601095080
+2022-06-29 19:54:33.328712:
+epoch: 39, train set index: 199, average loss: 0.7929944396
+2022-06-29 19:54:39.672288:
+epoch: 39, train set index: 219, average loss: 0.6500701904
+2022-06-29 19:54:46.016519:
+epoch: 39, train set index: 239, average loss: 0.5876883268
+2022-06-29 19:54:52.357711:
+epoch: 39, train set index: 259, average loss: 0.6831476092
+2022-06-29 19:54:58.692366:
+epoch: 39, train set index: 279, average loss: 0.7128316164
+2022-06-29 19:55:05.044158:
+epoch: 39, train set index: 299, average loss: 0.7118779421
+2022-06-29 19:55:11.399773:
+epoch: 39, train set index: 319, average loss: 0.5703671575
+2022-06-29 19:55:17.735915:
+epoch: 39, train set index: 339, average loss: 0.6671640277
+2022-06-29 19:55:24.089945:
+epoch: 39, train set index: 359, average loss: 0.6326665878
+2022-06-29 19:55:30.460366:
+epoch: 39, train set index: 379, average loss: 0.6536756754
+2022-06-29 19:55:34.542290:
+Epoch 39 finished, average loss: 0.0051307254
+2022-06-29 19:55:34.542393:
+Starting testing
+2022-06-29 19:55:37.276796:
+Correct: 8361, total: 10000, accuracy: 0.8360999823, average loss: 0.0037483429
+2022-06-29 19:55:45.097970:
+epoch: 40, train set index: 19, average loss: 0.6922736168
+2022-06-29 19:55:51.520390:
+epoch: 40, train set index: 39, average loss: 0.6250151992
+2022-06-29 19:55:57.953451:
+epoch: 40, train set index: 59, average loss: 0.5976135731
+2022-06-29 19:56:04.353913:
+epoch: 40, train set index: 79, average loss: 0.8499917984
+2022-06-29 19:56:10.731318:
+epoch: 40, train set index: 99, average loss: 0.5860292315
+2022-06-29 19:56:17.106535:
+epoch: 40, train set index: 119, average loss: 0.7028887868
+2022-06-29 19:56:23.491365:
+epoch: 40, train set index: 139, average loss: 0.5651215911
+2022-06-29 19:56:29.863121:
+epoch: 40, train set index: 159, average loss: 0.6118921638
+2022-06-29 19:56:36.263426:
+epoch: 40, train set index: 179, average loss: 0.6420934200
+2022-06-29 19:56:42.640064:
+epoch: 40, train set index: 199, average loss: 0.7373141050
+2022-06-29 19:56:49.014488:
+epoch: 40, train set index: 219, average loss: 0.5006247163
+2022-06-29 19:56:55.408799:
+epoch: 40, train set index: 239, average loss: 0.7584997416
+2022-06-29 19:57:01.734674:
+epoch: 40, train set index: 259, average loss: 0.6813783050
+2022-06-29 19:57:08.059198:
+epoch: 40, train set index: 279, average loss: 0.5843428969
+2022-06-29 19:57:14.408190:
+epoch: 40, train set index: 299, average loss: 0.7392715812
+2022-06-29 19:57:20.775470:
+epoch: 40, train set index: 319, average loss: 0.5761463046
+2022-06-29 19:57:27.146914:
+epoch: 40, train set index: 339, average loss: 0.7100816369
+2022-06-29 19:57:33.529037:
+epoch: 40, train set index: 359, average loss: 0.6969088912
+2022-06-29 19:57:39.899121:
+epoch: 40, train set index: 379, average loss: 0.5893757343
+2022-06-29 19:57:43.964977:
+Epoch 40 finished, average loss: 0.0051075183
+2022-06-29 19:57:43.965183:
+Starting testing
+2022-06-29 19:57:46.670898:
+Correct: 8370, total: 10000, accuracy: 0.8369999528, average loss: 0.0037707190
+2022-06-29 19:57:54.491068:
+epoch: 41, train set index: 19, average loss: 0.7888960838
+2022-06-29 19:58:00.902793:
+epoch: 41, train set index: 39, average loss: 0.6174632311
+2022-06-29 19:58:07.301167:
+epoch: 41, train set index: 59, average loss: 0.6357987523
+2022-06-29 19:58:13.686540:
+epoch: 41, train set index: 79, average loss: 0.7554911375
+2022-06-29 19:58:20.027674:
+epoch: 41, train set index: 99, average loss: 0.5655437112
+2022-06-29 19:58:26.363836:
+epoch: 41, train set index: 119, average loss: 0.5923843980
+2022-06-29 19:58:32.696676:
+epoch: 41, train set index: 139, average loss: 0.6500874758
+2022-06-29 19:58:39.027553:
+epoch: 41, train set index: 159, average loss: 0.6789991260
+2022-06-29 19:58:45.314925:
+epoch: 41, train set index: 179, average loss: 0.5507022142
+2022-06-29 19:58:51.642104:
+epoch: 41, train set index: 199, average loss: 0.6254453659
+2022-06-29 19:58:57.948386:
+epoch: 41, train set index: 219, average loss: 0.7060810924
+2022-06-29 19:59:04.274736:
+epoch: 41, train set index: 239, average loss: 0.5801749229
+2022-06-29 19:59:10.611405:
+epoch: 41, train set index: 259, average loss: 0.6362039447
+2022-06-29 19:59:16.955554:
+epoch: 41, train set index: 279, average loss: 0.6209787726
+2022-06-29 19:59:23.330625:
+epoch: 41, train set index: 299, average loss: 0.7035248280
+2022-06-29 19:59:29.673816:
+epoch: 41, train set index: 319, average loss: 0.6458191872
+2022-06-29 19:59:36.002912:
+epoch: 41, train set index: 339, average loss: 0.6168973446
+2022-06-29 19:59:42.323445:
+epoch: 41, train set index: 359, average loss: 0.7519646883
+2022-06-29 19:59:48.640578:
+epoch: 41, train set index: 379, average loss: 0.7527158260
+2022-06-29 19:59:52.654584:
+Epoch 41 finished, average loss: 0.0050726752
+2022-06-29 19:59:52.654682:
+Starting testing
+2022-06-29 19:59:55.110047:
+Correct: 8494, total: 10000, accuracy: 0.8493999839, average loss: 0.0035084467
+2022-06-29 20:00:03.111649:
+epoch: 42, train set index: 19, average loss: 0.6927523613
+2022-06-29 20:00:09.521508:
+epoch: 42, train set index: 39, average loss: 0.5376440883
+2022-06-29 20:00:15.960670:
+epoch: 42, train set index: 59, average loss: 0.5564325452
+2022-06-29 20:00:22.351156:
+epoch: 42, train set index: 79, average loss: 0.6422741413
+2022-06-29 20:00:28.752485:
+epoch: 42, train set index: 99, average loss: 0.6474248767
+2022-06-29 20:00:35.097893:
+epoch: 42, train set index: 119, average loss: 0.6098183990
+2022-06-29 20:00:41.430480:
+epoch: 42, train set index: 139, average loss: 0.6760443449
+2022-06-29 20:00:47.778504:
+epoch: 42, train set index: 159, average loss: 0.7221798897
+2022-06-29 20:00:54.194589:
+epoch: 42, train set index: 179, average loss: 0.6381915808
+2022-06-29 20:01:00.546143:
+epoch: 42, train set index: 199, average loss: 0.7158648372
+2022-06-29 20:01:06.879125:
+epoch: 42, train set index: 219, average loss: 0.6352172494
+2022-06-29 20:01:13.235541:
+epoch: 42, train set index: 239, average loss: 0.5104485750
+2022-06-29 20:01:19.622803:
+epoch: 42, train set index: 259, average loss: 0.6794988513
+2022-06-29 20:01:25.991409:
+epoch: 42, train set index: 279, average loss: 0.6648512483
+2022-06-29 20:01:32.363510:
+epoch: 42, train set index: 299, average loss: 0.7628543973
+2022-06-29 20:01:38.735421:
+epoch: 42, train set index: 319, average loss: 0.8129370809
+2022-06-29 20:01:45.096590:
+epoch: 42, train set index: 339, average loss: 0.6501368880
+2022-06-29 20:01:51.435448:
+epoch: 42, train set index: 359, average loss: 0.6721588969
+2022-06-29 20:01:57.808130:
+epoch: 42, train set index: 379, average loss: 0.7865815759
+2022-06-29 20:02:01.867611:
+Epoch 42 finished, average loss: 0.0050740596
+2022-06-29 20:02:01.867722:
+Starting testing
+2022-06-29 20:02:04.308686:
+Correct: 8482, total: 10000, accuracy: 0.8481999636, average loss: 0.0035429897
+2022-06-29 20:02:12.320766:
+epoch: 43, train set index: 19, average loss: 0.5973636508
+2022-06-29 20:02:18.753461:
+epoch: 43, train set index: 39, average loss: 0.5991351604
+2022-06-29 20:02:25.146653:
+epoch: 43, train set index: 59, average loss: 0.7515813708
+2022-06-29 20:02:31.533074:
+epoch: 43, train set index: 79, average loss: 0.7546449900
+2022-06-29 20:02:37.888922:
+epoch: 43, train set index: 99, average loss: 0.7037894726
+2022-06-29 20:02:44.207247:
+epoch: 43, train set index: 119, average loss: 0.5118598342
+2022-06-29 20:02:50.530093:
+epoch: 43, train set index: 139, average loss: 0.6152719855
+2022-06-29 20:02:56.847076:
+epoch: 43, train set index: 159, average loss: 0.5738546848
+2022-06-29 20:03:03.179535:
+epoch: 43, train set index: 179, average loss: 0.6999307871
+2022-06-29 20:03:09.511705:
+epoch: 43, train set index: 199, average loss: 0.5875874758
+2022-06-29 20:03:15.850921:
+epoch: 43, train set index: 219, average loss: 0.6238096356
+2022-06-29 20:03:22.182923:
+epoch: 43, train set index: 239, average loss: 0.7354556322
+2022-06-29 20:03:28.536256:
+epoch: 43, train set index: 259, average loss: 0.6523927450
+2022-06-29 20:03:34.877206:
+epoch: 43, train set index: 279, average loss: 0.7094770074
+2022-06-29 20:03:41.231983:
+epoch: 43, train set index: 299, average loss: 0.6563724875
+2022-06-29 20:03:47.583550:
+epoch: 43, train set index: 319, average loss: 0.5575670600
+2022-06-29 20:03:53.938695:
+epoch: 43, train set index: 339, average loss: 0.6767095327
+2022-06-29 20:04:00.295445:
+epoch: 43, train set index: 359, average loss: 0.5859182477
+2022-06-29 20:04:06.669118:
+epoch: 43, train set index: 379, average loss: 0.6821499467
+2022-06-29 20:04:10.721136:
+Epoch 43 finished, average loss: 0.0050424701
+2022-06-29 20:04:10.721233:
+Starting testing
+2022-06-29 20:04:13.399286:
+Correct: 8370, total: 10000, accuracy: 0.8369999528, average loss: 0.0037575306
+2022-06-29 20:04:21.347593:
+epoch: 44, train set index: 19, average loss: 0.5897582769
+2022-06-29 20:04:27.712619:
+epoch: 44, train set index: 39, average loss: 0.5233327746
+2022-06-29 20:04:34.071472:
+epoch: 44, train set index: 59, average loss: 0.6242266893
+2022-06-29 20:04:40.418454:
+epoch: 44, train set index: 79, average loss: 0.8053277731
+2022-06-29 20:04:46.747674:
+epoch: 44, train set index: 99, average loss: 0.6596269608
+2022-06-29 20:04:53.089206:
+epoch: 44, train set index: 119, average loss: 0.6399668455
+2022-06-29 20:04:59.415488:
+epoch: 44, train set index: 139, average loss: 0.7342784405
+2022-06-29 20:05:05.767970:
+epoch: 44, train set index: 159, average loss: 0.6435166001
+2022-06-29 20:05:12.119895:
+epoch: 44, train set index: 179, average loss: 0.6017606854
+2022-06-29 20:05:18.488677:
+epoch: 44, train set index: 199, average loss: 0.5922424197
+2022-06-29 20:05:24.866721:
+epoch: 44, train set index: 219, average loss: 0.6808300018
+2022-06-29 20:05:31.287103:
+epoch: 44, train set index: 239, average loss: 0.6097785830
+2022-06-29 20:05:37.651293:
+epoch: 44, train set index: 259, average loss: 0.7529878616
+2022-06-29 20:05:44.000335:
+epoch: 44, train set index: 279, average loss: 0.6208608150
+2022-06-29 20:05:50.377168:
+epoch: 44, train set index: 299, average loss: 0.7329989672
+2022-06-29 20:05:56.736448:
+epoch: 44, train set index: 319, average loss: 0.5694362521
+2022-06-29 20:06:03.073648:
+epoch: 44, train set index: 339, average loss: 0.6114466190
+2022-06-29 20:06:09.451422:
+epoch: 44, train set index: 359, average loss: 0.6776618361
+2022-06-29 20:06:15.823257:
+epoch: 44, train set index: 379, average loss: 0.7096405029
+2022-06-29 20:06:19.888041:
+Epoch 44 finished, average loss: 0.0049933265
+2022-06-29 20:06:19.888180:
+Starting testing
+2022-06-29 20:06:22.514855:
+Correct: 8475, total: 10000, accuracy: 0.8474999666, average loss: 0.0035756580
+2022-06-29 20:06:30.398156:
+epoch: 45, train set index: 19, average loss: 0.6661583781
+2022-06-29 20:06:36.766704:
+epoch: 45, train set index: 39, average loss: 0.6757832170
+2022-06-29 20:06:43.124160:
+epoch: 45, train set index: 59, average loss: 0.5628508329
+2022-06-29 20:06:49.475448:
+epoch: 45, train set index: 79, average loss: 0.6956204772
+2022-06-29 20:06:55.812219:
+epoch: 45, train set index: 99, average loss: 0.6410797238
+2022-06-29 20:07:02.154079:
+epoch: 45, train set index: 119, average loss: 0.5606365800
+2022-06-29 20:07:08.491694:
+epoch: 45, train set index: 139, average loss: 0.5906526446
+2022-06-29 20:07:14.823181:
+epoch: 45, train set index: 159, average loss: 0.4810225964
+2022-06-29 20:07:21.163250:
+epoch: 45, train set index: 179, average loss: 0.6839580536
+2022-06-29 20:07:27.517900:
+epoch: 45, train set index: 199, average loss: 0.5574187636
+2022-06-29 20:07:33.858852:
+epoch: 45, train set index: 219, average loss: 0.6067333221
+2022-06-29 20:07:40.209440:
+epoch: 45, train set index: 239, average loss: 0.6713690758
+2022-06-29 20:07:46.545959:
+epoch: 45, train set index: 259, average loss: 0.6157251000
+2022-06-29 20:07:52.889602:
+epoch: 45, train set index: 279, average loss: 0.5839855075
+2022-06-29 20:07:59.230645:
+epoch: 45, train set index: 299, average loss: 0.5411617160
+2022-06-29 20:08:05.574662:
+epoch: 45, train set index: 319, average loss: 0.5941509008
+2022-06-29 20:08:11.913468:
+epoch: 45, train set index: 339, average loss: 0.5743837357
+2022-06-29 20:08:18.255121:
+epoch: 45, train set index: 359, average loss: 0.7243555784
+2022-06-29 20:08:24.603196:
+epoch: 45, train set index: 379, average loss: 0.5510000587
+2022-06-29 20:08:28.665819:
+Epoch 45 finished, average loss: 0.0050182985
+2022-06-29 20:08:28.665916:
+Starting testing
+2022-06-29 20:08:31.190328:
+Correct: 8433, total: 10000, accuracy: 0.8432999849, average loss: 0.0036501933
+2022-06-29 20:08:39.072141:
+epoch: 46, train set index: 19, average loss: 0.5505356193
+2022-06-29 20:08:45.477668:
+epoch: 46, train set index: 39, average loss: 0.7234706283
+2022-06-29 20:08:51.859095:
+epoch: 46, train set index: 59, average loss: 0.6685642600
+2022-06-29 20:08:58.170653:
+epoch: 46, train set index: 79, average loss: 0.7878825665
+2022-06-29 20:09:04.476383:
+epoch: 46, train set index: 99, average loss: 0.5172744989
+2022-06-29 20:09:10.775434:
+epoch: 46, train set index: 119, average loss: 0.8124398589
+2022-06-29 20:09:17.075337:
+epoch: 46, train set index: 139, average loss: 0.6670266390
+2022-06-29 20:09:23.362636:
+epoch: 46, train set index: 159, average loss: 0.6239860654
+2022-06-29 20:09:29.698493:
+epoch: 46, train set index: 179, average loss: 0.5955415964
+2022-06-29 20:09:36.061197:
+epoch: 46, train set index: 199, average loss: 0.6421033740
+2022-06-29 20:09:42.451055:
+epoch: 46, train set index: 219, average loss: 0.6219627261
+2022-06-29 20:09:48.843233:
+epoch: 46, train set index: 239, average loss: 0.7451494336
+2022-06-29 20:09:55.224091:
+epoch: 46, train set index: 259, average loss: 0.7734475136
+2022-06-29 20:10:01.612640:
+epoch: 46, train set index: 279, average loss: 0.5761610866
+2022-06-29 20:10:07.964119:
+epoch: 46, train set index: 299, average loss: 0.6186102629
+2022-06-29 20:10:14.345258:
+epoch: 46, train set index: 319, average loss: 0.5926190615
+2022-06-29 20:10:20.732368:
+epoch: 46, train set index: 339, average loss: 0.7872097492
+2022-06-29 20:10:27.107524:
+epoch: 46, train set index: 359, average loss: 0.7060950398
+2022-06-29 20:10:33.556296:
+epoch: 46, train set index: 379, average loss: 0.6403997540
+2022-06-29 20:10:37.619298:
+Epoch 46 finished, average loss: 0.0049889688
+2022-06-29 20:10:37.619401:
+Starting testing
+2022-06-29 20:10:40.140192:
+Correct: 8467, total: 10000, accuracy: 0.8466999531, average loss: 0.0034905162
+2022-06-29 20:10:48.040464:
+epoch: 47, train set index: 19, average loss: 0.5037145019
+2022-06-29 20:10:54.412639:
+epoch: 47, train set index: 39, average loss: 0.6509201527
+2022-06-29 20:11:00.748777:
+epoch: 47, train set index: 59, average loss: 0.7635857463
+2022-06-29 20:11:07.095695:
+epoch: 47, train set index: 79, average loss: 0.6738709211
+2022-06-29 20:11:13.417892:
+epoch: 47, train set index: 99, average loss: 0.6398535967
+2022-06-29 20:11:19.781731:
+epoch: 47, train set index: 119, average loss: 0.5273907781
+2022-06-29 20:11:26.148037:
+epoch: 47, train set index: 139, average loss: 0.5640903115
+2022-06-29 20:11:32.547942:
+epoch: 47, train set index: 159, average loss: 0.5142392516
+2022-06-29 20:11:38.911350:
+epoch: 47, train set index: 179, average loss: 0.6274571419
+2022-06-29 20:11:45.286073:
+epoch: 47, train set index: 199, average loss: 0.6860702038
+2022-06-29 20:11:51.640018:
+epoch: 47, train set index: 219, average loss: 0.6113087535
+2022-06-29 20:11:57.996411:
+epoch: 47, train set index: 239, average loss: 0.6419600248
+2022-06-29 20:12:04.353150:
+epoch: 47, train set index: 259, average loss: 0.6323661208
+2022-06-29 20:12:10.710394:
+epoch: 47, train set index: 279, average loss: 0.7405710220
+2022-06-29 20:12:17.080882:
+epoch: 47, train set index: 299, average loss: 0.7757835388
+2022-06-29 20:12:23.446819:
+epoch: 47, train set index: 319, average loss: 0.6800712347
+2022-06-29 20:12:29.817916:
+epoch: 47, train set index: 339, average loss: 0.7129753232
+2022-06-29 20:12:36.176657:
+epoch: 47, train set index: 359, average loss: 0.5624585748
+2022-06-29 20:12:42.523489:
+epoch: 47, train set index: 379, average loss: 0.5751985312
+2022-06-29 20:12:46.625072:
+Epoch 47 finished, average loss: 0.0049817017
+2022-06-29 20:12:46.625237:
+Starting testing
+2022-06-29 20:12:49.291526:
+Correct: 8457, total: 10000, accuracy: 0.8456999660, average loss: 0.0035872657
+2022-06-29 20:12:57.189155:
+epoch: 48, train set index: 19, average loss: 0.5529953837
+2022-06-29 20:13:03.624883:
+epoch: 48, train set index: 39, average loss: 0.6140232682
+2022-06-29 20:13:10.006951:
+epoch: 48, train set index: 59, average loss: 0.5419454575
+2022-06-29 20:13:16.340249:
+epoch: 48, train set index: 79, average loss: 0.6154392362
+2022-06-29 20:13:22.692471:
+epoch: 48, train set index: 99, average loss: 0.6112933755
+2022-06-29 20:13:29.019868:
+epoch: 48, train set index: 119, average loss: 0.7458392382
+2022-06-29 20:13:35.331720:
+epoch: 48, train set index: 139, average loss: 0.5327103138
+2022-06-29 20:13:41.647392:
+epoch: 48, train set index: 159, average loss: 0.4544185698
+2022-06-29 20:13:47.964035:
+epoch: 48, train set index: 179, average loss: 0.5562509298
+2022-06-29 20:13:54.309543:
+epoch: 48, train set index: 199, average loss: 0.6229719520
+2022-06-29 20:14:00.628948:
+epoch: 48, train set index: 219, average loss: 0.6704695225
+2022-06-29 20:14:07.013237:
+epoch: 48, train set index: 239, average loss: 0.6397225857
+2022-06-29 20:14:13.366465:
+epoch: 48, train set index: 259, average loss: 0.6256442666
+2022-06-29 20:14:19.703059:
+epoch: 48, train set index: 279, average loss: 0.5905420184
+2022-06-29 20:14:26.043997:
+epoch: 48, train set index: 299, average loss: 0.4949960411
+2022-06-29 20:14:32.374968:
+epoch: 48, train set index: 319, average loss: 0.5306045413
+2022-06-29 20:14:38.726774:
+epoch: 48, train set index: 339, average loss: 0.6640204191
+2022-06-29 20:14:45.059122:
+epoch: 48, train set index: 359, average loss: 0.6542261243
+2022-06-29 20:14:51.444559:
+epoch: 48, train set index: 379, average loss: 0.5718587041
+2022-06-29 20:14:55.493045:
+Epoch 48 finished, average loss: 0.0049076281
+2022-06-29 20:14:55.493140:
+Starting testing
+2022-06-29 20:14:58.017692:
+Correct: 8438, total: 10000, accuracy: 0.8438000083, average loss: 0.0036109248
+2022-06-29 20:15:05.947106:
+epoch: 49, train set index: 19, average loss: 0.8174908757
+2022-06-29 20:15:12.305565:
+epoch: 49, train set index: 39, average loss: 0.6742134094
+2022-06-29 20:15:18.711785:
+epoch: 49, train set index: 59, average loss: 0.5638594031
+2022-06-29 20:15:25.062899:
+epoch: 49, train set index: 79, average loss: 0.7009755969
+2022-06-29 20:15:31.421667:
+epoch: 49, train set index: 99, average loss: 0.5312321782
+2022-06-29 20:15:37.812818:
+epoch: 49, train set index: 119, average loss: 0.5639629364
+2022-06-29 20:15:44.196217:
+epoch: 49, train set index: 139, average loss: 0.5421854258
+2022-06-29 20:15:50.574442:
+epoch: 49, train set index: 159, average loss: 0.8323644400
+2022-06-29 20:15:56.948863:
+epoch: 49, train set index: 179, average loss: 0.6546872854
+2022-06-29 20:16:03.332169:
+epoch: 49, train set index: 199, average loss: 0.4790796936
+2022-06-29 20:16:09.705621:
+epoch: 49, train set index: 219, average loss: 0.5432031751
+2022-06-29 20:16:16.079945:
+epoch: 49, train set index: 239, average loss: 0.5402144790
+2022-06-29 20:16:22.438820:
+epoch: 49, train set index: 259, average loss: 0.5925183296
+2022-06-29 20:16:28.779166:
+epoch: 49, train set index: 279, average loss: 0.5053030849
+2022-06-29 20:16:35.120040:
+epoch: 49, train set index: 299, average loss: 0.5838232040
+2022-06-29 20:16:41.439833:
+epoch: 49, train set index: 319, average loss: 0.6331503987
+2022-06-29 20:16:47.764807:
+epoch: 49, train set index: 339, average loss: 0.4956905544
+2022-06-29 20:16:54.163036:
+epoch: 49, train set index: 359, average loss: 0.6551916003
+2022-06-29 20:17:00.528428:
+epoch: 49, train set index: 379, average loss: 0.5628028512
+2022-06-29 20:17:04.537133:
+Epoch 49 finished, average loss: 0.0049294215
+2022-06-29 20:17:04.537240:
+Starting testing
+2022-06-29 20:17:06.973898:
+Correct: 8503, total: 10000, accuracy: 0.8502999544, average loss: 0.0034353680
+2022-06-29 20:17:14.901840:
+epoch: 50, train set index: 19, average loss: 0.6730251312
+2022-06-29 20:17:21.302260:
+epoch: 50, train set index: 39, average loss: 0.6590778232
+2022-06-29 20:17:27.686207:
+epoch: 50, train set index: 59, average loss: 0.6522036791
+2022-06-29 20:17:34.074739:
+epoch: 50, train set index: 79, average loss: 0.6831491590
+2022-06-29 20:17:40.455157:
+epoch: 50, train set index: 99, average loss: 0.6404690146
+2022-06-29 20:17:46.839598:
+epoch: 50, train set index: 119, average loss: 0.6997359395
+2022-06-29 20:17:53.223691:
+epoch: 50, train set index: 139, average loss: 0.5124108195
+2022-06-29 20:17:59.612730:
+epoch: 50, train set index: 159, average loss: 0.5410580635
+2022-06-29 20:18:05.996775:
+epoch: 50, train set index: 179, average loss: 0.6946101189
+2022-06-29 20:18:12.378816:
+epoch: 50, train set index: 199, average loss: 0.6456498504
+2022-06-29 20:18:18.782382:
+epoch: 50, train set index: 219, average loss: 0.7235181928
+2022-06-29 20:18:25.168097:
+epoch: 50, train set index: 239, average loss: 0.6113873124
+2022-06-29 20:18:31.533322:
+epoch: 50, train set index: 259, average loss: 0.6856448054
+2022-06-29 20:18:37.895239:
+epoch: 50, train set index: 279, average loss: 0.7183324099
+2022-06-29 20:18:44.268408:
+epoch: 50, train set index: 299, average loss: 0.5741780996
+2022-06-29 20:18:50.587705:
+epoch: 50, train set index: 319, average loss: 0.7025079727
+2022-06-29 20:18:56.921525:
+epoch: 50, train set index: 339, average loss: 0.5893809795
+2022-06-29 20:19:03.276337:
+epoch: 50, train set index: 359, average loss: 0.5189355612
+2022-06-29 20:19:09.650426:
+epoch: 50, train set index: 379, average loss: 0.5707207918
+2022-06-29 20:19:13.744873:
+Epoch 50 finished, average loss: 0.0049091773
+2022-06-29 20:19:13.745003:
+Starting testing
+2022-06-29 20:19:16.270243:
+Correct: 8510, total: 10000, accuracy: 0.8509999514, average loss: 0.0035126873
+2022-06-29 20:19:24.309184:
+epoch: 51, train set index: 19, average loss: 0.5668920875
+2022-06-29 20:19:30.708925:
+epoch: 51, train set index: 39, average loss: 0.7203567028
+2022-06-29 20:19:37.127749:
+epoch: 51, train set index: 59, average loss: 0.6494574547
+2022-06-29 20:19:43.535274:
+epoch: 51, train set index: 79, average loss: 0.5096715093
+2022-06-29 20:19:49.957031:
+epoch: 51, train set index: 99, average loss: 0.6751160026
+2022-06-29 20:19:56.339204:
+epoch: 51, train set index: 119, average loss: 0.7806221247
+2022-06-29 20:20:02.712472:
+epoch: 51, train set index: 139, average loss: 0.5884324908
+2022-06-29 20:20:09.075064:
+epoch: 51, train set index: 159, average loss: 0.7414904833
+2022-06-29 20:20:15.443003:
+epoch: 51, train set index: 179, average loss: 0.6960316896
+2022-06-29 20:20:21.844963:
+epoch: 51, train set index: 199, average loss: 0.6737097502
+2022-06-29 20:20:28.223013:
+epoch: 51, train set index: 219, average loss: 0.7297177911
+2022-06-29 20:20:34.598676:
+epoch: 51, train set index: 239, average loss: 0.6874012351
+2022-06-29 20:20:40.932205:
+epoch: 51, train set index: 259, average loss: 0.5340823531
+2022-06-29 20:20:47.282012:
+epoch: 51, train set index: 279, average loss: 0.5827270150
+2022-06-29 20:20:53.653285:
+epoch: 51, train set index: 299, average loss: 0.6634933352
+2022-06-29 20:20:59.989667:
+epoch: 51, train set index: 319, average loss: 0.5347658992
+2022-06-29 20:21:06.360825:
+epoch: 51, train set index: 339, average loss: 0.6458346248
+2022-06-29 20:21:12.727987:
+epoch: 51, train set index: 359, average loss: 0.6265977621
+2022-06-29 20:21:19.062680:
+epoch: 51, train set index: 379, average loss: 0.5756719112
+2022-06-29 20:21:23.086330:
+Epoch 51 finished, average loss: 0.0049124355
+2022-06-29 20:21:23.086429:
+Starting testing
+2022-06-29 20:21:25.595056:
+Correct: 8384, total: 10000, accuracy: 0.8384000063, average loss: 0.0037386527
+2022-06-29 20:21:33.559986:
+epoch: 52, train set index: 19, average loss: 0.5671839714
+2022-06-29 20:21:39.982656:
+epoch: 52, train set index: 39, average loss: 0.4932119846
+2022-06-29 20:21:46.358366:
+epoch: 52, train set index: 59, average loss: 0.6662606597
+2022-06-29 20:21:52.756175:
+epoch: 52, train set index: 79, average loss: 0.7146970034
+2022-06-29 20:21:59.132908:
+epoch: 52, train set index: 99, average loss: 0.6821550727
+2022-06-29 20:22:05.522853:
+epoch: 52, train set index: 119, average loss: 0.6792298555
+2022-06-29 20:22:11.891665:
+epoch: 52, train set index: 139, average loss: 0.5443522930
+2022-06-29 20:22:18.268811:
+epoch: 52, train set index: 159, average loss: 0.5740053058
+2022-06-29 20:22:24.644525:
+epoch: 52, train set index: 179, average loss: 0.6047971845
+2022-06-29 20:22:30.972416:
+epoch: 52, train set index: 199, average loss: 0.6408244371
+2022-06-29 20:22:37.292660:
+epoch: 52, train set index: 219, average loss: 0.6833311319
+2022-06-29 20:22:43.626758:
+epoch: 52, train set index: 239, average loss: 0.5794998407
+2022-06-29 20:22:50.012387:
+epoch: 52, train set index: 259, average loss: 0.5647515655
+2022-06-29 20:22:56.388711:
+epoch: 52, train set index: 279, average loss: 0.6769117713
+2022-06-29 20:23:02.803749:
+epoch: 52, train set index: 299, average loss: 0.6293304563
+2022-06-29 20:23:09.219910:
+epoch: 52, train set index: 319, average loss: 0.7126389146
+2022-06-29 20:23:15.591540:
+epoch: 52, train set index: 339, average loss: 0.5669642687
+2022-06-29 20:23:21.963098:
+epoch: 52, train set index: 359, average loss: 0.6200836897
+2022-06-29 20:23:28.335815:
+epoch: 52, train set index: 379, average loss: 0.6987942457
+2022-06-29 20:23:32.430305:
+Epoch 52 finished, average loss: 0.0049066348
+2022-06-29 20:23:32.430416:
+Starting testing
+2022-06-29 20:23:34.979400:
+Correct: 8558, total: 10000, accuracy: 0.8557999730, average loss: 0.0033660876
+2022-06-29 20:23:43.077646:
+epoch: 53, train set index: 19, average loss: 0.5357457995
+2022-06-29 20:23:49.473175:
+epoch: 53, train set index: 39, average loss: 0.5508065820
+2022-06-29 20:23:55.830880:
+epoch: 53, train set index: 59, average loss: 0.5280463696
+2022-06-29 20:24:02.208666:
+epoch: 53, train set index: 79, average loss: 0.6219914556
+2022-06-29 20:24:08.591397:
+epoch: 53, train set index: 99, average loss: 0.6250119209
+2022-06-29 20:24:14.955238:
+epoch: 53, train set index: 119, average loss: 0.5447282791
+2022-06-29 20:24:21.356452:
+epoch: 53, train set index: 139, average loss: 0.5515942574
+2022-06-29 20:24:27.706143:
+epoch: 53, train set index: 159, average loss: 0.6329848170
+2022-06-29 20:24:34.087275:
+epoch: 53, train set index: 179, average loss: 0.5705902576
+2022-06-29 20:24:40.437567:
+epoch: 53, train set index: 199, average loss: 0.5662738085
+2022-06-29 20:24:46.781743:
+epoch: 53, train set index: 219, average loss: 0.5394855738
+2022-06-29 20:24:53.127525:
+epoch: 53, train set index: 239, average loss: 0.5170215368
+2022-06-29 20:24:59.477476:
+epoch: 53, train set index: 259, average loss: 0.6049787402
+2022-06-29 20:25:05.844361:
+epoch: 53, train set index: 279, average loss: 0.4937686622
+2022-06-29 20:25:12.197217:
+epoch: 53, train set index: 299, average loss: 0.6823656559
+2022-06-29 20:25:18.566322:
+epoch: 53, train set index: 319, average loss: 0.6288230419
+2022-06-29 20:25:24.896279:
+epoch: 53, train set index: 339, average loss: 0.5387670994
+2022-06-29 20:25:31.232392:
+epoch: 53, train set index: 359, average loss: 0.6675323248
+2022-06-29 20:25:37.564489:
+epoch: 53, train set index: 379, average loss: 0.5957086682
+2022-06-29 20:25:41.574292:
+Epoch 53 finished, average loss: 0.0048540756
+2022-06-29 20:25:41.574403:
+Starting testing
+2022-06-29 20:25:44.185774:
+Correct: 8449, total: 10000, accuracy: 0.8448999524, average loss: 0.0035920371
+2022-06-29 20:25:52.024440:
+epoch: 54, train set index: 19, average loss: 0.6838006377
+2022-06-29 20:25:58.392756:
+epoch: 54, train set index: 39, average loss: 0.5742763281
+2022-06-29 20:26:04.761327:
+epoch: 54, train set index: 59, average loss: 0.6163772941
+2022-06-29 20:26:11.124144:
+epoch: 54, train set index: 79, average loss: 0.4265397489
+2022-06-29 20:26:17.526122:
+epoch: 54, train set index: 99, average loss: 0.6727807522
+2022-06-29 20:26:23.916250:
+epoch: 54, train set index: 119, average loss: 0.7201878428
+2022-06-29 20:26:30.317856:
+epoch: 54, train set index: 139, average loss: 0.6646244526
+2022-06-29 20:26:36.693252:
+epoch: 54, train set index: 159, average loss: 0.5426842570
+2022-06-29 20:26:43.059963:
+epoch: 54, train set index: 179, average loss: 0.5822128654
+2022-06-29 20:26:49.370297:
+epoch: 54, train set index: 199, average loss: 0.5668830872
+2022-06-29 20:26:55.771240:
+epoch: 54, train set index: 219, average loss: 0.5697364807
+2022-06-29 20:27:02.145977:
+epoch: 54, train set index: 239, average loss: 0.5688024759
+2022-06-29 20:27:08.531132:
+epoch: 54, train set index: 259, average loss: 0.6856716871
+2022-06-29 20:27:14.916642:
+epoch: 54, train set index: 279, average loss: 0.7231612802
+2022-06-29 20:27:21.302946:
+epoch: 54, train set index: 299, average loss: 0.7230728269
+2022-06-29 20:27:27.694413:
+epoch: 54, train set index: 319, average loss: 0.7299979925
+2022-06-29 20:27:34.082871:
+epoch: 54, train set index: 339, average loss: 0.7352930307
+2022-06-29 20:27:40.469427:
+epoch: 54, train set index: 359, average loss: 0.6112256646
+2022-06-29 20:27:46.836030:
+epoch: 54, train set index: 379, average loss: 0.5176453590
+2022-06-29 20:27:50.901363:
+Epoch 54 finished, average loss: 0.0048634959
+2022-06-29 20:27:50.901463:
+Starting testing
+2022-06-29 20:27:53.475710:
+Correct: 8443, total: 10000, accuracy: 0.8442999721, average loss: 0.0035455599
+2022-06-29 20:28:01.242545:
+epoch: 55, train set index: 19, average loss: 0.6087987423
+2022-06-29 20:28:07.638947:
+epoch: 55, train set index: 39, average loss: 0.6041546464
+2022-06-29 20:28:14.060016:
+epoch: 55, train set index: 59, average loss: 0.8064852953
+2022-06-29 20:28:20.464370:
+epoch: 55, train set index: 79, average loss: 0.5749825835
+2022-06-29 20:28:26.847607:
+epoch: 55, train set index: 99, average loss: 0.5879485607
+2022-06-29 20:28:33.233423:
+epoch: 55, train set index: 119, average loss: 0.6990576386
+2022-06-29 20:28:39.632350:
+epoch: 55, train set index: 139, average loss: 0.5817056298
+2022-06-29 20:28:46.046320:
+epoch: 55, train set index: 159, average loss: 0.6102708578
+2022-06-29 20:28:52.418627:
+epoch: 55, train set index: 179, average loss: 0.6051059961
+2022-06-29 20:28:58.803098:
+epoch: 55, train set index: 199, average loss: 0.8845514655
+2022-06-29 20:29:05.243263:
+epoch: 55, train set index: 219, average loss: 0.5510794520
+2022-06-29 20:29:11.619520:
+epoch: 55, train set index: 239, average loss: 0.6789746284
+2022-06-29 20:29:17.997643:
+epoch: 55, train set index: 259, average loss: 0.6068670750
+2022-06-29 20:29:24.387348:
+epoch: 55, train set index: 279, average loss: 0.5999578238
+2022-06-29 20:29:30.764615:
+epoch: 55, train set index: 299, average loss: 0.6197009087
+2022-06-29 20:29:37.122279:
+epoch: 55, train set index: 319, average loss: 0.6256130338
+2022-06-29 20:29:43.448617:
+epoch: 55, train set index: 339, average loss: 0.4748432934
+2022-06-29 20:29:49.782036:
+epoch: 55, train set index: 359, average loss: 0.5724513531
+2022-06-29 20:29:56.102072:
+epoch: 55, train set index: 379, average loss: 0.5783469677
+2022-06-29 20:30:00.159078:
+Epoch 55 finished, average loss: 0.0048587080
+2022-06-29 20:30:00.159198:
+Starting testing
+2022-06-29 20:30:02.755916:
+Correct: 8447, total: 10000, accuracy: 0.8446999788, average loss: 0.0036493286
+2022-06-29 20:30:10.634612:
+epoch: 56, train set index: 19, average loss: 0.5360288024
+2022-06-29 20:30:16.992257:
+epoch: 56, train set index: 39, average loss: 0.4353960156
+2022-06-29 20:30:23.360182:
+epoch: 56, train set index: 59, average loss: 0.6241712570
+2022-06-29 20:30:29.753428:
+epoch: 56, train set index: 79, average loss: 0.5012788177
+2022-06-29 20:30:36.117355:
+epoch: 56, train set index: 99, average loss: 0.7764419913
+2022-06-29 20:30:42.507718:
+epoch: 56, train set index: 119, average loss: 0.6192660928
+2022-06-29 20:30:48.885815:
+epoch: 56, train set index: 139, average loss: 0.7172976732
+2022-06-29 20:30:55.236163:
+epoch: 56, train set index: 159, average loss: 0.5548907518
+2022-06-29 20:31:01.636442:
+epoch: 56, train set index: 179, average loss: 0.5069923401
+2022-06-29 20:31:08.050896:
+epoch: 56, train set index: 199, average loss: 0.5656180978
+2022-06-29 20:31:14.409802:
+epoch: 56, train set index: 219, average loss: 0.5065913796
+2022-06-29 20:31:20.755970:
+epoch: 56, train set index: 239, average loss: 0.6634325981
+2022-06-29 20:31:27.126963:
+epoch: 56, train set index: 259, average loss: 0.6590278745
+2022-06-29 20:31:33.477484:
+epoch: 56, train set index: 279, average loss: 0.6294056773
+2022-06-29 20:31:39.859072:
+epoch: 56, train set index: 299, average loss: 0.7433578968
+2022-06-29 20:31:46.251154:
+epoch: 56, train set index: 319, average loss: 0.6713145971
+2022-06-29 20:31:52.638221:
+epoch: 56, train set index: 339, average loss: 0.7983701825
+2022-06-29 20:31:59.012642:
+epoch: 56, train set index: 359, average loss: 0.6525115967
+2022-06-29 20:32:05.442413:
+epoch: 56, train set index: 379, average loss: 0.6384095550
+2022-06-29 20:32:09.537154:
+Epoch 56 finished, average loss: 0.0048258770
+2022-06-29 20:32:09.537299:
+Starting testing
+2022-06-29 20:32:12.209694:
+Correct: 8486, total: 10000, accuracy: 0.8485999703, average loss: 0.0034610922
+2022-06-29 20:32:20.129958:
+epoch: 57, train set index: 19, average loss: 0.5210754871
+2022-06-29 20:32:26.534156:
+epoch: 57, train set index: 39, average loss: 0.6480085254
+2022-06-29 20:32:32.904921:
+epoch: 57, train set index: 59, average loss: 0.5110588670
+2022-06-29 20:32:39.252337:
+epoch: 57, train set index: 79, average loss: 0.5991731286
+2022-06-29 20:32:45.603923:
+epoch: 57, train set index: 99, average loss: 0.6484443545
+2022-06-29 20:32:51.944797:
+epoch: 57, train set index: 119, average loss: 0.5833166242
+2022-06-29 20:32:58.289435:
+epoch: 57, train set index: 139, average loss: 0.4845964611
+2022-06-29 20:33:04.630481:
+epoch: 57, train set index: 159, average loss: 0.7995100021
+2022-06-29 20:33:10.966802:
+epoch: 57, train set index: 179, average loss: 0.6473000646
+2022-06-29 20:33:17.317825:
+epoch: 57, train set index: 199, average loss: 0.6081876755
+2022-06-29 20:33:23.672383:
+epoch: 57, train set index: 219, average loss: 0.6779667735
+2022-06-29 20:33:30.020999:
+epoch: 57, train set index: 239, average loss: 0.6326658726
+2022-06-29 20:33:36.374618:
+epoch: 57, train set index: 259, average loss: 0.6483007669
+2022-06-29 20:33:42.721040:
+epoch: 57, train set index: 279, average loss: 0.5486222506
+2022-06-29 20:33:49.075185:
+epoch: 57, train set index: 299, average loss: 0.5153301358
+2022-06-29 20:33:55.428741:
+epoch: 57, train set index: 319, average loss: 0.5501465201
+2022-06-29 20:34:01.785285:
+epoch: 57, train set index: 339, average loss: 0.6585273147
+2022-06-29 20:34:08.145516:
+epoch: 57, train set index: 359, average loss: 0.5738869309
+2022-06-29 20:34:14.548931:
+epoch: 57, train set index: 379, average loss: 0.6130921245
+2022-06-29 20:34:18.594206:
+Epoch 57 finished, average loss: 0.0048469719
+2022-06-29 20:34:18.594302:
+Starting testing
+2022-06-29 20:34:21.056703:
+Correct: 8611, total: 10000, accuracy: 0.8610999584, average loss: 0.0032698344
+2022-06-29 20:34:29.055061:
+epoch: 58, train set index: 19, average loss: 0.5723804832
+2022-06-29 20:34:35.561421:
+epoch: 58, train set index: 39, average loss: 0.5904856324
+2022-06-29 20:34:41.936087:
+epoch: 58, train set index: 59, average loss: 0.6026271582
+2022-06-29 20:34:48.239878:
+epoch: 58, train set index: 79, average loss: 0.6567246914
+2022-06-29 20:34:54.587509:
+epoch: 58, train set index: 99, average loss: 0.5869046450
+2022-06-29 20:35:00.924663:
+epoch: 58, train set index: 119, average loss: 0.4661171138
+2022-06-29 20:35:07.304190:
+epoch: 58, train set index: 139, average loss: 0.6413313746
+2022-06-29 20:35:13.679753:
+epoch: 58, train set index: 159, average loss: 0.7164351940
+2022-06-29 20:35:20.048305:
+epoch: 58, train set index: 179, average loss: 0.6877935529
+2022-06-29 20:35:26.441187:
+epoch: 58, train set index: 199, average loss: 0.5083327293
+2022-06-29 20:35:32.779845:
+epoch: 58, train set index: 219, average loss: 0.6128513217
+2022-06-29 20:35:39.106146:
+epoch: 58, train set index: 239, average loss: 0.6093179584
+2022-06-29 20:35:45.490033:
+epoch: 58, train set index: 259, average loss: 0.7345101833
+2022-06-29 20:35:51.875484:
+epoch: 58, train set index: 279, average loss: 0.5538141727
+2022-06-29 20:35:58.298659:
+epoch: 58, train set index: 299, average loss: 0.5835863352
+2022-06-29 20:36:04.695064:
+epoch: 58, train set index: 319, average loss: 0.5943683982
+2022-06-29 20:36:11.096981:
+epoch: 58, train set index: 339, average loss: 0.6443762779
+2022-06-29 20:36:17.490453:
+epoch: 58, train set index: 359, average loss: 0.8530163169
+2022-06-29 20:36:23.895878:
+epoch: 58, train set index: 379, average loss: 0.6829785109
+2022-06-29 20:36:27.996614:
+Epoch 58 finished, average loss: 0.0047761840
+2022-06-29 20:36:27.996724:
+Starting testing
+2022-06-29 20:36:30.639612:
+Correct: 8478, total: 10000, accuracy: 0.8477999568, average loss: 0.0034835443
+2022-06-29 20:36:38.509406:
+epoch: 59, train set index: 19, average loss: 0.4956588745
+2022-06-29 20:36:44.908461:
+epoch: 59, train set index: 39, average loss: 0.5030847788
+2022-06-29 20:36:51.255937:
+epoch: 59, train set index: 59, average loss: 0.5724618435
+2022-06-29 20:36:57.561589:
+epoch: 59, train set index: 79, average loss: 0.7229156494
+2022-06-29 20:37:03.878294:
+epoch: 59, train set index: 99, average loss: 0.6229515672
+2022-06-29 20:37:10.199690:
+epoch: 59, train set index: 119, average loss: 0.6753748655
+2022-06-29 20:37:16.530810:
+epoch: 59, train set index: 139, average loss: 0.5147211552
+2022-06-29 20:37:22.870030:
+epoch: 59, train set index: 159, average loss: 0.6706340313
+2022-06-29 20:37:29.193350:
+epoch: 59, train set index: 179, average loss: 0.5532904863
+2022-06-29 20:37:35.547799:
+epoch: 59, train set index: 199, average loss: 0.7211444974
+2022-06-29 20:37:41.894485:
+epoch: 59, train set index: 219, average loss: 0.7011321187
+2022-06-29 20:37:48.266208:
+epoch: 59, train set index: 239, average loss: 0.5766605735
+2022-06-29 20:37:54.639044:
+epoch: 59, train set index: 259, average loss: 0.5907589793
+2022-06-29 20:38:01.001875:
+epoch: 59, train set index: 279, average loss: 0.7692953944
+2022-06-29 20:38:07.379236:
+epoch: 59, train set index: 299, average loss: 0.6157659888
+2022-06-29 20:38:13.740926:
+epoch: 59, train set index: 319, average loss: 0.7389255166
+2022-06-29 20:38:20.128980:
+epoch: 59, train set index: 339, average loss: 0.4695803523
+2022-06-29 20:38:26.511933:
+epoch: 59, train set index: 359, average loss: 0.6946599483
+2022-06-29 20:38:32.870690:
+epoch: 59, train set index: 379, average loss: 0.7497945428
+2022-06-29 20:38:36.922826:
+Epoch 59 finished, average loss: 0.0047776718
+2022-06-29 20:38:36.922940:
+Starting testing
+2022-06-29 20:38:39.481961:
+Correct: 8505, total: 10000, accuracy: 0.8504999876, average loss: 0.0034627928
+2022-06-29 20:38:47.369748:
+epoch: 60, train set index: 19, average loss: 0.5496563315
+2022-06-29 20:38:53.747025:
+epoch: 60, train set index: 39, average loss: 0.6065273881
+2022-06-29 20:39:00.121163:
+epoch: 60, train set index: 59, average loss: 0.5802275538
+2022-06-29 20:39:06.476671:
+epoch: 60, train set index: 79, average loss: 0.5671616793
+2022-06-29 20:39:12.821552:
+epoch: 60, train set index: 99, average loss: 0.5957511663
+2022-06-29 20:39:19.159389:
+epoch: 60, train set index: 119, average loss: 0.5837890506
+2022-06-29 20:39:25.515093:
+epoch: 60, train set index: 139, average loss: 0.5922987461
+2022-06-29 20:39:31.848390:
+epoch: 60, train set index: 159, average loss: 0.6405404806
+2022-06-29 20:39:38.185311:
+epoch: 60, train set index: 179, average loss: 0.6639919281
+2022-06-29 20:39:44.532412:
+epoch: 60, train set index: 199, average loss: 0.4957806766
+2022-06-29 20:39:50.876551:
+epoch: 60, train set index: 219, average loss: 0.5732033253
+2022-06-29 20:39:57.216736:
+epoch: 60, train set index: 239, average loss: 0.5999144316
+2022-06-29 20:40:03.572589:
+epoch: 60, train set index: 259, average loss: 0.5922911167
+2022-06-29 20:40:09.923965:
+epoch: 60, train set index: 279, average loss: 0.7323641181
+2022-06-29 20:40:16.278119:
+epoch: 60, train set index: 299, average loss: 0.6582928300
+2022-06-29 20:40:22.622355:
+epoch: 60, train set index: 319, average loss: 0.6126329303
+2022-06-29 20:40:28.965994:
+epoch: 60, train set index: 339, average loss: 0.6825984716
+2022-06-29 20:40:35.311936:
+epoch: 60, train set index: 359, average loss: 0.5123093128
+2022-06-29 20:40:41.648766:
+epoch: 60, train set index: 379, average loss: 0.6389199495
+2022-06-29 20:40:45.669015:
+Epoch 60 finished, average loss: 0.0047893021
+2022-06-29 20:40:45.669106:
+Starting testing
+2022-06-29 20:40:48.220453:
+Correct: 8510, total: 10000, accuracy: 0.8509999514, average loss: 0.0034345649
+2022-06-29 20:40:56.179290:
+epoch: 61, train set index: 19, average loss: 0.6193861365
+2022-06-29 20:41:02.597976:
+epoch: 61, train set index: 39, average loss: 0.5935035944
+2022-06-29 20:41:08.984168:
+epoch: 61, train set index: 59, average loss: 0.4487957060
+2022-06-29 20:41:15.364281:
+epoch: 61, train set index: 79, average loss: 0.5530026555
+2022-06-29 20:41:21.698805:
+epoch: 61, train set index: 99, average loss: 0.6171230078
+2022-06-29 20:41:28.032075:
+epoch: 61, train set index: 119, average loss: 0.5677849650
+2022-06-29 20:41:34.367206:
+epoch: 61, train set index: 139, average loss: 0.3692564368
+2022-06-29 20:41:40.718836:
+epoch: 61, train set index: 159, average loss: 0.6195992827
+2022-06-29 20:41:47.048218:
+epoch: 61, train set index: 179, average loss: 0.6268948317
+2022-06-29 20:41:53.415875:
+epoch: 61, train set index: 199, average loss: 0.5646657348
+2022-06-29 20:41:59.782449:
+epoch: 61, train set index: 219, average loss: 0.5905036926
+2022-06-29 20:42:06.147378:
+epoch: 61, train set index: 239, average loss: 0.5452785492
+2022-06-29 20:42:12.531977:
+epoch: 61, train set index: 259, average loss: 0.6343296170
+2022-06-29 20:42:18.906090:
+epoch: 61, train set index: 279, average loss: 0.6576425433
+2022-06-29 20:42:25.287860:
+epoch: 61, train set index: 299, average loss: 0.5875293016
+2022-06-29 20:42:31.680685:
+epoch: 61, train set index: 319, average loss: 0.7317014933
+2022-06-29 20:42:38.071240:
+epoch: 61, train set index: 339, average loss: 0.6637147665
+2022-06-29 20:42:44.445997:
+epoch: 61, train set index: 359, average loss: 0.5309633613
+2022-06-29 20:42:50.813692:
+epoch: 61, train set index: 379, average loss: 0.6224905252
+2022-06-29 20:42:54.861164:
+Epoch 61 finished, average loss: 0.0047497880
+2022-06-29 20:42:54.861298:
+Starting testing
+2022-06-29 20:42:57.360632:
+Correct: 8506, total: 10000, accuracy: 0.8506000042, average loss: 0.0035115671
+2022-06-29 20:43:05.397622:
+epoch: 62, train set index: 19, average loss: 0.4838885665
+2022-06-29 20:43:11.776916:
+epoch: 62, train set index: 39, average loss: 0.6894698739
+2022-06-29 20:43:18.179268:
+epoch: 62, train set index: 59, average loss: 0.7275612354
+2022-06-29 20:43:24.591620:
+epoch: 62, train set index: 79, average loss: 0.6050532460
+2022-06-29 20:43:30.953911:
+epoch: 62, train set index: 99, average loss: 0.6380582452
+2022-06-29 20:43:37.286763:
+epoch: 62, train set index: 119, average loss: 0.5810405016
+2022-06-29 20:43:43.628672:
+epoch: 62, train set index: 139, average loss: 0.6160922647
+2022-06-29 20:43:49.978246:
+epoch: 62, train set index: 159, average loss: 0.6473693252
+2022-06-29 20:43:56.302393:
+epoch: 62, train set index: 179, average loss: 0.5791642666
+2022-06-29 20:44:02.628085:
+epoch: 62, train set index: 199, average loss: 0.5895944238
+2022-06-29 20:44:08.944636:
+epoch: 62, train set index: 219, average loss: 0.6873757243
+2022-06-29 20:44:15.327016:
+epoch: 62, train set index: 239, average loss: 0.7055783272
+2022-06-29 20:44:21.707279:
+epoch: 62, train set index: 259, average loss: 0.5052343011
+2022-06-29 20:44:28.101204:
+epoch: 62, train set index: 279, average loss: 0.5507115722
+2022-06-29 20:44:34.480540:
+epoch: 62, train set index: 299, average loss: 0.4624020755
+2022-06-29 20:44:40.868863:
+epoch: 62, train set index: 319, average loss: 0.6614089608
+2022-06-29 20:44:47.271842:
+epoch: 62, train set index: 339, average loss: 0.8076000214
+2022-06-29 20:44:53.589457:
+epoch: 62, train set index: 359, average loss: 0.6851842999
+2022-06-29 20:44:59.887387:
+epoch: 62, train set index: 379, average loss: 0.6990771294
+2022-06-29 20:45:03.892172:
+Epoch 62 finished, average loss: 0.0047463835
+2022-06-29 20:45:03.892273:
+Starting testing
+2022-06-29 20:45:06.453994:
+Correct: 8503, total: 10000, accuracy: 0.8502999544, average loss: 0.0033856749
+2022-06-29 20:45:14.383055:
+epoch: 63, train set index: 19, average loss: 0.5743120909
+2022-06-29 20:45:20.809899:
+epoch: 63, train set index: 39, average loss: 0.5505009890
+2022-06-29 20:45:27.222340:
+epoch: 63, train set index: 59, average loss: 0.5437666178
+2022-06-29 20:45:33.621084:
+epoch: 63, train set index: 79, average loss: 0.6825616360
+2022-06-29 20:45:39.979175:
+epoch: 63, train set index: 99, average loss: 0.6852012873
+2022-06-29 20:45:46.291074:
+epoch: 63, train set index: 119, average loss: 0.8110400438
+2022-06-29 20:45:52.590600:
+epoch: 63, train set index: 139, average loss: 0.5714636445
+2022-06-29 20:45:58.914549:
+epoch: 63, train set index: 159, average loss: 0.5297559500
+2022-06-29 20:46:05.249794:
+epoch: 63, train set index: 179, average loss: 0.6259446740
+2022-06-29 20:46:11.597770:
+epoch: 63, train set index: 199, average loss: 0.5965847373
+2022-06-29 20:46:17.936818:
+epoch: 63, train set index: 219, average loss: 0.8934111595
+2022-06-29 20:46:24.261887:
+epoch: 63, train set index: 239, average loss: 0.6649220586
+2022-06-29 20:46:30.628739:
+epoch: 63, train set index: 259, average loss: 0.6118645668
+2022-06-29 20:46:36.962643:
+epoch: 63, train set index: 279, average loss: 0.5380685329
+2022-06-29 20:46:43.286173:
+epoch: 63, train set index: 299, average loss: 0.6351003051
+2022-06-29 20:46:49.598413:
+epoch: 63, train set index: 319, average loss: 0.7587665319
+2022-06-29 20:46:55.926799:
+epoch: 63, train set index: 339, average loss: 0.5619554520
+2022-06-29 20:47:02.285521:
+epoch: 63, train set index: 359, average loss: 0.7619324327
+2022-06-29 20:47:08.669423:
+epoch: 63, train set index: 379, average loss: 0.4578074515
+2022-06-29 20:47:12.752642:
+Epoch 63 finished, average loss: 0.0047747870
+2022-06-29 20:47:12.752771:
+Starting testing
+2022-06-29 20:47:15.355281:
+Correct: 8597, total: 10000, accuracy: 0.8596999645, average loss: 0.0032301738
+2022-06-29 20:47:23.263971:
+epoch: 64, train set index: 19, average loss: 0.5280405879
+2022-06-29 20:47:29.689792:
+epoch: 64, train set index: 39, average loss: 0.6300625801
+2022-06-29 20:47:36.077226:
+epoch: 64, train set index: 59, average loss: 0.5436066389
+2022-06-29 20:47:42.472597:
+epoch: 64, train set index: 79, average loss: 0.5772346258
+2022-06-29 20:47:48.812916:
+epoch: 64, train set index: 99, average loss: 0.4312082529
+2022-06-29 20:47:55.142737:
+epoch: 64, train set index: 119, average loss: 0.7741457224
+2022-06-29 20:48:01.474291:
+epoch: 64, train set index: 139, average loss: 0.5524995923
+2022-06-29 20:48:07.800206:
+epoch: 64, train set index: 159, average loss: 0.5319187045
+2022-06-29 20:48:14.143947:
+epoch: 64, train set index: 179, average loss: 0.6668530107
+2022-06-29 20:48:20.522099:
+epoch: 64, train set index: 199, average loss: 0.5264346600
+2022-06-29 20:48:26.899172:
+epoch: 64, train set index: 219, average loss: 0.5462982059
+2022-06-29 20:48:33.269031:
+epoch: 64, train set index: 239, average loss: 0.6577033401
+2022-06-29 20:48:39.662724:
+epoch: 64, train set index: 259, average loss: 0.6158255339
+2022-06-29 20:48:46.029595:
+epoch: 64, train set index: 279, average loss: 0.5474190116
+2022-06-29 20:48:52.437719:
+epoch: 64, train set index: 299, average loss: 0.5847960711
+2022-06-29 20:48:58.813645:
+epoch: 64, train set index: 319, average loss: 0.5633729100
+2022-06-29 20:49:05.217314:
+epoch: 64, train set index: 339, average loss: 0.6984606385
+2022-06-29 20:49:11.598561:
+epoch: 64, train set index: 359, average loss: 0.5661318302
+2022-06-29 20:49:17.931812:
+epoch: 64, train set index: 379, average loss: 0.5320260525
+2022-06-29 20:49:21.956166:
+Epoch 64 finished, average loss: 0.0047400943
+2022-06-29 20:49:21.956261:
+Starting testing
+2022-06-29 20:49:24.498897:
+Correct: 8571, total: 10000, accuracy: 0.8570999503, average loss: 0.0034191927
+2022-06-29 20:49:32.450458:
+epoch: 65, train set index: 19, average loss: 0.4353621602
+2022-06-29 20:49:38.864596:
+epoch: 65, train set index: 39, average loss: 0.5374164581
+2022-06-29 20:49:45.270207:
+epoch: 65, train set index: 59, average loss: 0.5671012402
+2022-06-29 20:49:51.686214:
+epoch: 65, train set index: 79, average loss: 0.6610127091
+2022-06-29 20:49:58.059776:
+epoch: 65, train set index: 99, average loss: 0.5848056078
+2022-06-29 20:50:04.427011:
+epoch: 65, train set index: 119, average loss: 0.7187161446
+2022-06-29 20:50:10.805908:
+epoch: 65, train set index: 139, average loss: 0.5834828615
+2022-06-29 20:50:17.171759:
+epoch: 65, train set index: 159, average loss: 0.6255730987
+2022-06-29 20:50:23.618932:
+epoch: 65, train set index: 179, average loss: 0.6221104264
+2022-06-29 20:50:30.010657:
+epoch: 65, train set index: 199, average loss: 0.5966603756
+2022-06-29 20:50:36.405506:
+epoch: 65, train set index: 219, average loss: 0.5555579662
+2022-06-29 20:50:42.788085:
+epoch: 65, train set index: 239, average loss: 0.6105383635
+2022-06-29 20:50:49.168905:
+epoch: 65, train set index: 259, average loss: 0.6626216173
+2022-06-29 20:50:55.552266:
+epoch: 65, train set index: 279, average loss: 0.5350222588
+2022-06-29 20:51:01.920432:
+epoch: 65, train set index: 299, average loss: 0.6877586842
+2022-06-29 20:51:08.300273:
+epoch: 65, train set index: 319, average loss: 0.6910786629
+2022-06-29 20:51:14.676711:
+epoch: 65, train set index: 339, average loss: 0.6372420788
+2022-06-29 20:51:21.055215:
+epoch: 65, train set index: 359, average loss: 0.5708221793
+2022-06-29 20:51:27.450180:
+epoch: 65, train set index: 379, average loss: 0.5781194568
+2022-06-29 20:51:31.502490:
+Epoch 65 finished, average loss: 0.0047168653
+2022-06-29 20:51:31.502631:
+Starting testing
+2022-06-29 20:51:34.199778:
+Correct: 8468, total: 10000, accuracy: 0.8467999697, average loss: 0.0035670360
+2022-06-29 20:51:42.086066:
+epoch: 66, train set index: 19, average loss: 0.5958777070
+2022-06-29 20:51:48.464636:
+epoch: 66, train set index: 39, average loss: 0.5179657340
+2022-06-29 20:51:54.821069:
+epoch: 66, train set index: 59, average loss: 0.6233459115
+2022-06-29 20:52:01.162656:
+epoch: 66, train set index: 79, average loss: 0.6494556069
+2022-06-29 20:52:07.537148:
+epoch: 66, train set index: 99, average loss: 0.6128444672
+2022-06-29 20:52:13.906804:
+epoch: 66, train set index: 119, average loss: 0.6545065045
+2022-06-29 20:52:20.280894:
+epoch: 66, train set index: 139, average loss: 0.5001558661
+2022-06-29 20:52:26.652216:
+epoch: 66, train set index: 159, average loss: 0.4128716290
+2022-06-29 20:52:33.019884:
+epoch: 66, train set index: 179, average loss: 0.5787343979
+2022-06-29 20:52:39.403846:
+epoch: 66, train set index: 199, average loss: 0.5282480121
+2022-06-29 20:52:45.814963:
+epoch: 66, train set index: 219, average loss: 0.5665269494
+2022-06-29 20:52:52.164214:
+epoch: 66, train set index: 239, average loss: 0.4866382778
+2022-06-29 20:52:58.508903:
+epoch: 66, train set index: 259, average loss: 0.6358685493
+2022-06-29 20:53:04.845945:
+epoch: 66, train set index: 279, average loss: 0.5842924714
+2022-06-29 20:53:11.179592:
+epoch: 66, train set index: 299, average loss: 0.6664722562
+2022-06-29 20:53:17.550599:
+epoch: 66, train set index: 319, average loss: 0.6940712929
+2022-06-29 20:53:23.949498:
+epoch: 66, train set index: 339, average loss: 0.6686472297
+2022-06-29 20:53:30.317859:
+epoch: 66, train set index: 359, average loss: 0.6133099794
+2022-06-29 20:53:36.668586:
+epoch: 66, train set index: 379, average loss: 0.7448011041
+2022-06-29 20:53:40.742938:
+Epoch 66 finished, average loss: 0.0047064321
+2022-06-29 20:53:40.743058:
+Starting testing
+2022-06-29 20:53:43.369611:
+Correct: 8560, total: 10000, accuracy: 0.8560000062, average loss: 0.0033173945
+2022-06-29 20:53:51.186881:
+epoch: 67, train set index: 19, average loss: 0.5778199434
+2022-06-29 20:53:57.544299:
+epoch: 67, train set index: 39, average loss: 0.5588582754
+2022-06-29 20:54:03.903808:
+epoch: 67, train set index: 59, average loss: 0.4324101508
+2022-06-29 20:54:10.261911:
+epoch: 67, train set index: 79, average loss: 0.6115216017
+2022-06-29 20:54:16.636768:
+epoch: 67, train set index: 99, average loss: 0.7106073499
+2022-06-29 20:54:23.031375:
+epoch: 67, train set index: 119, average loss: 0.5627024770
+2022-06-29 20:54:29.403183:
+epoch: 67, train set index: 139, average loss: 0.5469132662
+2022-06-29 20:54:35.798313:
+epoch: 67, train set index: 159, average loss: 0.7003054023
+2022-06-29 20:54:42.194388:
+epoch: 67, train set index: 179, average loss: 0.5059087873
+2022-06-29 20:54:48.575255:
+epoch: 67, train set index: 199, average loss: 0.5765676498
+2022-06-29 20:54:54.936476:
+epoch: 67, train set index: 219, average loss: 0.6774139404
+2022-06-29 20:55:01.328352:
+epoch: 67, train set index: 239, average loss: 0.5907982588
+2022-06-29 20:55:07.698673:
+epoch: 67, train set index: 259, average loss: 0.5065003633
+2022-06-29 20:55:14.047855:
+epoch: 67, train set index: 279, average loss: 0.5865858197
+2022-06-29 20:55:20.392204:
+epoch: 67, train set index: 299, average loss: 0.5408504009
+2022-06-29 20:55:26.731383:
+epoch: 67, train set index: 319, average loss: 0.7424218655
+2022-06-29 20:55:33.082602:
+epoch: 67, train set index: 339, average loss: 0.5799362659
+2022-06-29 20:55:39.438079:
+epoch: 67, train set index: 359, average loss: 0.6546179652
+2022-06-29 20:55:45.805993:
+epoch: 67, train set index: 379, average loss: 0.5833565593
+2022-06-29 20:55:49.901177:
+Epoch 67 finished, average loss: 0.0046935207
+2022-06-29 20:55:49.901286:
+Starting testing
+2022-06-29 20:55:52.397564:
+Correct: 8553, total: 10000, accuracy: 0.8552999496, average loss: 0.0033773109
+2022-06-29 20:56:00.334544:
+epoch: 68, train set index: 19, average loss: 0.6822174191
+2022-06-29 20:56:06.704668:
+epoch: 68, train set index: 39, average loss: 0.5669321418
+2022-06-29 20:56:13.077233:
+epoch: 68, train set index: 59, average loss: 0.6123553514
+2022-06-29 20:56:19.455747:
+epoch: 68, train set index: 79, average loss: 0.4564115703
+2022-06-29 20:56:25.817662:
+epoch: 68, train set index: 99, average loss: 0.5506664515
+2022-06-29 20:56:32.144716:
+epoch: 68, train set index: 119, average loss: 0.5549232364
+2022-06-29 20:56:38.503428:
+epoch: 68, train set index: 139, average loss: 0.4834394157
+2022-06-29 20:56:44.882651:
+epoch: 68, train set index: 159, average loss: 0.5857042074
+2022-06-29 20:56:51.228962:
+epoch: 68, train set index: 179, average loss: 0.6481217742
+2022-06-29 20:56:57.567138:
+epoch: 68, train set index: 199, average loss: 0.6016473770
+2022-06-29 20:57:03.930956:
+epoch: 68, train set index: 219, average loss: 0.5301565528
+2022-06-29 20:57:10.320737:
+epoch: 68, train set index: 239, average loss: 0.4842242599
+2022-06-29 20:57:16.697608:
+epoch: 68, train set index: 259, average loss: 0.6485810876
+2022-06-29 20:57:23.070987:
+epoch: 68, train set index: 279, average loss: 0.5930175781
+2022-06-29 20:57:29.443094:
+epoch: 68, train set index: 299, average loss: 0.5873326659
+2022-06-29 20:57:35.810951:
+epoch: 68, train set index: 319, average loss: 0.5739254355
+2022-06-29 20:57:42.174884:
+epoch: 68, train set index: 339, average loss: 0.6307125092
+2022-06-29 20:57:48.548342:
+epoch: 68, train set index: 359, average loss: 0.4750368893
+2022-06-29 20:57:54.901723:
+epoch: 68, train set index: 379, average loss: 0.7303276658
+2022-06-29 20:57:58.939272:
+Epoch 68 finished, average loss: 0.0046800748
+2022-06-29 20:57:58.939399:
+Starting testing
+2022-06-29 20:58:01.587664:
+Correct: 8585, total: 10000, accuracy: 0.8585000038, average loss: 0.0032193076
+2022-06-29 20:58:09.412247:
+epoch: 69, train set index: 19, average loss: 0.6014510989
+2022-06-29 20:58:15.803411:
+epoch: 69, train set index: 39, average loss: 0.5076897144
+2022-06-29 20:58:22.189110:
+epoch: 69, train set index: 59, average loss: 0.7669082880
+2022-06-29 20:58:28.529250:
+epoch: 69, train set index: 79, average loss: 0.5389630795
+2022-06-29 20:58:34.865050:
+epoch: 69, train set index: 99, average loss: 0.6216611266
+2022-06-29 20:58:41.229165:
+epoch: 69, train set index: 119, average loss: 0.5520929098
+2022-06-29 20:58:47.599176:
+epoch: 69, train set index: 139, average loss: 0.5323876739
+2022-06-29 20:58:53.971100:
+epoch: 69, train set index: 159, average loss: 0.6133177280
+2022-06-29 20:59:00.334179:
+epoch: 69, train set index: 179, average loss: 0.5813716054
+2022-06-29 20:59:06.688732:
+epoch: 69, train set index: 199, average loss: 0.4977732301
+2022-06-29 20:59:13.065112:
+epoch: 69, train set index: 219, average loss: 0.5718984008
+2022-06-29 20:59:19.430639:
+epoch: 69, train set index: 239, average loss: 0.7928702831
+2022-06-29 20:59:25.789419:
+epoch: 69, train set index: 259, average loss: 0.5158469677
+2022-06-29 20:59:32.146508:
+epoch: 69, train set index: 279, average loss: 0.6820815206
+2022-06-29 20:59:38.502628:
+epoch: 69, train set index: 299, average loss: 0.5106454492
+2022-06-29 20:59:44.844027:
+epoch: 69, train set index: 319, average loss: 0.5959467292
+2022-06-29 20:59:51.184277:
+epoch: 69, train set index: 339, average loss: 0.5849298835
+2022-06-29 20:59:57.538190:
+epoch: 69, train set index: 359, average loss: 0.6644327641
+2022-06-29 21:00:03.886538:
+epoch: 69, train set index: 379, average loss: 0.5712524652
+2022-06-29 21:00:07.938494:
+Epoch 69 finished, average loss: 0.0047045117
+2022-06-29 21:00:07.938662:
+Starting testing
+2022-06-29 21:00:10.539282:
+Correct: 8503, total: 10000, accuracy: 0.8502999544, average loss: 0.0034313239
+2022-06-29 21:00:18.401693:
+epoch: 70, train set index: 19, average loss: 0.4986841977
+2022-06-29 21:00:24.768523:
+epoch: 70, train set index: 39, average loss: 0.6773132086
+2022-06-29 21:00:31.130146:
+epoch: 70, train set index: 59, average loss: 0.5795100331
+2022-06-29 21:00:37.501439:
+epoch: 70, train set index: 79, average loss: 0.6260891557
+2022-06-29 21:00:43.839512:
+epoch: 70, train set index: 99, average loss: 0.5982008576
+2022-06-29 21:00:50.227775:
+epoch: 70, train set index: 119, average loss: 0.4662515521
+2022-06-29 21:00:56.559188:
+epoch: 70, train set index: 139, average loss: 0.5713160038
+2022-06-29 21:01:02.896072:
+epoch: 70, train set index: 159, average loss: 0.6715660691
+2022-06-29 21:01:09.234061:
+epoch: 70, train set index: 179, average loss: 0.5654796362
+2022-06-29 21:01:15.576495:
+epoch: 70, train set index: 199, average loss: 0.6650347710
+2022-06-29 21:01:21.954165:
+epoch: 70, train set index: 219, average loss: 0.6749530435
+2022-06-29 21:01:28.300021:
+epoch: 70, train set index: 239, average loss: 0.5552918911
+2022-06-29 21:01:34.629522:
+epoch: 70, train set index: 259, average loss: 0.5204039812
+2022-06-29 21:01:40.977630:
+epoch: 70, train set index: 279, average loss: 0.5442349315
+2022-06-29 21:01:47.327507:
+epoch: 70, train set index: 299, average loss: 0.5246319771
+2022-06-29 21:01:53.667428:
+epoch: 70, train set index: 319, average loss: 0.6249706149
+2022-06-29 21:02:00.006413:
+epoch: 70, train set index: 339, average loss: 0.4968917668
+2022-06-29 21:02:06.362750:
+epoch: 70, train set index: 359, average loss: 0.5477519631
+2022-06-29 21:02:12.728296:
+epoch: 70, train set index: 379, average loss: 0.5251721740
+2022-06-29 21:02:16.795271:
+Epoch 70 finished, average loss: 0.0047096452
+2022-06-29 21:02:16.795372:
+Starting testing
+2022-06-29 21:02:19.487532:
+Correct: 8518, total: 10000, accuracy: 0.8517999649, average loss: 0.0033243347
+2022-06-29 21:02:27.391099:
+epoch: 71, train set index: 19, average loss: 0.5699183941
+2022-06-29 21:02:33.764690:
+epoch: 71, train set index: 39, average loss: 0.7176536918
+2022-06-29 21:02:40.147732:
+epoch: 71, train set index: 59, average loss: 0.5438220501
+2022-06-29 21:02:46.530565:
+epoch: 71, train set index: 79, average loss: 0.6537033916
+2022-06-29 21:02:52.982280:
+epoch: 71, train set index: 99, average loss: 0.5463516116
+2022-06-29 21:02:59.355856:
+epoch: 71, train set index: 119, average loss: 0.6212758422
+2022-06-29 21:03:05.742833:
+epoch: 71, train set index: 139, average loss: 0.5756862760
+2022-06-29 21:03:12.111418:
+epoch: 71, train set index: 159, average loss: 0.6183175445
+2022-06-29 21:03:18.474320:
+epoch: 71, train set index: 179, average loss: 0.6531370878
+2022-06-29 21:03:24.853876:
+epoch: 71, train set index: 199, average loss: 0.6019596457
+2022-06-29 21:03:31.232647:
+epoch: 71, train set index: 219, average loss: 0.4539435804
+2022-06-29 21:03:37.600633:
+epoch: 71, train set index: 239, average loss: 0.4977967143
+2022-06-29 21:03:43.985206:
+epoch: 71, train set index: 259, average loss: 0.6065403819
+2022-06-29 21:03:50.367633:
+epoch: 71, train set index: 279, average loss: 0.6111809015
+2022-06-29 21:03:56.746205:
+epoch: 71, train set index: 299, average loss: 0.5407757759
+2022-06-29 21:04:03.108888:
+epoch: 71, train set index: 319, average loss: 0.6308905482
+2022-06-29 21:04:09.476240:
+epoch: 71, train set index: 339, average loss: 0.6544033289
+2022-06-29 21:04:15.842031:
+epoch: 71, train set index: 359, average loss: 0.5669072866
+2022-06-29 21:04:22.203198:
+epoch: 71, train set index: 379, average loss: 0.5990331769
+2022-06-29 21:04:26.290147:
+Epoch 71 finished, average loss: 0.0046914225
+2022-06-29 21:04:26.290258:
+Starting testing
+2022-06-29 21:04:28.953354:
+Correct: 8548, total: 10000, accuracy: 0.8547999859, average loss: 0.0033591364
+2022-06-29 21:04:36.814180:
+epoch: 72, train set index: 19, average loss: 0.5855183601
+2022-06-29 21:04:43.255266:
+epoch: 72, train set index: 39, average loss: 0.6799118519
+2022-06-29 21:04:49.703407:
+epoch: 72, train set index: 59, average loss: 0.5267728567
+2022-06-29 21:04:56.120059:
+epoch: 72, train set index: 79, average loss: 0.6364979148
+2022-06-29 21:05:02.524914:
+epoch: 72, train set index: 99, average loss: 0.5278220773
+2022-06-29 21:05:08.952706:
+epoch: 72, train set index: 119, average loss: 0.6054658890
+2022-06-29 21:05:15.349032:
+epoch: 72, train set index: 139, average loss: 0.5078665614
+2022-06-29 21:05:21.798691:
+epoch: 72, train set index: 159, average loss: 0.5069748759
+2022-06-29 21:05:28.177241:
+epoch: 72, train set index: 179, average loss: 0.4450409412
+2022-06-29 21:05:34.550947:
+epoch: 72, train set index: 199, average loss: 0.7350326180
+2022-06-29 21:05:40.921300:
+epoch: 72, train set index: 219, average loss: 0.6148751974
+2022-06-29 21:05:47.293573:
+epoch: 72, train set index: 239, average loss: 0.5948982239
+2022-06-29 21:05:53.672093:
+epoch: 72, train set index: 259, average loss: 0.6518660188
+2022-06-29 21:06:00.045417:
+epoch: 72, train set index: 279, average loss: 0.5406716466
+2022-06-29 21:06:06.440736:
+epoch: 72, train set index: 299, average loss: 0.6330664158
+2022-06-29 21:06:12.762048:
+epoch: 72, train set index: 319, average loss: 0.6916579008
+2022-06-29 21:06:19.104531:
+epoch: 72, train set index: 339, average loss: 0.6111877561
+2022-06-29 21:06:25.484218:
+epoch: 72, train set index: 359, average loss: 0.5233026743
+2022-06-29 21:06:31.889928:
+epoch: 72, train set index: 379, average loss: 0.5660943389
+2022-06-29 21:06:35.996399:
+Epoch 72 finished, average loss: 0.0046292292
+2022-06-29 21:06:35.996505:
+Starting testing
+2022-06-29 21:06:38.606018:
+Correct: 8529, total: 10000, accuracy: 0.8528999686, average loss: 0.0034725016
+2022-06-29 21:06:46.519020:
+epoch: 73, train set index: 19, average loss: 0.6728655696
+2022-06-29 21:06:52.907984:
+epoch: 73, train set index: 39, average loss: 0.5901364088
+2022-06-29 21:06:59.281191:
+epoch: 73, train set index: 59, average loss: 0.7162660956
+2022-06-29 21:07:05.661103:
+epoch: 73, train set index: 79, average loss: 0.6878406405
+2022-06-29 21:07:12.016229:
+epoch: 73, train set index: 99, average loss: 0.6437702775
+2022-06-29 21:07:18.357708:
+epoch: 73, train set index: 119, average loss: 0.7158651948
+2022-06-29 21:07:24.711935:
+epoch: 73, train set index: 139, average loss: 0.5402187109
+2022-06-29 21:07:31.060974:
+epoch: 73, train set index: 159, average loss: 0.5686424971
+2022-06-29 21:07:37.405178:
+epoch: 73, train set index: 179, average loss: 0.5463813543
+2022-06-29 21:07:43.757583:
+epoch: 73, train set index: 199, average loss: 0.5036867857
+2022-06-29 21:07:50.112561:
+epoch: 73, train set index: 219, average loss: 0.5643975139
+2022-06-29 21:07:56.451359:
+epoch: 73, train set index: 239, average loss: 0.5651038885
+2022-06-29 21:08:02.799165:
+epoch: 73, train set index: 259, average loss: 0.8198316097
+2022-06-29 21:08:09.175288:
+epoch: 73, train set index: 279, average loss: 0.5843029022
+2022-06-29 21:08:15.537025:
+epoch: 73, train set index: 299, average loss: 0.6514232755
+2022-06-29 21:08:21.889991:
+epoch: 73, train set index: 319, average loss: 0.6255519390
+2022-06-29 21:08:28.243598:
+epoch: 73, train set index: 339, average loss: 0.5671786070
+2022-06-29 21:08:34.599009:
+epoch: 73, train set index: 359, average loss: 0.6908770204
+2022-06-29 21:08:40.970876:
+epoch: 73, train set index: 379, average loss: 0.6297128797
+2022-06-29 21:08:45.039750:
+Epoch 73 finished, average loss: 0.0046410682
+2022-06-29 21:08:45.039983:
+Starting testing
+2022-06-29 21:08:47.622863:
+Correct: 8607, total: 10000, accuracy: 0.8606999516, average loss: 0.0033104492
+2022-06-29 21:08:55.515199:
+epoch: 74, train set index: 19, average loss: 0.4887977242
+2022-06-29 21:09:01.921960:
+epoch: 74, train set index: 39, average loss: 0.5395851731
+2022-06-29 21:09:08.311196:
+epoch: 74, train set index: 59, average loss: 0.4834684432
+2022-06-29 21:09:14.712473:
+epoch: 74, train set index: 79, average loss: 0.7300911546
+2022-06-29 21:09:21.166210:
+epoch: 74, train set index: 99, average loss: 0.5447037816
+2022-06-29 21:09:27.502557:
+epoch: 74, train set index: 119, average loss: 0.4887592196
+2022-06-29 21:09:33.861058:
+epoch: 74, train set index: 139, average loss: 0.5548868179
+2022-06-29 21:09:40.194094:
+epoch: 74, train set index: 159, average loss: 0.5920594335
+2022-06-29 21:09:46.528160:
+epoch: 74, train set index: 179, average loss: 0.6826730371
+2022-06-29 21:09:52.898613:
+epoch: 74, train set index: 199, average loss: 0.5795716643
+2022-06-29 21:09:59.276337:
+epoch: 74, train set index: 219, average loss: 0.6263396144
+2022-06-29 21:10:05.672899:
+epoch: 74, train set index: 239, average loss: 0.6151922941
+2022-06-29 21:10:12.044886:
+epoch: 74, train set index: 259, average loss: 0.6786687970
+2022-06-29 21:10:18.415740:
+epoch: 74, train set index: 279, average loss: 0.6393158436
+2022-06-29 21:10:24.819750:
+epoch: 74, train set index: 299, average loss: 0.5482367873
+2022-06-29 21:10:31.187347:
+epoch: 74, train set index: 319, average loss: 0.6713235378
+2022-06-29 21:10:37.550487:
+epoch: 74, train set index: 339, average loss: 0.5587064624
+2022-06-29 21:10:43.918628:
+epoch: 74, train set index: 359, average loss: 0.5067253113
+2022-06-29 21:10:50.312547:
+epoch: 74, train set index: 379, average loss: 0.6764100194
+2022-06-29 21:10:54.359651:
+Epoch 74 finished, average loss: 0.0046245120
+2022-06-29 21:10:54.359797:
+Starting testing
+2022-06-29 21:10:56.986741:
+Correct: 8554, total: 10000, accuracy: 0.8553999662, average loss: 0.0033260542
+2022-06-29 21:11:04.827105:
+epoch: 75, train set index: 19, average loss: 0.5550901890
+2022-06-29 21:11:11.238048:
+epoch: 75, train set index: 39, average loss: 0.6671830416
+2022-06-29 21:11:17.635230:
+epoch: 75, train set index: 59, average loss: 0.6082596183
+2022-06-29 21:11:24.013973:
+epoch: 75, train set index: 79, average loss: 0.6001765728
+2022-06-29 21:11:30.384903:
+epoch: 75, train set index: 99, average loss: 0.4856149256
+2022-06-29 21:11:36.763824:
+epoch: 75, train set index: 119, average loss: 0.6724571586
+2022-06-29 21:11:43.131656:
+epoch: 75, train set index: 139, average loss: 0.7742539048
+2022-06-29 21:11:49.510422:
+epoch: 75, train set index: 159, average loss: 0.6477700472
+2022-06-29 21:11:55.876561:
+epoch: 75, train set index: 179, average loss: 0.5176551342
+2022-06-29 21:12:02.274779:
+epoch: 75, train set index: 199, average loss: 0.6527575850
+2022-06-29 21:12:08.647379:
+epoch: 75, train set index: 219, average loss: 0.6201763749
+2022-06-29 21:12:15.030610:
+epoch: 75, train set index: 239, average loss: 0.5631673932
+2022-06-29 21:12:21.417674:
+epoch: 75, train set index: 259, average loss: 0.6589506865
+2022-06-29 21:12:27.794420:
+epoch: 75, train set index: 279, average loss: 0.6829053164
+2022-06-29 21:12:34.169236:
+epoch: 75, train set index: 299, average loss: 0.5519170761
+2022-06-29 21:12:40.532275:
+epoch: 75, train set index: 319, average loss: 0.5913120508
+2022-06-29 21:12:46.916874:
+epoch: 75, train set index: 339, average loss: 0.6104575396
+2022-06-29 21:12:53.283463:
+epoch: 75, train set index: 359, average loss: 0.5305333734
+2022-06-29 21:12:59.622698:
+epoch: 75, train set index: 379, average loss: 0.6062507033
+2022-06-29 21:13:03.706229:
+Epoch 75 finished, average loss: 0.0046539274
+2022-06-29 21:13:03.706331:
+Starting testing
+2022-06-29 21:13:06.285940:
+Correct: 8544, total: 10000, accuracy: 0.8543999791, average loss: 0.0033382529
+2022-06-29 21:13:14.120891:
+epoch: 76, train set index: 19, average loss: 0.6554393768
+2022-06-29 21:13:20.499735:
+epoch: 76, train set index: 39, average loss: 0.4995119870
+2022-06-29 21:13:26.867394:
+epoch: 76, train set index: 59, average loss: 0.6636437774
+2022-06-29 21:13:33.268348:
+epoch: 76, train set index: 79, average loss: 0.5699585676
+2022-06-29 21:13:39.658290:
+epoch: 76, train set index: 99, average loss: 0.5610746741
+2022-06-29 21:13:46.038455:
+epoch: 76, train set index: 119, average loss: 0.6381558180
+2022-06-29 21:13:52.422455:
+epoch: 76, train set index: 139, average loss: 0.5824175477
+2022-06-29 21:13:58.815230:
+epoch: 76, train set index: 159, average loss: 0.5390483141
+2022-06-29 21:14:05.200362:
+epoch: 76, train set index: 179, average loss: 0.5104767680
+2022-06-29 21:14:11.593973:
+epoch: 76, train set index: 199, average loss: 0.5561414361
+2022-06-29 21:14:17.963375:
+epoch: 76, train set index: 219, average loss: 0.5204661489
+2022-06-29 21:14:24.330312:
+epoch: 76, train set index: 239, average loss: 0.6472911239
+2022-06-29 21:14:30.690771:
+epoch: 76, train set index: 259, average loss: 0.6222722530
+2022-06-29 21:14:37.046148:
+epoch: 76, train set index: 279, average loss: 0.5873166323
+2022-06-29 21:14:43.408846:
+epoch: 76, train set index: 299, average loss: 0.7189604640
+2022-06-29 21:14:49.783409:
+epoch: 76, train set index: 319, average loss: 0.6399282217
+2022-06-29 21:14:56.136770:
+epoch: 76, train set index: 339, average loss: 0.7073903084
+2022-06-29 21:15:02.494503:
+epoch: 76, train set index: 359, average loss: 0.6452413201
+2022-06-29 21:15:08.936723:
+epoch: 76, train set index: 379, average loss: 0.5980939269
+2022-06-29 21:15:13.023865:
+Epoch 76 finished, average loss: 0.0046277693
+2022-06-29 21:15:13.023993:
+Starting testing
+2022-06-29 21:15:15.739476:
+Correct: 8477, total: 10000, accuracy: 0.8476999998, average loss: 0.0035061068
+2022-06-29 21:15:23.525169:
+epoch: 77, train set index: 19, average loss: 0.5910401940
+2022-06-29 21:15:29.926152:
+epoch: 77, train set index: 39, average loss: 0.6182911992
+2022-06-29 21:15:36.324745:
+epoch: 77, train set index: 59, average loss: 0.6442008018
+2022-06-29 21:15:42.715798:
+epoch: 77, train set index: 79, average loss: 0.4348378181
+2022-06-29 21:15:49.091508:
+epoch: 77, train set index: 99, average loss: 0.5636321902
+2022-06-29 21:15:55.474722:
+epoch: 77, train set index: 119, average loss: 0.6755686998
+2022-06-29 21:16:01.879554:
+epoch: 77, train set index: 139, average loss: 0.6050808430
+2022-06-29 21:16:08.251536:
+epoch: 77, train set index: 159, average loss: 0.5883087516
+2022-06-29 21:16:14.618794:
+epoch: 77, train set index: 179, average loss: 0.5552259088
+2022-06-29 21:16:20.985013:
+epoch: 77, train set index: 199, average loss: 0.7414634824
+2022-06-29 21:16:27.359400:
+epoch: 77, train set index: 219, average loss: 0.5436096787
+2022-06-29 21:16:33.718352:
+epoch: 77, train set index: 239, average loss: 0.5367301106
+2022-06-29 21:16:40.093356:
+epoch: 77, train set index: 259, average loss: 0.8149680495
+2022-06-29 21:16:46.475020:
+epoch: 77, train set index: 279, average loss: 0.6284233332
+2022-06-29 21:16:52.849098:
+epoch: 77, train set index: 299, average loss: 0.4064050615
+2022-06-29 21:16:59.212314:
+epoch: 77, train set index: 319, average loss: 0.5268108249
+2022-06-29 21:17:05.568053:
+epoch: 77, train set index: 339, average loss: 0.6550210714
+2022-06-29 21:17:11.950609:
+epoch: 77, train set index: 359, average loss: 0.5726418495
+2022-06-29 21:17:18.319314:
+epoch: 77, train set index: 379, average loss: 0.5487844944
+2022-06-29 21:17:22.380785:
+Epoch 77 finished, average loss: 0.0046156775
+2022-06-29 21:17:22.380917:
+Starting testing
+2022-06-29 21:17:24.999443:
+Correct: 8548, total: 10000, accuracy: 0.8547999859, average loss: 0.0033626007
+2022-06-29 21:17:32.909948:
+epoch: 78, train set index: 19, average loss: 0.5251163244
+2022-06-29 21:17:39.344039:
+epoch: 78, train set index: 39, average loss: 0.6085370183
+2022-06-29 21:17:45.734827:
+epoch: 78, train set index: 59, average loss: 0.5673286319
+2022-06-29 21:17:52.123899:
+epoch: 78, train set index: 79, average loss: 0.4522874355
+2022-06-29 21:17:58.519920:
+epoch: 78, train set index: 99, average loss: 0.6191139221
+2022-06-29 21:18:04.958100:
+epoch: 78, train set index: 119, average loss: 0.4871667922
+2022-06-29 21:18:11.348382:
+epoch: 78, train set index: 139, average loss: 0.5214546323
+2022-06-29 21:18:17.720885:
+epoch: 78, train set index: 159, average loss: 0.5148690343
+2022-06-29 21:18:24.090653:
+epoch: 78, train set index: 179, average loss: 0.6475781798
+2022-06-29 21:18:30.456108:
+epoch: 78, train set index: 199, average loss: 0.6437750459
+2022-06-29 21:18:36.823514:
+epoch: 78, train set index: 219, average loss: 0.5463863015
+2022-06-29 21:18:43.139354:
+epoch: 78, train set index: 239, average loss: 0.7042091489
+2022-06-29 21:18:49.462200:
+epoch: 78, train set index: 259, average loss: 0.6018970609
+2022-06-29 21:18:55.791401:
+epoch: 78, train set index: 279, average loss: 0.7075657845
+2022-06-29 21:19:02.123441:
+epoch: 78, train set index: 299, average loss: 0.5373590589
+2022-06-29 21:19:08.457010:
+epoch: 78, train set index: 319, average loss: 0.6229344010
+2022-06-29 21:19:14.796779:
+epoch: 78, train set index: 339, average loss: 0.5416181684
+2022-06-29 21:19:21.161015:
+epoch: 78, train set index: 359, average loss: 0.6342233419
+2022-06-29 21:19:27.522949:
+epoch: 78, train set index: 379, average loss: 0.5754579902
+2022-06-29 21:19:31.639228:
+Epoch 78 finished, average loss: 0.0045789201
+2022-06-29 21:19:31.639357:
+Starting testing
+2022-06-29 21:19:34.364708:
+Correct: 8551, total: 10000, accuracy: 0.8550999761, average loss: 0.0032825309
+2022-06-29 21:19:42.227347:
+epoch: 79, train set index: 19, average loss: 0.6052278876
+2022-06-29 21:19:48.628324:
+epoch: 79, train set index: 39, average loss: 0.6410969496
+2022-06-29 21:19:55.038360:
+epoch: 79, train set index: 59, average loss: 0.6379397511
+2022-06-29 21:20:01.423298:
+epoch: 79, train set index: 79, average loss: 0.6051515937
+2022-06-29 21:20:07.802795:
+epoch: 79, train set index: 99, average loss: 0.6867410541
+2022-06-29 21:20:14.180522:
+epoch: 79, train set index: 119, average loss: 0.6779652238
+2022-06-29 21:20:20.567278:
+epoch: 79, train set index: 139, average loss: 0.6037704945
+2022-06-29 21:20:26.948656:
+epoch: 79, train set index: 159, average loss: 0.5817218423
+2022-06-29 21:20:33.331509:
+epoch: 79, train set index: 179, average loss: 0.5763082504
+2022-06-29 21:20:39.730789:
+epoch: 79, train set index: 199, average loss: 0.6293692589
+2022-06-29 21:20:46.109976:
+epoch: 79, train set index: 219, average loss: 0.4671522677
+2022-06-29 21:20:52.483142:
+epoch: 79, train set index: 239, average loss: 0.5853413343
+2022-06-29 21:20:58.835255:
+epoch: 79, train set index: 259, average loss: 0.5523810983
+2022-06-29 21:21:05.227585:
+epoch: 79, train set index: 279, average loss: 0.7131599784
+2022-06-29 21:21:11.613934:
+epoch: 79, train set index: 299, average loss: 0.6011412144
+2022-06-29 21:21:17.979815:
+epoch: 79, train set index: 319, average loss: 0.5057188869
+2022-06-29 21:21:24.356658:
+epoch: 79, train set index: 339, average loss: 0.5877715945
+2022-06-29 21:21:30.734348:
+epoch: 79, train set index: 359, average loss: 0.5318455696
+2022-06-29 21:21:37.119653:
+epoch: 79, train set index: 379, average loss: 0.5687380433
+2022-06-29 21:21:41.177835:
+Epoch 79 finished, average loss: 0.0046145343
+2022-06-29 21:21:41.177978:
+Starting testing
+2022-06-29 21:21:43.882857:
+Correct: 8609, total: 10000, accuracy: 0.8608999848, average loss: 0.0032582716
+2022-06-29 21:21:51.652377:
+epoch: 80, train set index: 19, average loss: 0.4885518551
+2022-06-29 21:21:58.037221:
+epoch: 80, train set index: 39, average loss: 0.5860518217
+2022-06-29 21:22:04.466836:
+epoch: 80, train set index: 59, average loss: 0.5592146516
+2022-06-29 21:22:10.850073:
+epoch: 80, train set index: 79, average loss: 0.4164270461
+2022-06-29 21:22:17.234045:
+epoch: 80, train set index: 99, average loss: 0.6117275357
+2022-06-29 21:22:23.623511:
+epoch: 80, train set index: 119, average loss: 0.5564405322
+2022-06-29 21:22:30.000759:
+epoch: 80, train set index: 139, average loss: 0.5503737330
+2022-06-29 21:22:36.349218:
+epoch: 80, train set index: 159, average loss: 0.6151895523
+2022-06-29 21:22:42.685464:
+epoch: 80, train set index: 179, average loss: 0.6193200946
+2022-06-29 21:22:49.042943:
+epoch: 80, train set index: 199, average loss: 0.6456733346
+2022-06-29 21:22:55.419886:
+epoch: 80, train set index: 219, average loss: 0.5245854855
+2022-06-29 21:23:01.793640:
+epoch: 80, train set index: 239, average loss: 0.5409581661
+2022-06-29 21:23:08.160217:
+epoch: 80, train set index: 259, average loss: 0.5982744098
+2022-06-29 21:23:14.543184:
+epoch: 80, train set index: 279, average loss: 0.5926074386
+2022-06-29 21:23:20.922449:
+epoch: 80, train set index: 299, average loss: 0.4565867782
+2022-06-29 21:23:27.298227:
+epoch: 80, train set index: 319, average loss: 0.5326763391
+2022-06-29 21:23:33.721803:
+epoch: 80, train set index: 339, average loss: 0.5904818177
+2022-06-29 21:23:40.114357:
+epoch: 80, train set index: 359, average loss: 0.3761811256
+2022-06-29 21:23:46.543183:
+epoch: 80, train set index: 379, average loss: 0.6127912998
+2022-06-29 21:23:50.642082:
+Epoch 80 finished, average loss: 0.0045861281
+2022-06-29 21:23:50.642178:
+Starting testing
+2022-06-29 21:23:53.199736:
+Correct: 8467, total: 10000, accuracy: 0.8466999531, average loss: 0.0035240725
+2022-06-29 21:24:01.026157:
+epoch: 81, train set index: 19, average loss: 0.4045276940
+2022-06-29 21:24:07.468899:
+epoch: 81, train set index: 39, average loss: 0.4774652421
+2022-06-29 21:24:13.877128:
+epoch: 81, train set index: 59, average loss: 0.5041806698
+2022-06-29 21:24:20.284886:
+epoch: 81, train set index: 79, average loss: 0.5149324536
+2022-06-29 21:24:26.677021:
+epoch: 81, train set index: 99, average loss: 0.4966662824
+2022-06-29 21:24:33.066423:
+epoch: 81, train set index: 119, average loss: 0.5234779119
+2022-06-29 21:24:39.560123:
+epoch: 81, train set index: 139, average loss: 0.4353461862
+2022-06-29 21:24:45.860959:
+epoch: 81, train set index: 159, average loss: 0.5106003881
+2022-06-29 21:24:52.168064:
+epoch: 81, train set index: 179, average loss: 0.5894417763
+2022-06-29 21:24:58.498747:
+epoch: 81, train set index: 199, average loss: 0.4111314714
+2022-06-29 21:25:04.824685:
+epoch: 81, train set index: 219, average loss: 0.4635415077
+2022-06-29 21:25:11.146189:
+epoch: 81, train set index: 239, average loss: 0.4057582915
+2022-06-29 21:25:17.467611:
+epoch: 81, train set index: 259, average loss: 0.4007844329
+2022-06-29 21:25:23.892246:
+epoch: 81, train set index: 279, average loss: 0.4755195975
+2022-06-29 21:25:30.278623:
+epoch: 81, train set index: 299, average loss: 0.4706714153
+2022-06-29 21:25:36.677091:
+epoch: 81, train set index: 319, average loss: 0.4720415473
+2022-06-29 21:25:43.076594:
+epoch: 81, train set index: 339, average loss: 0.4052953124
+2022-06-29 21:25:49.449115:
+epoch: 81, train set index: 359, average loss: 0.4371345639
+2022-06-29 21:25:55.770692:
+epoch: 81, train set index: 379, average loss: 0.3874939084
+2022-06-29 21:25:59.808905:
+Epoch 81 finished, average loss: 0.0037010855
+2022-06-29 21:25:59.809045:
+Starting testing
+2022-06-29 21:26:02.279976:
+Correct: 8828, total: 10000, accuracy: 0.8827999830, average loss: 0.0027060539
+2022-06-29 21:26:10.316119:
+epoch: 82, train set index: 19, average loss: 0.4387470782
+2022-06-29 21:26:16.736093:
+epoch: 82, train set index: 39, average loss: 0.4194520712
+2022-06-29 21:26:23.119775:
+epoch: 82, train set index: 59, average loss: 0.5493028760
+2022-06-29 21:26:29.523519:
+epoch: 82, train set index: 79, average loss: 0.3475423157
+2022-06-29 21:26:35.893978:
+epoch: 82, train set index: 99, average loss: 0.4096270204
+2022-06-29 21:26:42.270334:
+epoch: 82, train set index: 119, average loss: 0.3674144149
+2022-06-29 21:26:48.636475:
+epoch: 82, train set index: 139, average loss: 0.4315972626
+2022-06-29 21:26:54.997821:
+epoch: 82, train set index: 159, average loss: 0.4371017218
+2022-06-29 21:27:01.362407:
+epoch: 82, train set index: 179, average loss: 0.4513203800
+2022-06-29 21:27:07.726874:
+epoch: 82, train set index: 199, average loss: 0.5287438631
+2022-06-29 21:27:14.102862:
+epoch: 82, train set index: 219, average loss: 0.5159970522
+2022-06-29 21:27:20.490761:
+epoch: 82, train set index: 239, average loss: 0.4261170924
+2022-06-29 21:27:26.854587:
+epoch: 82, train set index: 259, average loss: 0.4243510664
+2022-06-29 21:27:33.223682:
+epoch: 82, train set index: 279, average loss: 0.4096071124
+2022-06-29 21:27:39.617500:
+epoch: 82, train set index: 299, average loss: 0.4706144929
+2022-06-29 21:27:45.982487:
+epoch: 82, train set index: 319, average loss: 0.3950217664
+2022-06-29 21:27:52.347536:
+epoch: 82, train set index: 339, average loss: 0.4394516349
+2022-06-29 21:27:58.717409:
+epoch: 82, train set index: 359, average loss: 0.3954978883
+2022-06-29 21:28:05.111559:
+epoch: 82, train set index: 379, average loss: 0.4147606194
+2022-06-29 21:28:09.158914:
+Epoch 82 finished, average loss: 0.0034483082
+2022-06-29 21:28:09.159011:
+Starting testing
+2022-06-29 21:28:11.764089:
+Correct: 8798, total: 10000, accuracy: 0.8797999620, average loss: 0.0027215413
+2022-06-29 21:28:19.678294:
+epoch: 83, train set index: 19, average loss: 0.2712492645
+2022-06-29 21:28:26.088037:
+epoch: 83, train set index: 39, average loss: 0.3835290670
+2022-06-29 21:28:32.491445:
+epoch: 83, train set index: 59, average loss: 0.5574907064
+2022-06-29 21:28:38.895946:
+epoch: 83, train set index: 79, average loss: 0.3786484301
+2022-06-29 21:28:45.284589:
+epoch: 83, train set index: 99, average loss: 0.4434042573
+2022-06-29 21:28:51.696144:
+epoch: 83, train set index: 119, average loss: 0.4708532691
+2022-06-29 21:28:58.082396:
+epoch: 83, train set index: 139, average loss: 0.3431469500
+2022-06-29 21:29:04.505734:
+epoch: 83, train set index: 159, average loss: 0.4161546826
+2022-06-29 21:29:10.902474:
+epoch: 83, train set index: 179, average loss: 0.4215169847
+2022-06-29 21:29:17.276170:
+epoch: 83, train set index: 199, average loss: 0.4098512232
+2022-06-29 21:29:23.666525:
+epoch: 83, train set index: 219, average loss: 0.5683447719
+2022-06-29 21:29:30.038368:
+epoch: 83, train set index: 239, average loss: 0.4582155943
+2022-06-29 21:29:36.382546:
+epoch: 83, train set index: 259, average loss: 0.4015802443
+2022-06-29 21:29:42.710246:
+epoch: 83, train set index: 279, average loss: 0.3717281520
+2022-06-29 21:29:49.052193:
+epoch: 83, train set index: 299, average loss: 0.3468840122
+2022-06-29 21:29:55.396132:
+epoch: 83, train set index: 319, average loss: 0.3791975677
+2022-06-29 21:30:01.766629:
+epoch: 83, train set index: 339, average loss: 0.4201284349
+2022-06-29 21:30:08.138188:
+epoch: 83, train set index: 359, average loss: 0.4216487408
+2022-06-29 21:30:14.528664:
+epoch: 83, train set index: 379, average loss: 0.4352906942
+2022-06-29 21:30:18.614033:
+Epoch 83 finished, average loss: 0.0033254432
+2022-06-29 21:30:18.614159:
+Starting testing
+2022-06-29 21:30:21.225593:
+Correct: 8807, total: 10000, accuracy: 0.8806999922, average loss: 0.0027000417
+2022-06-29 21:30:29.160629:
+epoch: 84, train set index: 19, average loss: 0.4468327463
+2022-06-29 21:30:35.563642:
+epoch: 84, train set index: 39, average loss: 0.5252811313
+2022-06-29 21:30:41.962127:
+epoch: 84, train set index: 59, average loss: 0.4607053399
+2022-06-29 21:30:48.360177:
+epoch: 84, train set index: 79, average loss: 0.3906615973
+2022-06-29 21:30:54.736386:
+epoch: 84, train set index: 99, average loss: 0.4315698743
+2022-06-29 21:31:01.117909:
+epoch: 84, train set index: 119, average loss: 0.3741090298
+2022-06-29 21:31:07.489634:
+epoch: 84, train set index: 139, average loss: 0.4673419595
+2022-06-29 21:31:13.846019:
+epoch: 84, train set index: 159, average loss: 0.3377883732
+2022-06-29 21:31:20.235710:
+epoch: 84, train set index: 179, average loss: 0.3447675109
+2022-06-29 21:31:26.617982:
+epoch: 84, train set index: 199, average loss: 0.3982556462
+2022-06-29 21:31:32.980035:
+epoch: 84, train set index: 219, average loss: 0.5333348513
+2022-06-29 21:31:39.345175:
+epoch: 84, train set index: 239, average loss: 0.4680986106
+2022-06-29 21:31:45.701899:
+epoch: 84, train set index: 259, average loss: 0.4735830426
+2022-06-29 21:31:52.054766:
+epoch: 84, train set index: 279, average loss: 0.4290683270
+2022-06-29 21:31:58.412862:
+epoch: 84, train set index: 299, average loss: 0.3671254516
+2022-06-29 21:32:04.784061:
+epoch: 84, train set index: 319, average loss: 0.4829344153
+2022-06-29 21:32:11.135843:
+epoch: 84, train set index: 339, average loss: 0.5359113812
+2022-06-29 21:32:17.502070:
+epoch: 84, train set index: 359, average loss: 0.3645162880
+2022-06-29 21:32:23.907542:
+epoch: 84, train set index: 379, average loss: 0.4612885118
+2022-06-29 21:32:28.018637:
+Epoch 84 finished, average loss: 0.0032482669
+2022-06-29 21:32:28.018792:
+Starting testing
+2022-06-29 21:32:30.710499:
+Correct: 8771, total: 10000, accuracy: 0.8770999908, average loss: 0.0028489796
+2022-06-29 21:32:38.570993:
+epoch: 85, train set index: 19, average loss: 0.3539314866
+2022-06-29 21:32:44.964132:
+epoch: 85, train set index: 39, average loss: 0.4113703072
+2022-06-29 21:32:51.307603:
+epoch: 85, train set index: 59, average loss: 0.4181901515
+2022-06-29 21:32:57.641805:
+epoch: 85, train set index: 79, average loss: 0.4207754433
+2022-06-29 21:33:04.006955:
+epoch: 85, train set index: 99, average loss: 0.3824928701
+2022-06-29 21:33:10.409128:
+epoch: 85, train set index: 119, average loss: 0.4131716490
+2022-06-29 21:33:16.794210:
+epoch: 85, train set index: 139, average loss: 0.4655363858
+2022-06-29 21:33:23.174982:
+epoch: 85, train set index: 159, average loss: 0.4155441225
+2022-06-29 21:33:29.560655:
+epoch: 85, train set index: 179, average loss: 0.3732006848
+2022-06-29 21:33:35.925791:
+epoch: 85, train set index: 199, average loss: 0.4570276439
+2022-06-29 21:33:42.252487:
+epoch: 85, train set index: 219, average loss: 0.3788827062
+2022-06-29 21:33:48.576950:
+epoch: 85, train set index: 239, average loss: 0.4529738128
+2022-06-29 21:33:54.895510:
+epoch: 85, train set index: 259, average loss: 0.4235755205
+2022-06-29 21:34:01.211226:
+epoch: 85, train set index: 279, average loss: 0.3183746040
+2022-06-29 21:34:07.529879:
+epoch: 85, train set index: 299, average loss: 0.4264655709
+2022-06-29 21:34:13.849722:
+epoch: 85, train set index: 319, average loss: 0.5104274154
+2022-06-29 21:34:20.183586:
+epoch: 85, train set index: 339, average loss: 0.4358783364
+2022-06-29 21:34:26.512467:
+epoch: 85, train set index: 359, average loss: 0.3914159834
+2022-06-29 21:34:32.874218:
+epoch: 85, train set index: 379, average loss: 0.3313199878
+2022-06-29 21:34:36.920171:
+Epoch 85 finished, average loss: 0.0032030032
+2022-06-29 21:34:36.920273:
+Starting testing
+2022-06-29 21:34:39.380868:
+Correct: 8868, total: 10000, accuracy: 0.8867999911, average loss: 0.0025580775
+2022-06-29 21:34:47.433396:
+epoch: 86, train set index: 19, average loss: 0.4135479033
+2022-06-29 21:34:53.836032:
+epoch: 86, train set index: 39, average loss: 0.4075678289
+2022-06-29 21:35:00.222606:
+epoch: 86, train set index: 59, average loss: 0.3864522576
+2022-06-29 21:35:06.613091:
+epoch: 86, train set index: 79, average loss: 0.3515175879
+2022-06-29 21:35:13.033131:
+epoch: 86, train set index: 99, average loss: 0.3130682707
+2022-06-29 21:35:19.400200:
+epoch: 86, train set index: 119, average loss: 0.4690494239
+2022-06-29 21:35:25.760456:
+epoch: 86, train set index: 139, average loss: 0.5273816586
+2022-06-29 21:35:32.123017:
+epoch: 86, train set index: 159, average loss: 0.3769261539
+2022-06-29 21:35:38.502976:
+epoch: 86, train set index: 179, average loss: 0.3113015294
+2022-06-29 21:35:44.889130:
+epoch: 86, train set index: 199, average loss: 0.3154251873
+2022-06-29 21:35:51.252295:
+epoch: 86, train set index: 219, average loss: 0.3407533169
+2022-06-29 21:35:57.610991:
+epoch: 86, train set index: 239, average loss: 0.4132383168
+2022-06-29 21:36:03.967969:
+epoch: 86, train set index: 259, average loss: 0.4298377633
+2022-06-29 21:36:10.328976:
+epoch: 86, train set index: 279, average loss: 0.3434047997
+2022-06-29 21:36:16.702004:
+epoch: 86, train set index: 299, average loss: 0.4214687645
+2022-06-29 21:36:23.068353:
+epoch: 86, train set index: 319, average loss: 0.4196051657
+2022-06-29 21:36:29.424775:
+epoch: 86, train set index: 339, average loss: 0.4879939258
+2022-06-29 21:36:35.764473:
+epoch: 86, train set index: 359, average loss: 0.3561424613
+2022-06-29 21:36:42.095972:
+epoch: 86, train set index: 379, average loss: 0.3799753189
+2022-06-29 21:36:46.149686:
+Epoch 86 finished, average loss: 0.0031581491
+2022-06-29 21:36:46.149791:
+Starting testing
+2022-06-29 21:36:48.684994:
+Correct: 8793, total: 10000, accuracy: 0.8792999983, average loss: 0.0027302983
+2022-06-29 21:36:56.655029:
+epoch: 87, train set index: 19, average loss: 0.3191747069
+2022-06-29 21:37:03.032589:
+epoch: 87, train set index: 39, average loss: 0.4429672658
+2022-06-29 21:37:09.395350:
+epoch: 87, train set index: 59, average loss: 0.3867066503
+2022-06-29 21:37:15.752119:
+epoch: 87, train set index: 79, average loss: 0.3402888477
+2022-06-29 21:37:22.096002:
+epoch: 87, train set index: 99, average loss: 0.4043175578
+2022-06-29 21:37:28.467949:
+epoch: 87, train set index: 119, average loss: 0.3625470996
+2022-06-29 21:37:34.881569:
+epoch: 87, train set index: 139, average loss: 0.5028983951
+2022-06-29 21:37:41.259584:
+epoch: 87, train set index: 159, average loss: 0.3131127656
+2022-06-29 21:37:47.639951:
+epoch: 87, train set index: 179, average loss: 0.3221158981
+2022-06-29 21:37:54.012845:
+epoch: 87, train set index: 199, average loss: 0.3814302683
+2022-06-29 21:38:00.377315:
+epoch: 87, train set index: 219, average loss: 0.5016171932
+2022-06-29 21:38:06.741591:
+epoch: 87, train set index: 239, average loss: 0.2489842474
+2022-06-29 21:38:13.116431:
+epoch: 87, train set index: 259, average loss: 0.3969401121
+2022-06-29 21:38:19.499587:
+epoch: 87, train set index: 279, average loss: 0.3869177699
+2022-06-29 21:38:25.882420:
+epoch: 87, train set index: 299, average loss: 0.2845355272
+2022-06-29 21:38:32.267115:
+epoch: 87, train set index: 319, average loss: 0.3844470382
+2022-06-29 21:38:38.648091:
+epoch: 87, train set index: 339, average loss: 0.4299328923
+2022-06-29 21:38:45.020761:
+epoch: 87, train set index: 359, average loss: 0.3862879276
+2022-06-29 21:38:51.392069:
+epoch: 87, train set index: 379, average loss: 0.4395494759
+2022-06-29 21:38:55.489298:
+Epoch 87 finished, average loss: 0.0031242259
+2022-06-29 21:38:55.489446:
+Starting testing
+2022-06-29 21:38:58.142906:
+Correct: 8826, total: 10000, accuracy: 0.8825999498, average loss: 0.0026563019
+2022-06-29 21:39:06.021983:
+epoch: 88, train set index: 19, average loss: 0.3821744323
+2022-06-29 21:39:12.432725:
+epoch: 88, train set index: 39, average loss: 0.3058748245
+2022-06-29 21:39:18.823573:
+epoch: 88, train set index: 59, average loss: 0.3384168744
+2022-06-29 21:39:25.214852:
+epoch: 88, train set index: 79, average loss: 0.4011741281
+2022-06-29 21:39:31.597459:
+epoch: 88, train set index: 99, average loss: 0.4007000625
+2022-06-29 21:39:37.995044:
+epoch: 88, train set index: 119, average loss: 0.3656224310
+2022-06-29 21:39:44.371631:
+epoch: 88, train set index: 139, average loss: 0.3879574537
+2022-06-29 21:39:50.755131:
+epoch: 88, train set index: 159, average loss: 0.4140496254
+2022-06-29 21:39:57.140555:
+epoch: 88, train set index: 179, average loss: 0.2773106992
+2022-06-29 21:40:03.514965:
+epoch: 88, train set index: 199, average loss: 0.4515860677
+2022-06-29 21:40:09.907221:
+epoch: 88, train set index: 219, average loss: 0.3295747042
+2022-06-29 21:40:16.293796:
+epoch: 88, train set index: 239, average loss: 0.3454421461
+2022-06-29 21:40:22.686077:
+epoch: 88, train set index: 259, average loss: 0.3714264333
+2022-06-29 21:40:29.061308:
+epoch: 88, train set index: 279, average loss: 0.2291230559
+2022-06-29 21:40:35.444183:
+epoch: 88, train set index: 299, average loss: 0.3360971510
+2022-06-29 21:40:41.822021:
+epoch: 88, train set index: 319, average loss: 0.4207508564
+2022-06-29 21:40:48.186078:
+epoch: 88, train set index: 339, average loss: 0.3175030947
+2022-06-29 21:40:54.546840:
+epoch: 88, train set index: 359, average loss: 0.4596625268
+2022-06-29 21:41:00.913277:
+epoch: 88, train set index: 379, average loss: 0.3926591575
+2022-06-29 21:41:04.991986:
+Epoch 88 finished, average loss: 0.0030874002
+2022-06-29 21:41:04.992107:
+Starting testing
+2022-06-29 21:41:07.674272:
+Correct: 8807, total: 10000, accuracy: 0.8806999922, average loss: 0.0026616051
+2022-06-29 21:41:15.469346:
+epoch: 89, train set index: 19, average loss: 0.5187780857
+2022-06-29 21:41:21.869614:
+epoch: 89, train set index: 39, average loss: 0.3510961533
+2022-06-29 21:41:28.258905:
+epoch: 89, train set index: 59, average loss: 0.3995085955
+2022-06-29 21:41:34.641861:
+epoch: 89, train set index: 79, average loss: 0.4007839561
+2022-06-29 21:41:41.028037:
+epoch: 89, train set index: 99, average loss: 0.3085480034
+2022-06-29 21:41:47.382204:
+epoch: 89, train set index: 119, average loss: 0.5259450078
+2022-06-29 21:41:53.753471:
+epoch: 89, train set index: 139, average loss: 0.4497383237
+2022-06-29 21:42:00.126179:
+epoch: 89, train set index: 159, average loss: 0.3362766802
+2022-06-29 21:42:06.504521:
+epoch: 89, train set index: 179, average loss: 0.2625871301
+2022-06-29 21:42:12.880387:
+epoch: 89, train set index: 199, average loss: 0.4009203911
+2022-06-29 21:42:19.294605:
+epoch: 89, train set index: 219, average loss: 0.3821057081
+2022-06-29 21:42:25.669227:
+epoch: 89, train set index: 239, average loss: 0.4733279049
+2022-06-29 21:42:32.043152:
+epoch: 89, train set index: 259, average loss: 0.5156565905
+2022-06-29 21:42:38.418156:
+epoch: 89, train set index: 279, average loss: 0.5091009140
+2022-06-29 21:42:44.822671:
+epoch: 89, train set index: 299, average loss: 0.3925395906
+2022-06-29 21:42:51.202685:
+epoch: 89, train set index: 319, average loss: 0.3828012943
+2022-06-29 21:42:57.584044:
+epoch: 89, train set index: 339, average loss: 0.3311561644
+2022-06-29 21:43:03.971280:
+epoch: 89, train set index: 359, average loss: 0.3764458299
+2022-06-29 21:43:10.345290:
+epoch: 89, train set index: 379, average loss: 0.5180834532
+2022-06-29 21:43:14.396599:
+Epoch 89 finished, average loss: 0.0030816984
+2022-06-29 21:43:14.396709:
+Starting testing
+2022-06-29 21:43:17.034791:
+Correct: 8821, total: 10000, accuracy: 0.8820999861, average loss: 0.0027476372
+2022-06-29 21:43:25.021449:
+epoch: 90, train set index: 19, average loss: 0.4127905369
