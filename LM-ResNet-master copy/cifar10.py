@@ -127,7 +127,7 @@ def train_epoch(net,optimizer,trainloader,testloader,it,control_dict,device,glob
         # if global_cuda_available:
         #     inputs, labels = inputs.cuda(), labels.cuda()
         optimizer.zero_grad()
-        outputs,_ = net(inputs,labels)
+        outputs = net(inputs,labels)
         loss = criterion(outputs, labels)
         loss.backward()
         # optimizer.step()
@@ -148,7 +148,7 @@ def train_epoch(net,optimizer,trainloader,testloader,it,control_dict,device,glob
                 inputs, labels = inputs.to(device), labels.to(device)  # Changes here interested in TPUs not cuda
                 #if global_cuda_available:
                 #    inputs, labels = inputs.cuda(), labels.cuda()
-                outputs, _ = net(inputs,labels)
+                outputs = net(inputs,labels)
                 _, predicted = torch.max(outputs.data, 1)
                 total_ctr += labels.size()[0]
                 correct_sum += (predicted == labels.data).sum()
