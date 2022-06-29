@@ -610,18 +610,18 @@ class AttackPGD(nn.Module):  # Taken and adapted from https://github.com/BaoWang
     
     def forward(self, inputs, targets):
         x = inputs
-        if self.rand:
-            x = x + torch.zeros_like(x).uniform_(-self.epsilon, self.epsilon)
-        for i in range(self.num_steps): # iFGSM attack
-            x.requires_grad_()
-            with torch.enable_grad():
-                logits = self.basic_net(x)
-                loss = nn.functional.cross_entropy(logits, targets,reduction="sum")  # size_average=False is now reduction="sum" in pytorch
-            grad = torch.autograd.grad(loss, [x])[0]
-            x = x.detach() + self.step_size*torch.sign(grad.detach())
-            x = torch.min(torch.max(x, inputs - self.epsilon), inputs + self.epsilon)
-            x = torch.clamp(x, self.normalized_min_clip, self.normalized_max_clip)
-
+        if self.training:
+            if self.rand:
+                x = x + torch.zeros_like(x).uniform_(-self.epsilon, self.epsilon)
+            for i in range(self.num_steps): # iFGSM attack
+                x.requires_grad_()
+                with torch.enable_grad():
+                    logits = self.basic_net(x)
+                    loss = nn.functional.cross_entropy(logits, targets,reduction="sum")  # size_average=False is now reduction="sum" in pytorch
+                grad = torch.autograd.grad(loss, [x])[0]
+                x = x.detach() + self.step_size*torch.sign(grad.detach())
+                x = torch.min(torch.max(x, inputs - self.epsilon), inputs + self.epsilon)
+                x = torch.clamp(x, self.normalized_min_clip, self.normalized_max_clip)
         return self.basic_net(x), x
     
 def MResNet110(**kwargs) :
