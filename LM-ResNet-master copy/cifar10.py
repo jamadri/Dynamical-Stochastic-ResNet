@@ -421,7 +421,7 @@ def _run():  # See https://www.kaggle.com/code/tanulsingh077/pytorch-xla-underst
     normalized_min_clip = NORMALIZED_MIN.unsqueeze(0).unsqueeze(-1).unsqueeze(-1).to(dev)
     normalized_max_clip = NORMALIZED_MAX.unsqueeze(0).unsqueeze(-1).unsqueeze(-1).to(dev)
 
-    code=72
+    code=73
     configPGD={
     'epsilon':0.031,
     'num_steps':10,
@@ -440,6 +440,8 @@ def _run():  # See https://www.kaggle.com/code/tanulsingh077/pytorch-xla-underst
     net=MResNet(**MResNetParameters)
     net=AttackPGD(net, configPGD)
     net=En_LM_ResNet(net,num_ensembles=2)
+    state_dict = torch.load('result/exp72.pt')
+    net.load_state_dict(state_dict)
     net.to(device=dev)
     model_name = "exp"+str(code)
     # net.load_state_dict(state_dict)
@@ -459,9 +461,10 @@ def _run():  # See https://www.kaggle.com/code/tanulsingh077/pytorch-xla-underst
     '''
     For LM-ResNet on CIFAR10 (CIFAR100), we start with the learning rate of 0.1, divide it by 10 at 80 (150) and 120 (225) epochs and terminate training at 160 (300) epochs.
     '''
-    sgd_para = {"lr":0.1, "momentum":0.9, "weight_decay":0.0001}  
-    Trainer = NN_SGDTrainer(net,sgd_para, trainloader, testloader, {80:0.1,120:0.01,160:0.001,200:0.0001}, dev, model_name+'.txt', code)
-    for i in range(200):
+    sgd_para = {"lr":0.1, "momentum":0.9, "weight_decay":0.0001}
+    last_epoch_computed=89
+    Trainer = NN_SGDTrainer(net,sgd_para, trainloader, testloader, {120-last_epoch_computed:0.01,160-last_epoch_computed:0.001,200-last_epoch_computed:0.0001}, dev, model_name+'.txt', code)
+    for i in range(200-last_epoch_computed):
         Trainer.train()
 def _mp_fn(rank, flags):
     '''
