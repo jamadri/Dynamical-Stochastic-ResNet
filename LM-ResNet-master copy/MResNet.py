@@ -615,7 +615,7 @@ class AttackPGD(nn.Module):  # Taken and adapted from https://github.com/BaoWang
                 x = x + torch.zeros_like(x).uniform_(-self.epsilon, self.epsilon)
             for i in range(self.num_steps): # iFGSM attack
                 x.requires_grad_()
-                with torch.enable_grad():attack
+                with torch.enable_grad():
                     logits = self.basic_net(x)
                     loss = nn.functional.cross_entropy(logits, targets,reduction="sum")  # size_average=False is now reduction="sum" in pytorch
                 grad = torch.autograd.grad(loss, [x])[0]
