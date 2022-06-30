@@ -608,7 +608,7 @@ class AttackPGD(nn.Module):  # Taken and adapted from https://github.com/BaoWang
         self.normalized_max_clip = config['normalized_max_clip']
         assert config['loss_func'] == 'xent', 'Only xent supported for now.'
     
-    def forward(self, inputs, targets):
+    def forward(self, inputs, targets=None):
         x = inputs
         if self.training:
             if self.rand:
@@ -629,7 +629,7 @@ class En_LM_ResNet(nn.Module):
       super(En_LM_ResNet, self).__init__()
       self.num_ensembles = num_ensembles
       self.ensemble = nn.ModuleList([net for i in range(num_ensembles)])
-    def forward(self, x,y):
+    def forward(self, x,y=None):
       ret = 0.0
       for net in self.ensemble:
         out,_ = net(x,y)
