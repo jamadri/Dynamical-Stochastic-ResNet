@@ -608,14 +608,14 @@ class AttackPGD(nn.Module):  # Taken and adapted from https://github.com/BaoWang
         self.normalized_max_clip = config['normalized_max_clip']
         assert config['loss_func'] == 'xent', 'Only xent supported for now.'
     
-    def forward(self, inputs, targets):
+    def forward(self, inputs, targets=None):
         x = inputs
         if self.training:
             if self.rand:
                 x = x + torch.zeros_like(x).uniform_(-self.epsilon, self.epsilon)
             for i in range(self.num_steps): # iFGSM attack
                 x.requires_grad_()
-                with torch.enable_grad():
+                with torch.enable_grad():attack
                     logits = self.basic_net(x)
                     loss = nn.functional.cross_entropy(logits, targets,reduction="sum")  # size_average=False is now reduction="sum" in pytorch
                 grad = torch.autograd.grad(loss, [x])[0]
