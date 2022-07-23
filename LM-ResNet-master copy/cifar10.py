@@ -466,7 +466,7 @@ def _run():  # See https://www.kaggle.com/code/tanulsingh077/pytorch-xla-underst
     sgd_para = {"lr":0.1, "momentum":0.9, "weight_decay":0.0001}
     last_epoch_computed=0
     Trainer = NN_SGDTrainer(net,sgd_para, trainloader, testloader, {120-last_epoch_computed:0.01,160-last_epoch_computed:0.001}, dev, model_name+'.txt', code)
-    for i in range(2-last_epoch_computed):
+    for i in range(160-last_epoch_computed):
         Trainer.train()
 def _mp_fn(rank, flags):
     '''
