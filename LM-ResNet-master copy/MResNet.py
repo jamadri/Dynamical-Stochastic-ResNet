@@ -514,7 +514,7 @@ class ResNet_N(nn.Module):
 
 class ResNet(nn.Module):
 
-    def __init__(self,block,layers,noise_level=0.001,pretrain=True,num_classes=100):
+    def __init__(self,block,layers,noise_level=0.001,pretrain=True,num_classes=100,device="cpu"):
         self.in_planes=16
         self.planes=[16,32,64]
         self.strides=[1,2,2]
@@ -525,13 +525,14 @@ class ResNet(nn.Module):
         self.bn1=nn.BatchNorm2d(16)
         self.relu=nn.ReLU(inplace=True)
         self.pretrain=pretrain
+        self.device=device
         
         blocks=[]
         for i in range(3):
-            blocks.append(block(self.in_planes,self.planes[i],self.strides[i]))
+            blocks.append(block(self.in_planes,self.planes[i],self.strides[i],device=self.device))
             self.in_planes=self.planes[i]*block.expansion
             for j in range(1,layers[i]):
-                blocks.append(block(self.in_planes,self.planes[i]))
+                blocks.append(block(self.in_planes,self.planes[i],device=self.device))
         self.blocks=nn.ModuleList(blocks)
         self.downsample1=Downsample(16,64,stride=1)
         #self.downsample1=nn.Conv2d(16, 64,

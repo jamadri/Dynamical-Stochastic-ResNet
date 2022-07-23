@@ -435,7 +435,7 @@ def _run():  # See https://www.kaggle.com/code/tanulsingh077/pytorch-xla-underst
     '''
     In our experiments, we select pL = 0.8 for LM-ResNet56 and pL = 0.5 for LM-ResNet110.
     '''
-    MResNetParameters={"block":BasicBlock,"layers":[3,3,3],"pretrain":False,"num_classes":10,"stochastic_depth":False,"PL":0, "device":dev,"noise_level":0}
+    ResNetParameters={"block":BasicBlock,"layers":[3,3,3],"pretrain":False,"num_classes":10, "device":dev,"noise_level":0}
 
     '''net=MResNet(**MResNetParameters)
     net=AttackPGD(net, configPGD)
@@ -443,7 +443,7 @@ def _run():  # See https://www.kaggle.com/code/tanulsingh077/pytorch-xla-underst
     state_dict = torch.load('result/ResNet20Normal.pt')
     net.load_state_dict(state_dict)
     '''
-    net=ResNet(**MResNetParameters)
+    net=ResNet(**ResNetParameters)
     net.to(device=dev)
     model_name = "ResNet20Normal"
     # net.load_state_dict(state_dict)
