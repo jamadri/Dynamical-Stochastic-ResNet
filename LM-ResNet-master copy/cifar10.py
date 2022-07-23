@@ -435,15 +435,17 @@ def _run():  # See https://www.kaggle.com/code/tanulsingh077/pytorch-xla-underst
     '''
     In our experiments, we select pL = 0.8 for LM-ResNet56 and pL = 0.5 for LM-ResNet110.
     '''
-    MResNetParameters={"block":BasicBlock,"layers":[3,3,3],"pretrain":False,"num_classes":10,"stochastic_depth":False,"PL":0, "device":dev,"noise_level":.1}
+    MResNetParameters={"block":BasicBlock,"layers":[3,3,3],"pretrain":False,"num_classes":10,"stochastic_depth":False,"PL":0, "device":dev,"noise_level":0}
 
-    net=MResNet(**MResNetParameters)
+    '''net=MResNet(**MResNetParameters)
     net=AttackPGD(net, configPGD)
     net=En_LM_ResNet(net,num_ensembles=2)
-    state_dict = torch.load('result/exp72.pt')
+    state_dict = torch.load('result/ResNet20Normal.pt')
     net.load_state_dict(state_dict)
+    '''
+    net=ResNet(**MResNetParameters)
     net.to(device=dev)
-    model_name = "exp"+str(code)
+    model_name = "ResNet20Normal"
     # net.load_state_dict(state_dict)
     ###
     batch_size = 128
@@ -462,9 +464,9 @@ def _run():  # See https://www.kaggle.com/code/tanulsingh077/pytorch-xla-underst
     For LM-ResNet on CIFAR10 (CIFAR100), we start with the learning rate of 0.1, divide it by 10 at 80 (150) and 120 (225) epochs and terminate training at 160 (300) epochs.
     '''
     sgd_para = {"lr":0.1, "momentum":0.9, "weight_decay":0.0001}
-    last_epoch_computed=89
-    Trainer = NN_SGDTrainer(net,sgd_para, trainloader, testloader, {120-last_epoch_computed:0.01,160-last_epoch_computed:0.001,200-last_epoch_computed:0.0001}, dev, model_name+'.txt', code)
-    for i in range(200-last_epoch_computed):
+    last_epoch_computed=0
+    Trainer = NN_SGDTrainer(net,sgd_para, trainloader, testloader, {120-last_epoch_computed:0.01,160-last_epoch_computed:0.001}, dev, model_name+'.txt', code)
+    for i in range(2-last_epoch_computed):
         Trainer.train()
 def _mp_fn(rank, flags):
     '''
