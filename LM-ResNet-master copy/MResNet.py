@@ -644,10 +644,10 @@ class EnResNet(nn.Module):
       super(EnResNet, self).__init__()
       self.num_ensembles = num_ensembles
       self.ensemble = nn.ModuleList([net for i in range(num_ensembles)])
-    def forward(self, x,y=None):
+    def forward(self, x):
       ret = 0.0
       for net in self.ensemble:
-        out,_ = net(x,y)
+        out,_ = net(x)
         ret+=out
         #ret += net(x)
         #ret += net(x, target)
