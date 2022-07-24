@@ -444,7 +444,7 @@ def _run():  # See https://www.kaggle.com/code/tanulsingh077/pytorch-xla-underst
     net.load_state_dict(state_dict)
     '''
     net=ResNet(**ResNetParameters)
-    net = EnResNet(net,num_ensembles=3)
+    net = EnResNet(net,num_ensembles=5)
     #state_dict = torch.load('result/exp101.pt')
     #net.load_state_dict(state_dict)
     net.to(device=dev)
