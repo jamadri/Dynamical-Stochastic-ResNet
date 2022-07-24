@@ -444,6 +444,8 @@ def _run():  # See https://www.kaggle.com/code/tanulsingh077/pytorch-xla-underst
     net.load_state_dict(state_dict)
     '''
     net=ResNet(**ResNetParameters)
+    state_dict = torch.load('result/ResNet20Normal.pt')
+    net.load_state_dict(state_dict)
     net.to(device=dev)
     model_name = "ResNet20Normal"
     # net.load_state_dict(state_dict)
