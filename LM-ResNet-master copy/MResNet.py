@@ -647,7 +647,7 @@ class EnResNet(nn.Module):
     def forward(self, x):
       ret = 0.0
       for net in self.ensemble:
-        out,_ = net(x)
+        out = net(x)
         ret+=out
         #ret += net(x)
         #ret += net(x, target)
