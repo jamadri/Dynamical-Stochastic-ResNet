@@ -640,7 +640,7 @@ class En_LM_ResNet(nn.Module):
       ret /= self.num_ensembles
       return ret#torch.mean(torch.Tensor([net(x) for net in self.ensemble]))
 class EnResNet(nn.Module):
-    def __init__(self,net, num_ensembles=3):
+    def __init__(self,net, num_ensembles=5):
       super(EnResNet, self).__init__()
       self.num_ensembles = num_ensembles
       self.ensemble = nn.ModuleList([net for i in range(num_ensembles)])
