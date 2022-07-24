@@ -52,7 +52,7 @@ class BasicBlockWithDeathRate(nn.Module):
 class BasicBlock(nn.Module):
     expansion = 1
 
-    def __init__(self, in_planes, planes, stride=1, downsample=None, device="cuda",noise_coef=None):  # added a device arg which will not be used but helps switchin easily between BasicBlock and BasicBlockWithDeathRate
+    def __init__(self, in_planes, planes, stride=1, downsample=None, device="cuda",noise_level=None):  # added a device arg which will not be used but helps switchin easily between BasicBlock and BasicBlockWithDeathRate
         super(BasicBlock,self).__init__()
         self.bn1=nn.BatchNorm2d(in_planes)
         self.conv1=nn.Conv2d(in_planes,planes,kernel_size=3,stride=stride,padding=1,bias=False)
@@ -62,7 +62,7 @@ class BasicBlock(nn.Module):
         self.stride=stride
         self.in_planes=in_planes
         self.planes=planes
-        self.noise_coef = noise_coef
+        self.noise_level = noise_level
     def forward(self,x):
         out=self.bn1(x)
         out=self.relu(out)
@@ -70,10 +70,10 @@ class BasicBlock(nn.Module):
         out=self.bn2(out)
         out=self.relu(out)
         out=self.conv2(out)
-        if self.noise_coef is not None:# and not self.training:
+        if self.noise_level is not None:# and not self.training:
             #print('Noise is present!')
-            #return out + self.noise_coef * torch.std(out) * Variable(torch.randn(out.shape).cuda())
-            return out + self.noise_coef * torch.std(out) * torch.randn_like(out)
+            #return out + self.noise_level * torch.std(out) * Variable(torch.randn(out.shape).cuda())
+            return out + self.noise_level * torch.std(out) * torch.randn_like(out)
         else:
             return out
 
@@ -157,18 +157,18 @@ class MResNet(nn.Module):
         
         if not self.stochastic_depth:
             for i in range(3):
-                blocks.append(block(self.in_planes,self.planes[i],self.strides[i], device=self.device,noise_coef = self.noise_level))
+                blocks.append(block(self.in_planes,self.planes[i],self.strides[i], device=self.device,noise_level = self.noise_level))
                 self.in_planes=self.planes[i]*block.expansion
                 for j in range(1,layers[i]):
-                    blocks.append(block(self.in_planes,self.planes[i],device=self.device,noise_coef = self.noise_level))  # added device=self.device for the basicBlockWithDeathRate which generate 0s outputs sometimes which have to be treated in parallel as xla tensors.
+                    blocks.append(block(self.in_planes,self.planes[i],device=self.device,noise_level = self.noise_level))  # added device=self.device for the basicBlockWithDeathRate which generate 0s outputs sometimes which have to be treated in parallel as xla tensors.
         else:
             death_rates=torch.Tensor([i/(n-1)*(1-PL) for i in range(n)])
             print(death_rates)
             for i in range(3):
-                blocks.append(block(self.in_planes,self.planes[i],self.strides[i],death_rate=death_rates[i*layers[0]], device=self.device,noise_coef = self.noise_level))
+                blocks.append(block(self.in_planes,self.planes[i],self.strides[i],death_rate=death_rates[i*layers[0]], device=self.device,noise_level = self.noise_level))
                 self.in_planes=self.planes[i]*block.expansion
                 for j in range(1,layers[i]):
-                    blocks.append(block(self.in_planes,self.planes[i],death_rate=death_rates[i*layers[0]+j], device=self.device,noise_coef = self.noise_level))
+                    blocks.append(block(self.in_planes,self.planes[i],death_rate=death_rates[i*layers[0]+j], device=self.device,noise_level = self.noise_level))
         self.blocks=nn.ModuleList(blocks)
         self.downsample1=Downsample(16,64,stride=1)
         #self.downsample1=nn.Conv2d(16, 64,
@@ -529,10 +529,10 @@ class ResNet(nn.Module):
         
         blocks=[]
         for i in range(3):
-            blocks.append(block(self.in_planes,self.planes[i],self.strides[i],device=self.device,noise_coef=self.noise_level))
+            blocks.append(block(self.in_planes,self.planes[i],self.strides[i],device=self.device,noise_level=self.noise_level))
             self.in_planes=self.planes[i]*block.expansion
             for j in range(1,layers[i]):
-                blocks.append(block(self.in_planes,self.planes[i],device=self.device,noise_coef=self.noise_level))
+                blocks.append(block(self.in_planes,self.planes[i],device=self.device,noise_level=self.noise_level))
         self.blocks=nn.ModuleList(blocks)
         self.downsample1=Downsample(16,64,stride=1)
         #self.downsample1=nn.Conv2d(16, 64,
