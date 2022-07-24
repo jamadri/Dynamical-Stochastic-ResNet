@@ -62,7 +62,7 @@ class BasicBlock(nn.Module):
         self.stride=stride
         self.in_planes=in_planes
         self.planes=planes
-        self.noise_level = nn.parameter.Parameter(torch.Tensor([noise_level]))
+        self.noise_level = noise_level#nn.parameter.Parameter(torch.Tensor([noise_level]))
     def forward(self,x):
         out=self.bn1(x)
         out=self.relu(out)
@@ -639,7 +639,21 @@ class En_LM_ResNet(nn.Module):
         #ret += net(x, target)
       ret /= self.num_ensembles
       return ret#torch.mean(torch.Tensor([net(x) for net in self.ensemble]))
-    
+class En_ResNet(nn.Module):
+    def __init__(self,net, num_ensembles=3):
+      super(En_LM_ResNet, self).__init__()
+      self.num_ensembles = num_ensembles
+      self.ensemble = nn.ModuleList([net for i in range(num_ensembles)])
+    def forward(self, x,y=None):
+      ret = 0.0
+      for net in self.ensemble:
+        out,_ = net(x,y)
+        ret+=out
+        #ret += net(x)
+        #ret += net(x, target)
+      ret /= self.num_ensembles
+      return ret#torch.mean(torch.Tensor([net(x) for net in self.ensemble]))
+
 def MResNet110(**kwargs) :
 
     return MResNet(BasicBlock,[18,18,18],**kwargs)
