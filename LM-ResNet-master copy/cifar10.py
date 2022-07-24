@@ -435,7 +435,7 @@ def _run():  # See https://www.kaggle.com/code/tanulsingh077/pytorch-xla-underst
     '''
     In our experiments, we select pL = 0.8 for LM-ResNet56 and pL = 0.5 for LM-ResNet110.
     '''
-    ResNetParameters={"block":BasicBlock,"layers":[3,3,3],"pretrain":False,"num_classes":10, "device":dev,"noise_level":0}
+    ResNetParameters={"block":BasicBlock,"layers":[3,3,3],"pretrain":False,"num_classes":10, "device":dev,"noise_level":None}
 
     '''net=MResNet(**MResNetParameters)
     net=AttackPGD(net, configPGD)
