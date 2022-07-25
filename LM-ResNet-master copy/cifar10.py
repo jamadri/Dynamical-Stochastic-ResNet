@@ -421,7 +421,7 @@ def _run():  # See https://www.kaggle.com/code/tanulsingh077/pytorch-xla-underst
     normalized_min_clip = NORMALIZED_MIN.unsqueeze(0).unsqueeze(-1).unsqueeze(-1).to(dev)
     normalized_max_clip = NORMALIZED_MAX.unsqueeze(0).unsqueeze(-1).unsqueeze(-1).to(dev)
 
-    code=112
+    code=113
     configPGD={
     'epsilon':0.031,
     'num_steps':10,
@@ -435,7 +435,7 @@ def _run():  # See https://www.kaggle.com/code/tanulsingh077/pytorch-xla-underst
     '''
     In our experiments, we select pL = 0.8 for LM-ResNet56 and pL = 0.5 for LM-ResNet110.
     '''
-    ResNetParameters={"block":BasicBlock,"layers":[3,3,3],"pretrain":False,"num_classes":10, "device":dev,"noise_level":None}
+    ResNetParameters={"block":BasicBlock,"layers":[3,3,3],"pretrain":False,"num_classes":10, "device":dev,"noise_level":0.1}
 
     '''net=MResNet(**MResNetParameters)
     net=AttackPGD(net, configPGD)
@@ -449,7 +449,7 @@ def _run():  # See https://www.kaggle.com/code/tanulsingh077/pytorch-xla-underst
     #state_dict = torch.load('result/exp101.pt')
     #net.load_state_dict(state_dict)
     net.to(device=dev)
-    model_name = "En_3ResNetPGDNoNoise"
+    model_name = "En_3ResNetPGDNoise0.1"
     # net.load_state_dict(state_dict)
     ###
     batch_size = 128
