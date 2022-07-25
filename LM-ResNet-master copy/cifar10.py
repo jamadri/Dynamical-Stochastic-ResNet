@@ -127,7 +127,7 @@ def train_epoch(net,optimizer,trainloader,testloader,it,control_dict,device,glob
         # if global_cuda_available:
         #     inputs, labels = inputs.cuda(), labels.cuda()
         optimizer.zero_grad()
-        outputs = net(inputs)#,labels)
+        outputs, adversaries = net(inputs,labels)
         loss = criterion(outputs, labels)
         loss.backward()
         # optimizer.step()
@@ -148,7 +148,7 @@ def train_epoch(net,optimizer,trainloader,testloader,it,control_dict,device,glob
                 inputs, labels = inputs.to(device), labels.to(device)  # Changes here interested in TPUs not cuda
                 #if global_cuda_available:
                 #    inputs, labels = inputs.cuda(), labels.cuda()
-                outputs = net(inputs)#,labels)
+                outputs, adversaries = net(inputs,labels)
                 _, predicted = torch.max(outputs.data, 1)
                 total_ctr += labels.size()[0]
                 correct_sum += (predicted == labels.data).sum()
@@ -421,7 +421,7 @@ def _run():  # See https://www.kaggle.com/code/tanulsingh077/pytorch-xla-underst
     normalized_min_clip = NORMALIZED_MIN.unsqueeze(0).unsqueeze(-1).unsqueeze(-1).to(dev)
     normalized_max_clip = NORMALIZED_MAX.unsqueeze(0).unsqueeze(-1).unsqueeze(-1).to(dev)
 
-    code=107
+    code=110
     configPGD={
     'epsilon':0.031,
     'num_steps':10,
@@ -444,11 +444,12 @@ def _run():  # See https://www.kaggle.com/code/tanulsingh077/pytorch-xla-underst
     net.load_state_dict(state_dict)
     '''
     net=ResNet(**ResNetParameters)
-    net = EnResNet(net,num_ensembles=5)
+    net=AttackPGD(net,configPGD)
+    #net = EnResNet(net,num_ensembles=5)
     #state_dict = torch.load('result/exp101.pt')
     #net.load_state_dict(state_dict)
     net.to(device=dev)
-    model_name = "En_5ResNet20Noise0.1"
+    model_name = "ResNetPGDNoise0.1"
     # net.load_state_dict(state_dict)
     ###
     batch_size = 128
