@@ -62,7 +62,7 @@ class BasicBlock(nn.Module):
         self.stride=stride
         self.in_planes=in_planes
         self.planes=planes
-        self.noise_level = nn.parameter.Parameter(torch.Tensor([noise_level]))
+        self.noise_level = noise_level  # nn.parameter.Parameter(torch.Tensor([noise_level]))
     def forward(self,x):
         out=self.bn1(x)
         out=self.relu(out)
