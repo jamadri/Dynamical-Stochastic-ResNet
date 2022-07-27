@@ -623,7 +623,7 @@ class AttackPGD(nn.Module):  # Taken and adapted from https://github.com/BaoWang
                 x = x.detach() + self.step_size*torch.sign(grad.detach())
                 x = torch.min(torch.max(x, inputs - self.epsilon), inputs + self.epsilon)
                 x = torch.clamp(x, self.normalized_min_clip, self.normalized_max_clip)
-        return self.basic_net(x), x
+        return self.basic_net(x)
 
 class En_LM_ResNet(nn.Module):
     def __init__(self,net, num_ensembles=3):
