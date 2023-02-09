@@ -5,4 +5,6 @@ We consider the ResNet as a numerical solution of a transport equation. We expec
 
 In this repository, we explore deep neural networks simulating the Itô process with improved weak orders of convergence.
 
+This is not really maintained and the code deserves to be cleaner. When I have time I'll be happy to go back on it.
+Please feel free to reach me out if you have any questions.
 ## References
